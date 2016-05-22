@@ -188,12 +188,12 @@ var theme = function () {
         initMainSlider: function () {
             $('#main-slider').owlCarousel({
                 //items: 1,
-                autoplay: true,
+                autoplay: false,
                 autoplayHoverPause: false,
-                loop: true,
+                loop: false,
                 margin: 0,
                 dots: false,
-                nav: true,
+                nav: false,
                 navText: [
                     "<i class='fa fa-caret-left'></i>",
                     "<i class='fa fa-caret-right'></i>"
