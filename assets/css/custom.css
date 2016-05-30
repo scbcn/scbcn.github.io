@@ -1,0 +1,14 @@
+.social-line a.youtube {background-color: rgb(229,45,39);}
+.social-line a.youtube:before {border-bottom-color: rgb(229,45,39);}
+.social-line a.youtube:after {border-top-color: rgb(229,45,39);}
+.social-line a:hover {background-color: #0D1D31;}
+.social-line a:hover:before {border-bottom-color: #0D1D31;}
+.social-line a:hover:after {border-top-color: #0D1D31;}
+.social-line a,
+.social-line a:hover {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
