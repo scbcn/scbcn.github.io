@@ -3479,6 +3479,7 @@ body.body-dark {
 .body-dark .comments-form {
     border-top: solid 1px #435469;
 }
+.schedule-width .media-body {width: 100%; float: left;}
 
 /* RTL
 /* ========================================================================== */
