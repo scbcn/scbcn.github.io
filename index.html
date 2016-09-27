@@ -718,25 +718,16 @@
                                                 </a>
                                                 -->
                                             </div>
-                                            <h2 class="post-title"><a href="#">Dojo Interaction Driven Design</a></h2>
+                                            <h2 class="post-title"><a href="#">Coding Dojo: Una aproximación a Clean Architecture</a></h2>
                                         </div>
                                         <div class="post-body">
                                             <div class="post-excerpt">
-<!--                                                
-<p>
-                                                    In hardly any other area we've had as much change and improvement as in the field of databases. Just a few years ago everyone had "their" database that was used for each project. Today you are confronted with a variety of approaches and implementations.<br/>
-
-                                                    We start off with a brief look at the theoretical background of distributed systems and databases in particular. On the basis of this, we take a look at traditional relational databases such as PostgreSQL and MySQL. Additionally, we dive into newer NoSQL systems like MongoDB, Redis, Cassandra, or Elasticsearch.<br/>
-
-                                                    After that, we discuss possible scenarios as well as the advantages and disadvantages of several<br/> databases:
-                                                    * Why SQL is in fashion (again).<br/>
-                                                    * Why MongoDB's document structure fits object-oriented programming so well.<br/>
-                                                    * How you can capture visitor hits with Redis efficiently.<br/>
-                                                    * Why Cassandra is so scalable and fail-safe.<br/>
-                                                    * How full-text search works with Elasticsearch.<br/>
-                                                    <br/>
-                                                    The right choice of database(s) hasn't become easier through the wide range of possibilities, but all the more interesting!<br/>
--->
+				Parece que en los últimos tiempos se oye mucho hablar sobre Clean Architecture. Desde algo más quizás de Hexagonal Architecture, Onion Architecture… al final comparten muchas ideas: centrarse en el dominio del problema, separación de responsabilidades en diferentes capas, independencia de sistemas externos y frameworks, fácil testeabilidad…
+				<br/>
+				Pues bien, en este dojo trabajaremos sobre un ejemplo de proyecto greenfield, a modo de PreparedKata, en el que mostraremos la aproximación a Clean Architecture que estamos implementando en este momento con los Coding Stones. 
+				<br/>
+				Utilizaremos ruby como lenguaje de programación, rspec será nuestra herramienta de testing. No usaremos ningún framework, así que cualquier  podrá seguir el dojo sin problemas.
+<br/>
                                                 </p>
                                             </div>
                                         </div>
@@ -1037,65 +1028,49 @@
                     </div>
                 </article>
 
-
-                <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
-                    <div class="media">
-                        <div class="schedule-width">
-                            <div class="post-header">
-                                <div class="post-meta">
-                                    <span class="post-date"><i class="fa fa-clock-o"></i> 15:00 - 15:55</span>
-                                    <!--
-                                    <a href="#" class="pull-right">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-stack-2x fa-circle-thin"></i>
-                                            <i class="fa fa-stack-1x fa-share-alt"></i>
-                                        </span>
-                                    </a>
-                                    -->
-                                </div>
-                                <h2 class="post-title"><a href="#">
-                                    Desarrollar un chat con Scala, Akka y WebSockets desde 0. ¡¿Qué puede salir mal?!
-                                </a></h2>
-                            </div>
-                            <div class="post-body">
-                                <div class="post-excerpt">
-                                    <p>
-                                        Estos últimos meses hemos desarrollado un nuevo sistema de chat para la aplicación de Letgo. En esta charla os contaremos toda la experiencia vivida al respecto, tanto a nivel del proceso seguido, como de nuestro proceso de aprendizaje sobre las tecnologías usadas y los errores que hemos cometido. Por lo tanto no es una charla puramente técnica (hay material mucho mejor para aprender Akka y Scala) pero sí que haremos una breve introducción al paradigma de actores.<br/>
-                                        <br/>
-                                        Viniendo de desarrollar webs en PHP, muy concienciados por temas como SOLID, Arquitectura Hexagonal, DDD, y CQRS; nos encontramos con un paradigma donde nos ha costado encajar según qué planteamientos. Con lo cuál, os contaremos justamente eso:<br/>
-                                        * Estrategia seguida para salir del monolito e ir al microservicio rico<br/>
-                                        * Evolución del proyecto a lo largo de estos meses<br/>
-                                        * Por qué decidimos apostar por el stack tecnológico escogido a pesar del cambio que implica<br/>
-                                        * Paradigma de actores de Akka en el chat de Letgo.<br/>
-                                        * Cómo hemos intentado llevar el CQRS a un protocolo de comunicación por WebSockets<br/>
-                                        * Cómo hemos usado Akka Streams para el proceso de migración inicial de datos<br/>
-                                        * Qué cosas nos han sorprendido del cambio de ecosistema (tanto para bien como para mal)<br/>
-                                        * Cómo hemos conseguido mantener retrocompatibilidad con las versiones anteriores de la app que apuntan al sistema de chat anterior<br/>
-                                        * …<br/>
-                                        <br/>
-                                        Esta charla proveerá de una visión más amplia de lo que se expuso en la Software Craftsmanship de Pamplona ( http://www.slideshare.net/JavierCane/leaving-the-monolith-thanks-to-eventsourcing-scpna-63267815 ). Donde nos centramos únicamente a analizamor cómo conseguimos mantener la retrocompatibilidad entre los dos sistemas de chat gracias a eventos de dominio, SNS, y SQS.<br/>
-                                        <br/>
-                                        La charla la daríamos a medias entre los dos, @SergiGP y @JavierCane :)<br/>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="post-footer">
-                                <span class="post-readmore">
-                                    <i class="fa fa-microphone"></i> Sergi González & Javier Ferrer	  
-                                    <a href="https://twitter.com/SergiGP"><i class="fa fa-twitter"></i></a>
-				    <!-- TODO ask for more twitter accounts -->
-                                    <!--		<a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
-                                -->
-                            </span>
-                        </div>
-                    </div>
-                    <!-- -->
+<article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
+    <div class="media">
+        <div class="schedule-width">
+            <div class="post-header">
+                <div class="post-meta">
+                    <span class="post-date"><i class="fa fa-clock-o"></i> 15:00 - 15:55</span>
+                    <!--
+                    <a href="#" class="pull-right">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-stack-2x fa-circle-thin"></i>
+                            <i class="fa fa-stack-1x fa-share-alt"></i>
+                        </span>
+                    </a>
+                    -->
                 </div>
-            </article>
+                <h2 class="post-title"><a href="#">
+                    Software Architecture patterns and tactics
+                </a></h2>
+            </div>
+            <div class="post-body">
+                <div class="post-excerpt">
+                    <p>
+                        The talk would describe the relationship between software architecture, qualitty attributes, talk some about architectural patterns and tactics. It is basically an introduction to some sw architecture topics (and up-front-design standpoint rather than emergent design) and while doing so focus on the fact that as engineers we have a responsibility to understand the pros but also the cons of our decisions.<br/>
+                    </p>
+                </div>
+            </div>
+            <div class="post-footer">
+                <span class="post-readmore">
+			<!-- TODO get twitter account -->
+                    <i class="fa fa-microphone"></i> David Carballo
+                    <!--		<a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                -->
+            </span>
+        </div>
+    </div>
+    <!-- -->
+</div>
+</article>
 
+ 
             <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
                 <div class="media">
                     <div class="schedule-width">
@@ -1486,47 +1461,71 @@
 </article>
 
 
-<article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
-    <div class="media">
-        <div class="schedule-width">
-            <div class="post-header">
-                <div class="post-meta">
-                    <span class="post-date"><i class="fa fa-clock-o"></i> 15:00 - 15:55</span>
-                    <!--
-                    <a href="#" class="pull-right">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-stack-2x fa-circle-thin"></i>
-                            <i class="fa fa-stack-1x fa-share-alt"></i>
-                        </span>
-                    </a>
-                    -->
+
+
+               <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
+                    <div class="media">
+                        <div class="schedule-width">
+                            <div class="post-header">
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="fa fa-clock-o"></i> 15:00 - 15:55</span>
+                                    <!--
+                                    <a href="#" class="pull-right">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-stack-2x fa-circle-thin"></i>
+                                            <i class="fa fa-stack-1x fa-share-alt"></i>
+                                        </span>
+                                    </a>
+                                    -->
+                                </div>
+                                <h2 class="post-title"><a href="#">
+                                    Desarrollar un chat con Scala, Akka y WebSockets desde 0. ¡¿Qué puede salir mal?!
+                                </a></h2>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-excerpt">
+                                    <p>
+                                        Estos últimos meses hemos desarrollado un nuevo sistema de chat para la aplicación de Letgo. En esta charla os contaremos toda la experiencia vivida al respecto, tanto a nivel del proceso seguido, como de nuestro proceso de aprendizaje sobre las tecnologías usadas y los errores que hemos cometido. Por lo tanto no es una charla puramente técnica (hay material mucho mejor para aprender Akka y Scala) pero sí que haremos una breve introducción al paradigma de actores.<br/>
+                                        <br/>
+                                        Viniendo de desarrollar webs en PHP, muy concienciados por temas como SOLID, Arquitectura Hexagonal, DDD, y CQRS; nos encontramos con un paradigma donde nos ha costado encajar según qué planteamientos. Con lo cuál, os contaremos justamente eso:<br/>
+                                        * Estrategia seguida para salir del monolito e ir al microservicio rico<br/>
+                                        * Evolución del proyecto a lo largo de estos meses<br/>
+                                        * Por qué decidimos apostar por el stack tecnológico escogido a pesar del cambio que implica<br/>
+                                        * Paradigma de actores de Akka en el chat de Letgo.<br/>
+                                        * Cómo hemos intentado llevar el CQRS a un protocolo de comunicación por WebSockets<br/>
+                                        * Cómo hemos usado Akka Streams para el proceso de migración inicial de datos<br/>
+                                        * Qué cosas nos han sorprendido del cambio de ecosistema (tanto para bien como para mal)<br/>
+                                        * Cómo hemos conseguido mantener retrocompatibilidad con las versiones anteriores de la app que apuntan al sistema de chat anterior<br/>
+                                        * …<br/>
+                                        <br/>
+                                        Esta charla proveerá de una visión más amplia de lo que se expuso en la Software Craftsmanship de Pamplona ( http://www.slideshare.net/JavierCane/leaving-the-monolith-thanks-to-eventsourcing-scpna-63267815 ). Donde nos centramos únicamente a analizamor cómo conseguimos mantener la retrocompatibilidad entre los dos sistemas de chat gracias a eventos de dominio, SNS, y SQS.<br/>
+                                        <br/>
+                                        La charla la daríamos a medias entre los dos, @SergiGP y @JavierCane :)<br/>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="post-footer">
+                                <span class="post-readmore">
+                                    <i class="fa fa-microphone"></i> Sergi González & Javier Ferrer	  
+                                    <a href="https://twitter.com/SergiGP"><i class="fa fa-twitter"></i></a>
+				    <!-- TODO ask for more twitter accounts -->
+                                    <!--		<a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                -->
+                            </span>
+                        </div>
+                    </div>
+                    <!-- -->
                 </div>
-                <h2 class="post-title"><a href="#">
-                    Software Architecture patterns and tactics
-                </a></h2>
-            </div>
-            <div class="post-body">
-                <div class="post-excerpt">
-                    <p>
-                        The talk would describe the relationship between software architecture, qualitty attributes, talk some about architectural patterns and tactics. It is basically an introduction to some sw architecture topics (and up-front-design standpoint rather than emergent design) and while doing so focus on the fact that as engineers we have a responsibility to understand the pros but also the cons of our decisions.<br/>
-                    </p>
-                </div>
-            </div>
-            <div class="post-footer">
-                <span class="post-readmore">
-			<!-- TODO get twitter account -->
-                    <i class="fa fa-microphone"></i> David Carballo
-                    <!--		<a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                -->
-            </span>
-        </div>
-    </div>
-    <!-- -->
-</div>
-</article>
+            </article>
+
+
+
+
+
+
 
 <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
     <div class="media">
