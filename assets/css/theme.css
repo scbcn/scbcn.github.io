@@ -596,7 +596,8 @@ hr.page-divider.small:after {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-.btn-theme:hover {
+.btn-theme:hover,
+.btn-theme:focus {
     background-color: #435469;
     border-color: #435469;
     color: #ffffff;
