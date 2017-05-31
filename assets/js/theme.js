@@ -211,7 +211,7 @@ var theme = function () {
         },
         // CountDown
         initCountDown: function () {
-            var austDay = new Date(2016,9,1);
+            var austDay = new Date(2017,9,7);
             $('#defaultCountdown').countdown({until: austDay});
             $('#year').text(austDay.getFullYear());
         },
@@ -305,21 +305,8 @@ var theme = function () {
             var marker;
             var image = 'assets/img/icon-google-map.png'; // marker icon
             function initialize() {
-                var mapOptions = {
-                    scrollwheel: false,
-                    zoom: 12,
-                    center: new google.maps.LatLng(41.3934792,2.1471763) // map coordinates
-                };
-                map = new google.maps.Map(document.getElementById('map-canvas'),
-                    mapOptions);
-                marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(41.397379, 2.1901718), // marker coordinates
-                    map: map,
-                    icon: image,
-                    title: 'Netmind'
-                });
+                
             }
-            google.maps.event.addDomListener(window, 'load', initialize);
         }
 
     };
