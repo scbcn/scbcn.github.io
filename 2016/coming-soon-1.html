@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>im Event</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <!-- CSS Global -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+    <link href="assets/plugins/owlcarousel2/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/plugins/owlcarousel2/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet">
+    <link href="assets/plugins/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/plugins/countdown/jquery.countdown.css" rel="stylesheet">
+
+    <link href="assets/css/theme.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="assets/plugins/iesupport/html5shiv.js"></script>
+    <script src="assets/plugins/iesupport/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="home" class="wide body-light coming-soon">
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">
+        <div class="spinner"></div>
+    </div>
+</div>
+
+<!-- Wrap all content -->
+<div class="wrapper">
+
+    <!-- HEADER -->
+    <header class="header fixed">
+        <div class="container">
+            <div class="header-wrapper clearfix">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#home" class="scroll-to">
+                    <span class="fa-stack">
+                        <i class="fa logo-hex fa-stack-2x"></i>
+                        <i class="fa logo-fa fa-map-marker fa-stack-1x"></i>
+                    </span>
+                    im Event
+                </a>
+            </div>
+            <!-- /Logo -->
+
+            </div>
+        </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- Content area -->
+    <div class="content-area">
+
+        <div id="main">
+        <!-- SLIDER -->
+        <section class="page-section no-padding background-img-slider">
+            <div class="container">
+
+            <div id="main-slider" class="owl-carousel owl-theme">
+
+                <!-- Slide -->
+                <div class="item page text-center slide0">
+                    <div class="caption">
+                        <div class="container">
+                            <div class="div-table">
+                                <div class="div-cell">
+                                    <h2 class="caption-title" data-animation="fadeInDown" data-animation-delay="100"><span>January 17-19, 2014</span></h2>
+                                    <h3 class="caption-subtitle" data-animation="fadeInUp" data-animation-delay="300"><i class="fa fa-angle-left"></i> PHP Conference ın Istanbul <i class="fa fa-angle-right"></i></h3>
+                                    <div class="countdown-wrapper">
+                                        <div id="defaultCountdown" class="defaultCountdown clearfix"></div>
+                                    </div>
+                                    <p class="caption-text">
+                                        <a class="btn btn-theme btn-theme-xl scroll-to" href="re" data-animation="flipInY" data-animation-delay="600"> Register <i class="fa fa-arrow-circle-right"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+        <!-- /SLIDER -->
+        </div>
+
+    </div>
+    <!-- /Content area -->
+
+</div>
+<!-- /Wrap all content -->
+
+<!-- JS Global -->
+
+<!--[if lt IE 9]><script src="assets/plugins/jquery/jquery-1.11.1.min.js"></script><![endif]-->
+<!--[if gte IE 9]><!--><script src="assets/plugins/jquery/jquery-2.1.1.min.js"></script><!--<![endif]-->
+<script src="assets/plugins/modernizr.custom.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/plugins/bootstrap-select/bootstrap-select.min.js"></script>
+<script src="assets/plugins/superfish/js/superfish.js"></script>
+<script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+<script src="assets/plugins/placeholdem.min.js"></script>
+<script src="assets/plugins/jquery.smoothscroll.min.js"></script>
+<script src="assets/plugins/jquery.easing.min.js"></script>
+
+<!-- JS Page Level -->
+<script src="assets/plugins/owlcarousel2/owl.carousel.min.js"></script>
+<script src="assets/plugins/waypoints/waypoints.min.js"></script>
+<script src="assets/plugins/countdown/jquery.plugin.min.js"></script>
+<script src="assets/plugins/countdown/jquery.countdown.min.js"></script>
+
+<script src="assets/js/theme-ajax-mail.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/custom.js"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        theme.init();
+        theme.initCountDown();
+    });
+
+    jQuery(document).ready(function () { theme.onResize(); });
+    jQuery(window).load(function(){ theme.onResize(); });
+    jQuery(window).resize(function(){ theme.onResize(); });
+
+</script>
+
+</body>
+</html>
