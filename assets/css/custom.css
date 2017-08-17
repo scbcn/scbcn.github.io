@@ -12,3 +12,6 @@
     -o-transition: none;
     transition: none;
 }
+.map{
+    width: 100%;
+}
