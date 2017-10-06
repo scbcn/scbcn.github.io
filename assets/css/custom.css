@@ -77,3 +77,9 @@
         border-radius: 50%;
     }
 }
+
+.language-flag{
+    width: 28px;
+    vertical-align: top;
+    border-radius: 50%;
+}
