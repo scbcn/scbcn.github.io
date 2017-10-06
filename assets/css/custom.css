@@ -78,8 +78,18 @@
     }
 }
 
-.language-flag{
+.language-flag {
     width: 28px;
     vertical-align: top;
     border-radius: 50%;
+    margin-left: 5px;
 }
+
+.sponsor-track {
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+/*.nav>li>a>.language-flag {
+    vertical-align: sub;
+}*/
