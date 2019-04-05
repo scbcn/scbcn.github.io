@@ -211,7 +211,7 @@ var theme = function () {
         },
         // CountDown
         initCountDown: function () {
-            var austDay = new Date(2018,8,29);
+            var austDay = new Date(2019,9,5);
             $('#defaultCountdown').countdown({until: austDay});
             $('#year').text(austDay.getFullYear());
         },
