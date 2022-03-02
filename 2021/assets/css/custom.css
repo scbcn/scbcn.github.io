@@ -1,0 +1,128 @@
+.social-line a.youtube {
+    background-color: rgb(229, 45, 39);
+}
+
+.social-line a.youtube:before {
+    border-bottom-color: rgb(229, 45, 39);
+}
+
+.social-line a.youtube:after {
+    border-top-color: rgb(229, 45, 39);
+}
+
+.social-line a:hover {
+    background-color: #0D1D31;
+}
+
+.social-line a:hover:before {
+    border-bottom-color: #0D1D31;
+}
+
+.social-line a:hover:after {
+    border-top-color: #0D1D31;
+}
+
+.social-line a,
+.social-line a:hover {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.map {
+    width: 100%;
+}
+
+.sponsor {
+    line-height: 50px;
+}
+
+.sc-avatar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sc-avatar-second-wrapper {
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+
+.sc-avatar-wrapper img,
+.sc-avatar-second-wrapper img {
+    display: none;
+    max-width: 75px;
+    max-height: 75px;
+    border-radius: 50%;
+}
+
+.post-title {
+    margin-top: 20px;
+    padding-right: 15%;
+}
+
+@media screen and (min-width: 1024px) {
+    .owl-nav {
+        display: none;
+    }
+
+    .sc-avatar-wrapper img,
+    .sc-avatar-second-wrapper img {
+        display: block;
+        max-width: 75px;
+        max-height: 75px;
+        border-radius: 50%;
+    }
+}
+
+.language-flag {
+    width: 28px;
+    vertical-align: top;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.sponsor-track {
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+/*.nav>li>a>.language-flag {
+    vertical-align: sub;
+}*/
+.sc-organiser-avatar {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.sc-organiser-avatar-image {
+    transition: opacity .2s, visibility .2s;
+    -moz-transition: opacity .2s, visibility .2s;
+    -webkit-transition: opacity .2s, visibility .2s;
+}
+
+.sc-organiser-avatar-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 0 !important;
+    color: #0D1D31;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity .2s, visibility .2s;
+    -moz-transition: opacity .2s, visibility .2s;
+    -webkit-transition: opacity .2s, visibility .2s;
+}
+
+.sc-organiser-avatar:hover .sc-organiser-avatar-image {
+    opacity: 0.25;
+}
+
+.sc-organiser-avatar:hover .sc-organiser-avatar-name {
+    opacity: 1;
+    visibility: visible;
+}
