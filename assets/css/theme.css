@@ -1588,7 +1588,7 @@ textarea {
 /* 3.4 - Partners carousel / Owl carousel
 /* ========================================================================== */
 
-.partners-carousel .owl-carousel div a {display: block; text-align: center; background-color: #f3f4f5; border-radius: 10px; padding: 10px;}
+.partners-carousel .owl-carousel div a {display: block; text-align: center; background-color: #ffffff; border-radius: 10px; padding: 10px;}
 .partners-carousel .owl-carousel div a img {display: inline-block; max-width: 100%; }
 .partners-carousel .owl-carousel .owl-item-first img {width: 300px;}
 .partners-carousel .owl-carousel .owl-item-second img {width: 200px;}
