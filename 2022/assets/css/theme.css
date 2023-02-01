@@ -249,7 +249,7 @@ body.boxed {
     padding-top: 100px;
     padding-bottom: 100px;
     background-attachment: fixed;
-    /* background-image: url('../img/preview/pexels-michelangelo-buonarroti-8728388.jpg'); */
+    background-image: url('../img/preview/pexels-michelangelo-buonarroti-8728388.jpg');
     background-size: cover !important;
     background-position: 50% 0 !important;
     background-repeat: no-repeat;
@@ -269,11 +269,9 @@ body.boxed {
 .page-section.background-img-slider {position: relative;}
 .wide .page-section.background-img-slider,
 .boxed .page-section.background-img-slider > .container {
-    /* background: transparent url("../img/preview/pexels-michelangelo-buonarroti-8728388.jpg") 50% 0 repeat !important; */
-    background: transparent url("../img/preview/2022-edition-background.jpeg") 50% 0 repeat !important;
+    background: transparent url("../img/preview/pexels-michelangelo-buonarroti-8728388.jpg") 50% 0 repeat !important;
     background-position: 50% 0 !important;
     background-size: cover !important;
-    background-color: #805EB9;
 }
 .wide .page-section.background-img-slider > .container {
     width: 100%;
