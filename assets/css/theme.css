@@ -1232,6 +1232,10 @@ textarea {
     position: relative;
     overflow: hidden;
 }
+#main-slider .caption-title small {
+    color: #ffffff;
+    text-transform: lowercase;
+}
 #main-slider .caption-title span {
     display: inline-block;
     position: relative;
