@@ -270,7 +270,7 @@ body.boxed {
 .wide .page-section.background-img-slider,
 .boxed .page-section.background-img-slider > .container {
     /* background: transparent url("../img/preview/pexels-michelangelo-buonarroti-8728388.jpg") 50% 0 repeat !important; */
-    background: transparent url("../img/preview/2022-edition-background.jpeg") 50% 0 repeat !important;
+    background: transparent url("../img/2023-edition-background.jpg") 50% 0 repeat !important;
     background-position: 50% 0 !important;
     background-size: cover !important;
     background-color: #805EB9;
@@ -387,7 +387,7 @@ h4 .glyphicon, h5 .glyphicon, h6 .glyphicon {
  * -------------------------------------------------------------------------- */
 
 .rhex {
-    background-color: #0D1D31;
+    background-color: #048ba8;
     margin-top: 14px;
     width: 50px;
     height: 28px;
