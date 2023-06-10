@@ -1549,7 +1549,7 @@ textarea {
         flex-direction: row;
     }
     #cta .container a {
-        width: auto;
+        width: unset;
         text-align: center;
     }
 }
