@@ -159,7 +159,7 @@
 /* ========================================================================== */
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 1.33;
     color: #6d7a83;
@@ -783,7 +783,7 @@ textarea {
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 10;
-    font-family: 'Barlow Condensed', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Barlow Condensed', 'Trebuchet MS', sans-serif;
     -webkit-box-shadow: 0 10px 10px -10px #222;
     -moz-box-shadow: 0 10px 10px -10px #222;
     box-shadow: 0 10px 10px -10px #222;
@@ -3361,6 +3361,7 @@ body.body-dark {
 
 .body-dark .section-title {
     color: #ffffff;
+    font-family: 'Barlow Condensed', 'Trebuchet MS', sans-serif;
 }
 
 .body-dark .section-title small {
