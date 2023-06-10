@@ -1496,7 +1496,33 @@ textarea {
 
 #main .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+    font-family: 'Barlow Condensed', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #2E4057;
+}
+
+#main .container .scbcn {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+#main .container .edition {
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#main .container .place {
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 /* CTA */
