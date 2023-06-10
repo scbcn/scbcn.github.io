@@ -162,7 +162,6 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 1.33;
-    background: #fbfbfb;
     color: #6d7a83;
 
     -webkit-font-kerning: auto;
@@ -223,7 +222,6 @@ body.boxed {
     padding-bottom: 70px;
     position: relative;
     /*overflow: hidden; /* small devices */
-    background-color: #fbfbfb;
 }
 .boxed .page-section > .container {
     padding-left: 30px;
@@ -1090,7 +1088,6 @@ textarea {
  * -------------------------------------------------------------------------- */
 
 
-
 /* 3.1 - Slider / Owl sliders
 /* ========================================================================== */
 
@@ -1495,6 +1492,22 @@ textarea {
     top: 0; left: 0;
     bottom: 0; right: 0;
     background-color: rgba(220, 20, 60, .7);
+}
+
+/* CTA */
+#cta .container {
+    display: flex;
+    justify-content: center;
+}
+#cta .btn-cta {
+    color: #048BA8;
+    background-color: white;
+    border: 2px solid #048BA8;
+}
+#cta .btn-cta:hover {
+    color: white;
+    background-color: #048BA8;
+    border: 2px solid #048BA8;
 }
 
 /* 3.2 - Event description
