@@ -1502,6 +1502,7 @@ textarea {
     height: 450px;
     font-family: 'Barlow Condensed', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #2E4057;
+    margin-top: 50px;
 }
 
 @media (min-width:600px) {
@@ -1520,6 +1521,7 @@ textarea {
     font-weight: 500;
     font-size: 36px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #main .container .place {
