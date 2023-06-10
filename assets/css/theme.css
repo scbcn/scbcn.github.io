@@ -1496,11 +1496,18 @@ textarea {
 
 #main .container {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 450px;
     font-family: 'Barlow Condensed', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #2E4057;
+}
+
+@media (min-width:600px) {
+    #main .container {
+        flex-direction: row;
+    }
 }
 
 #main .container .scbcn {
@@ -1528,7 +1535,23 @@ textarea {
 /* CTA */
 #cta .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#cta .container a {
+    width: 100%;
+    text-align: center;
+}
+@media (min-width:600px) {
+    #cta .container {
+        flex-direction: row;
+    }
+    #cta .container a {
+        width: auto;
+        text-align: center;
+    }
 }
 #cta .btn-cta {
     color: #048BA8;
