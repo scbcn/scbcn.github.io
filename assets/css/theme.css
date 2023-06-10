@@ -959,11 +959,11 @@ textarea {
     display: none;
     position: fixed;
     padding: 0; margin: 0;
-    right: 280px; top: 43px;
+    right: 280px; top: 7px;
     font-size: 30px;
     line-height: 30px;
     border: none;
-    color: #ffffff !important;
+    color: #2E4057 !important;
 }
 .shrink .menu-toggle {
     top: 7px;
@@ -976,7 +976,7 @@ textarea {
         top: 0;
         height: 100%;
         width: 250px;
-        background-color: rgba(13, 29, 49, 0.95);
+        background-color: white;
     }
     .navigation.closed {right: -250px;}
     .navigation.opened {right: 0;}
