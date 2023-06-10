@@ -374,10 +374,10 @@ h4 .glyphicon, h5 .glyphicon, h6 .glyphicon {
     line-height: 57px;
     margin-right: 20px;
 }
-.section-title .fa-stack .fa {color: #ffffff;}
-.color .section-title .fa-stack .fa {color: #0D1D31;}
-.section-title .rhex {background-color: #0D1D31;}
-.color .section-title .rhex {background-color: #ffffff;}
+.section-title .fa-stack .fa {color: #F18F01;}
+.color .section-title .fa-stack .fa {color: #F18F01;}
+.section-title .rhex {background-color: #048BA8;}
+.color .section-title .rhex {background-color: #048BA8;}
 .color .section-title .crcle {background-color: #ffffff;}
 .color .section-title .wohex {background-color: #ffffff;}
 
@@ -3351,11 +3351,11 @@ body.body-dark {
 }
 
 .body-dark .section-title .rhex {
-    background-color:  #0D1D31;
+    background-color:  #048BA8;
 }
 
 .body-dark .color .section-title .rhex {
-    background-color: #0D1D31;
+    background-color: #048BA8;
 }
 
 .body-dark .color .btn-theme {
