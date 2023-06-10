@@ -239,7 +239,7 @@ body.boxed {
 }
 .wide .page-section.color,
 .boxed .page-section.color > .container {
-    background-color: #0D1D31;
+    background-color: #2E4057;
     color: #ffffff;
 }
 .wide .page-section.image,
@@ -2514,7 +2514,7 @@ footer.post-meta .post-categories {display: block;}
 .wide .footer-meta,
 .boxed .footer-meta > .container {
     padding: 40px 0 40px 0;
-    background-color: #f5f5f5;
+    background-color: #2E4057;
     color: #414650;
     font-size: 18px;
 }
@@ -3055,8 +3055,8 @@ div.pp_overlay {
 /* ========================================================================== */
 
 .to-top {
-    background-color: #373737;
-    color: #9f9197;
+    background-color: #048BA8;
+    color: white;
     z-index: 9999;
     width: 40px;
     height: 40px;
@@ -3345,13 +3345,13 @@ body.body-dark {
 
 .body-dark.wide .page-section.light,
 .body-dark.boxed .page-section.light > .container {
-    background-color: #122135;
+    background-color: #2E4057;
     color: #eff6ff;
 }
 
 .body-dark.wide .page-section.color,
 .body-dark.boxed .page-section.color > .container {
-    background-color: #122135;
+    background-color: #2E4057;
     color: #eff6ff;
 }
 
