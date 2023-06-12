@@ -1512,16 +1512,16 @@ textarea {
 }
 
 #main .container .scbcn {
-    font-weight: 700;
-    font-size: 64px;
+    font-weight: 500;
+    font-size: 80px;
     line-height: 77px;
 }
 
 #main .container .edition {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 36px;
     margin-bottom: 10px;
-    text-align: center;
+    font-family: 'Poppins', 'Raleway', sans-serif;
 }
 
 #main .container .place {
@@ -1532,6 +1532,11 @@ textarea {
     grid-row-gap: 10px;
     font-weight: 500;
     font-size: 24px;
+    font-family: 'Poppins', 'Raleway', sans-serif;
+}
+
+#main .container .place i {
+    margin-right: 0.5em;
 }
 
 /* CTA */
