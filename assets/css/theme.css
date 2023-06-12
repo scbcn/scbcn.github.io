@@ -454,18 +454,22 @@ a:active,
 a:focus {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    text-decoration: none;
 }
 
-a {color: #ea032d;}
+a {
+    color: #048BA8;
+    text-decoration: underline;
+}
 a:hover,
 a:active,
-a:focus {color: #000000;}
+a:focus {
+    color: #F18F01;
+}
 
 .color a {color: #ffffff;}
 .color a:hover,
 .color a:active,
-.color a:focus {color: #000000;}
+.color a:focus {color: #F18F01;}
 
 p {
     /*-moz-hyphens: auto;*/
