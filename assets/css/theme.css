@@ -338,6 +338,7 @@ h4 .glyphicon, h5 .glyphicon, h6 .glyphicon {
     color: #0D1D31;
     display: table;
     width: 100%;
+    font-family: 'Barlow Condensed', 'Trebuchet MS', sans-serif;
 }
 .section-title small {
     font-size: 24px;
