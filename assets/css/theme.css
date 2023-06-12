@@ -1500,7 +1500,7 @@ textarea {
     justify-content: space-around;
     align-items: center;
     height: 450px;
-    font-family: 'Barlow Condensed', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     color: #2E4057;
     margin-top: 50px;
 }
@@ -1550,6 +1550,7 @@ textarea {
 #cta .container a {
     width: 100%;
     text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 @media (min-width:600px) {
     #cta .container {
