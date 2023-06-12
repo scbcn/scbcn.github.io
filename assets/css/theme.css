@@ -1527,15 +1527,16 @@ textarea {
     margin-bottom: 10px;
     font-family: 'Poppins', 'Raleway', sans-serif;
     text-align: center;
+    margin-top: 2em;
 }
 
 #main .container .place {
     display:grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(1, auto);
     grid-row: auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
     font-family: 'Poppins', 'Raleway', sans-serif;
 }
@@ -1551,9 +1552,10 @@ textarea {
 @media (min-width:600px) {
     #main .container .edition {
         text-align: left;
+        margin-top: 0;
     }
     #main .container .place {
-        font-size: 24px;
+        grid-template-columns: auto auto;
     }
     #main .container .place div {
         padding: 0;
