@@ -1526,6 +1526,7 @@ textarea {
     font-size: 36px;
     margin-bottom: 10px;
     font-family: 'Poppins', 'Raleway', sans-serif;
+    text-align: center;
 }
 
 #main .container .place {
@@ -1534,14 +1535,31 @@ textarea {
     grid-row: auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
+    font-size: 18px;
     font-weight: 500;
-    font-size: 24px;
     font-family: 'Poppins', 'Raleway', sans-serif;
+}
+
+#main .container .place div {
+    padding: 0 5px;
 }
 
 #main .container .place i {
     margin-right: 0.5em;
 }
+
+@media (min-width:600px) {
+    #main .container .edition {
+        text-align: left;
+    }
+    #main .container .place {
+        font-size: 24px;
+    }
+    #main .container .place div {
+        padding: 0;
+    }
+}
+
 
 /* CTA */
 #cta .container {
