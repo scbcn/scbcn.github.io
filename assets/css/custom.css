@@ -126,3 +126,7 @@
     opacity: 1;
     visibility: visible;
 }
+
+.list {
+    list-style-type: disc;
+}

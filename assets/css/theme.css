@@ -338,6 +338,7 @@ h4 .glyphicon, h5 .glyphicon, h6 .glyphicon {
     color: #0D1D31;
     display: table;
     width: 100%;
+    font-family: 'Barlow Condensed', 'Trebuchet MS', sans-serif;
 }
 .section-title small {
     font-size: 24px;
@@ -453,18 +454,22 @@ a:active,
 a:focus {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    text-decoration: none;
 }
 
-a {color: #ea032d;}
+a {
+    color: #048BA8;
+    text-decoration: underline;
+}
 a:hover,
 a:active,
-a:focus {color: #000000;}
+a:focus {
+    color: #F18F01;
+}
 
 .color a {color: #ffffff;}
 .color a:hover,
 .color a:active,
-.color a:focus {color: #000000;}
+.color a:focus {color: #F18F01;}
 
 p {
     /*-moz-hyphens: auto;*/
@@ -907,7 +912,7 @@ textarea {
     color: #2E4057;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
 }
 .sf-menu li:hover,
@@ -1500,7 +1505,7 @@ textarea {
     justify-content: space-around;
     align-items: center;
     height: 450px;
-    font-family: 'Barlow Condensed', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     color: #2E4057;
     margin-top: 50px;
 }
@@ -1512,16 +1517,16 @@ textarea {
 }
 
 #main .container .scbcn {
-    font-weight: 700;
-    font-size: 64px;
+    font-weight: 500;
+    font-size: 80px;
     line-height: 77px;
 }
 
 #main .container .edition {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 36px;
     margin-bottom: 10px;
-    text-align: center;
+    font-family: 'Poppins', 'Raleway', sans-serif;
 }
 
 #main .container .place {
@@ -1532,6 +1537,11 @@ textarea {
     grid-row-gap: 10px;
     font-weight: 500;
     font-size: 24px;
+    font-family: 'Poppins', 'Raleway', sans-serif;
+}
+
+#main .container .place i {
+    margin-right: 0.5em;
 }
 
 /* CTA */
@@ -1545,6 +1555,7 @@ textarea {
 #cta .container a {
     width: 100%;
     text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 @media (min-width:600px) {
     #cta .container {
@@ -2316,7 +2327,7 @@ footer.post-meta .post-categories {display: block;}
     overflow: hidden;
     padding: 15px;
     background-color: transparent; /*0D1D31*/
-    background-color: rgba(220, 20, 60, 0.60);
+    background-color: rgba(241, 143, 1, 0.60);
     color: #ffffff;
     opacity: 0;
     z-index: 10;
