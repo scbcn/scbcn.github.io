@@ -95,6 +95,8 @@
 .sc-organiser-avatar {
     text-align: center;
     margin-bottom: 16px;
+    float: left;
+    position: relative;
 }
 
 .sc-organiser-avatar-image {
