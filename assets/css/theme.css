@@ -2319,6 +2319,12 @@ footer.post-meta .post-categories {display: block;}
     transform: scale(1) !important;
 }
 
+.img-hex {
+    -webkit-clip-path: polygon(5% 25%,5% 75%,50% 100%,95% 75%,95% 25%,50% 0%);
+    -moz-clip-path: polygon(5% 25%,5% 75%,50% 100%,95% 75%,95% 25%,50% 0%);
+}
+
+
 /* Thumbnail caption
  * -------------------------------------------------------------------------- */
 
