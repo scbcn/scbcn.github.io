@@ -458,6 +458,7 @@ a:focus {
 
 a {
     color: #048BA8;
+    font-weight: 700;
 }
 a:hover,
 a:active,
