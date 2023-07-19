@@ -38,6 +38,23 @@
     line-height: 150px;
 }
 
+.sponsor img {
+    width: 150px;
+}
+
+.unixcorn img {
+    width: 200px;
+}
+
+.sponsor-list {
+    display: flex;
+    gap: 6rem;
+}
+
+.sponsor-section .section-title {
+    margin: 0;
+}
+
 .sc-avatar-wrapper {
     position: absolute;
     top: 0;
