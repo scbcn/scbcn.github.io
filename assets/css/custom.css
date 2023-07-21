@@ -52,6 +52,7 @@
 
 .sponsor-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 6rem;
 }
 
