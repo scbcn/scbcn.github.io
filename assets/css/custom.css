@@ -46,8 +46,13 @@
     width: 200px;
 }
 
+.friends-for-life img {
+    width: 270px;
+}
+
 .sponsor-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 6rem;
 }
 
