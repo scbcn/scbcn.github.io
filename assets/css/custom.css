@@ -36,10 +36,21 @@
 
 .sponsor {
     line-height: 150px;
+    display: block;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    height: 180px;
+    min-width: 180px;
 }
 
 .sponsor img {
     width: 150px;
+}
+
+.sponsor img.little {
+    width: 80px;
 }
 
 .unixcorn img {
@@ -51,9 +62,19 @@
 }
 
 .sponsor-list {
+    padding: 2rem 0;
     display: flex;
     flex-wrap: wrap;
     gap: 6rem;
+}
+
+.sponsor-list div {
+
+}
+
+.sponsor-section {
+    background-color: #2E4057;
+    color: #ffffff;
 }
 
 .sponsor-section .section-title {
