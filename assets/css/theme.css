@@ -2033,6 +2033,10 @@ footer.post-meta .post-categories {display: block;}
     /*text-align: center;*/
 }
 
+.no-links {
+    color: #293239;
+    font-weight: bold;
+}
 /* 3.9 - Comments
 /* ========================================================================== */
 
