@@ -86,7 +86,7 @@
 .sc-avatar-second-wrapper {
     position: absolute;
     top: 0;
-    right: 100px;
+    right: 90px;
 }
 
 .sc-avatar-wrapper img,
@@ -119,7 +119,7 @@
 .language-flag {
     width: 28px;
     vertical-align: top;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     margin-left: 5px;
 }
 
