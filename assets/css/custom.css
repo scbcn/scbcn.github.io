@@ -102,6 +102,12 @@
     padding-right: 15%;
 }
 
+/* @media  screen (width > 768px) {
+    .post-title {
+        display: none;
+    }
+} */
+
 @media screen and (min-width: 1024px) {
     .owl-nav {
         display: none;
