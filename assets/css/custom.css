@@ -64,9 +64,7 @@
     gap: 6rem;
 }
 
-.sponsor-list div {
-
-}
+.sponsor-list div {}
 
 .sponsor-section {
     background-color: #2E4057;
@@ -100,6 +98,7 @@
 .post-title {
     margin-top: 20px;
     padding-right: 15%;
+    text-wrap: balance;
 }
 
 /* @media  screen (width > 768px) {
@@ -123,8 +122,8 @@
 }
 
 .language-flag {
-    width: 28px;
-    vertical-align: top;
+    width: 14px;
+    vertical-align: baseline;
     /* border-radius: 50%; */
     margin-left: 5px;
 }
@@ -176,4 +175,116 @@
 
 .list {
     list-style-type: disc;
+}
+
+#tab-second>table>thead>tr>th>img {
+    width: 100%;
+    object-fit: contain;
+}
+
+#tab-second>table>tbody>tr>td {
+    font-variant-numeric: tabular-nums;
+}
+
+#tab-second>table>tbody>tr>td.lightning-talks > h4 {
+    color: #0D1D31;
+    text-align: center;
+}
+
+#tab-second>table>tbody>tr>td.lightning-talks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+}
+#tab-second>table>tbody>tr>td.lightning-talks > div {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+#tab-second>table>tbody>tr>td.lightning-talks > div:not(:first-child) {
+    border-top-width: 2px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-color: #ccc;
+    border-style: solid;
+}
+
+#tab-second>table>tbody>tr>td[onclick]:hover, 
+#tab-second>table>tbody>tr>td>div[onclick]:hover {
+    background-color: #f0f0f0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.table-responsive>table>tbody>tr>td[colspan="5"] {
+    vertical-align: middle;
+    text-align: center;
+}
+
+dialog {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    max-width: 800px;
+    text-align: left;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+dialog button.dialog-close {
+    background-color: #0D1D31;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.author img {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .table-responsive table {
+        min-width: 800px;
+    }
+
+    .table-responsive>table>tbody>tr>td {
+        max-width: 250px;
+        word-wrap: break-word !important;
+        white-space: normal !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .table-responsive>table>tbody>tr>td[colspan="5"] {
+        text-align: left;
+    }
+}
+
+table a {
+    color: #293239;
 }
