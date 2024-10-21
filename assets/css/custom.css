@@ -186,7 +186,7 @@
     font-variant-numeric: tabular-nums;
 }
 
-#tab-second>table>tbody>tr>td.lightning-talks > h4 {
+#tab-second>table>tbody>tr>td.lightning-talks>h4 {
     color: #0D1D31;
     text-align: center;
 }
@@ -197,13 +197,14 @@
     gap: 20px;
     padding: 20px 0px;
 }
-#tab-second>table>tbody>tr>td.lightning-talks > div {
+
+#tab-second>table>tbody>tr>td.lightning-talks>div {
     padding: 10px;
     padding-top: 20px;
     padding-bottom: 0px;
 }
 
-#tab-second>table>tbody>tr>td.lightning-talks > div:not(:first-child) {
+#tab-second>table>tbody>tr>td.lightning-talks>div:not(:first-child) {
     border-top-width: 2px;
     border-bottom-width: 0px;
     border-left-width: 0px;
@@ -212,7 +213,7 @@
     border-style: solid;
 }
 
-#tab-second>table>tbody>tr>td[onclick]:hover, 
+#tab-second>table>tbody>tr>td[onclick]:hover,
 #tab-second>table>tbody>tr>td>div[onclick]:hover {
     background-color: #f0f0f0;
     text-decoration: underline;
@@ -242,6 +243,17 @@ dialog form {
 
 dialog button.dialog-close {
     background-color: #0D1D31;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+dialog button.dialog-feedback {
+    background-color: #F18F01;
     color: #ffffff;
     border: none;
     border-radius: 10px;
