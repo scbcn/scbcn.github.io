@@ -187,7 +187,10 @@
 }
 
 #tab-second>table>tbody>tr>td.lightning-talks>h4 {
-    color: #0D1D31;
+    background-color: #ffffff;
+    color: #F18F01;
+    padding: 0px;
+    border-radius: 0px;
     text-align: center;
 }
 
@@ -264,10 +267,12 @@ dialog button.dialog-feedback {
 .author {
     display: flex;
     align-items: center;
-    border-top: 1px solid #ccc;
+    justify-content: center;
+    border-top: 1px dashed #f0f0f0;
     margin-top: 10px;
     padding-top: 10px;
 }
+
 
 .author img {
     margin-right: 5px;
@@ -299,4 +304,30 @@ dialog button.dialog-feedback {
 
 table a {
     color: #293239;
+}
+
+.special-section {
+    background-color: #ffffff;
+    color: #F18F01;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.time-block {
+    background-color: #07819c;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
 }
