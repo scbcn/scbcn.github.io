@@ -227,6 +227,13 @@
     text-align: center;
 }
 
+#tab-second>table tbody td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: white; /* Ensure background is set to avoid transparency issues */
+    z-index: 5; /* Lower z-index than thead but higher than other cells */
+}
+
 dialog {
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -321,12 +328,7 @@ table a {
     padding: 5px 10px;
     border-radius: 3px;
     font-weight: bold;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+    text-align: center;
     box-sizing: border-box;
     margin: 0;
 }
