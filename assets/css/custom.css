@@ -230,8 +230,7 @@
 #tab-second>table tbody td:first-child {
     position: sticky;
     left: 0;
-    background-color: white; /* Ensure background is set to avoid transparency issues */
-    z-index: 5; /* Lower z-index than thead but higher than other cells */
+    z-index: 5;
 }
 
 dialog {
