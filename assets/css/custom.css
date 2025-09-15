@@ -177,6 +177,11 @@
     list-style-type: disc;
 }
 
+#tab-second>table>thead>tr>th {
+    text-align: center;
+    vertical-align: middle;
+}
+
 #tab-second>table>thead>tr>th>img {
     width: 100%;
     object-fit: contain;
@@ -220,6 +225,11 @@
     background-color: #f0f0f0;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.table-responsive>table>tbody>tr>td[colspan="4"] {
+    vertical-align: middle;
+    text-align: center;
 }
 
 .table-responsive>table>tbody>tr>td[colspan="5"] {
