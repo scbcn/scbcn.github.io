@@ -506,7 +506,74 @@
                                                     </form>
                                                 </dialog>
                                             </td>
-                                            <td class="lightning-talks">
+                                            <td
+                                                onclick="window['talk-2-2-1-dialog'].hasAttribute('open') ? window['talk-2-2-1-dialog'].close() : window['talk-2-2-1-dialog'].showModal()">
+                                                <img class="language-flag" src="assets/img/es_circle.svg"
+                                                    alt="Spanish" />
+                                                Product Engineer: ¡El unicornio que sí existe! 🦄💥<br>
+                                                <span class="author"><img
+                                                        src="assets/img/speakers/leo_manfred.jpeg"
+                                                        alt="leo@getmanfred.com" />Leonardo Poza</span>
+                                                <dialog id="talk-2-2-1-dialog">
+                                                    <div class="post-excerpt">
+                                                        <h2 class="post-title">Product Engineer: ¡El unicornio que sí existe! 🦄💥</h2>
+                                                        <p>Dicen que no existen, pero todas las empresas los quieren. Te suena, ¿verdad? En esta charla desenmascaramos al Product Engineer: qué demonios es, por qué mola tanto estar en ese rol, qué buscan las empresas cuando lo piden y cómo detectamos talento real cuando lo entrevistamos.</p>
+                                                        <p>Tres prismas: dev, empresa y recruiting. Sin bullshit, sin postureo. Solo criterio y un poco de rock and roll.</p>
+                                                    </div>
+                                                    <form method="dialog">
+                                                        <button class="dialog-feedback"
+                                                            onclick="window.open('', '_blank')">Feedback</button>
+                                                        <button class="dialog-close">Close</button>
+                                                    </form>
+                                                </dialog>
+                                            </td>
+                                            <td
+                                                onclick="window['talk-2-3-1-dialog'].hasAttribute('open') ? window['talk-2-3-1-dialog'].close() : window['talk-2-3-1-dialog'].showModal()">
+                                                <img class="language-flag" src="assets/img/es_circle.svg"
+                                                    alt="Spanish" />
+                                                Escalando con cabeza: 7 años de arquitectura para un ecommerce de
+                                                100M€<br>
+                                                <span class="author"><img
+                                                        src="assets/img/speakers/asier_alba_osambela.jpeg"
+                                                        alt="Asier Alba Osambela" />Asier Alba Osambela</span>
+                                                <dialog id="talk-2-3-1-dialog">
+                                                    <div class="post-excerpt">
+                                                        <h2 class="post-title">Escalando con cabeza: 7 años de
+                                                            arquitectura para un ecommerce de 100M€</h2>
+                                                        <p>En esta charla compartiré nuestra experiencia escalando la
+                                                            arquitectura de un ecommerce real, un proyecto de gran
+                                                            envergadura con una inversión significativa y más de 100
+                                                            millones de euros anuales en ventas a través del portal.</p>
+                                                        <p>Empezamos hace 7 años con un monolito sin apenas estructura.
+                                                            Pronto sentimos la necesidad de introducir una arquitectura
+                                                            hexagonal para separar responsabilidades y dar algo de
+                                                            orden. Pero eso solo fue el primer paso.</p>
+                                                        <p>Conforme el producto, el equipo y el negocio fueron
+                                                            creciendo, fuimos evolucionando hacia Bounded Contexts para
+                                                            reflejar mejor los límites naturales del dominio. Y más
+                                                            adelante, dimos el salto a CQRS, aún dentro del monolito,
+                                                            como estrategia para desacoplar necesidades muy distintas de
+                                                            lectura y escritura.</p>
+                                                        <p>Ahora estamos dando un nuevo paso hacia una arquitectura
+                                                            orientada a eventos, acompañando también un cambio
+                                                            organizacional que nos permita seguir escalando.</p>
+                                                        <p>Todo esto lo hemos vivido desde una empresa de servicios que
+                                                            trabaja codo con codo con el cliente, equilibrando siempre
+                                                            diseño, entrega y sostenibilidad.</p>
+                                                        <p>En la charla también compartiré aprendizajes clave sobre cómo
+                                                            trabajar con lenguaje ubicuo, cómo adaptar la arquitectura
+                                                            al ritmo del negocio y cómo construir software que sigue
+                                                            siendo relevante y mantenible incluso en productos de largo
+                                                            recorrido y gran impacto.</p>
+                                                    </div>
+                                                    <form method="dialog">
+                                                        <button class="dialog-feedback"
+                                                            onclick="window.open('', '_blank')">Feedback</button>
+                                                        <button class="dialog-close">Close</button>
+                                                    </form>
+                                                </dialog>
+                                            </td>
+                                                                                        <td class="lightning-talks">
                                                 <h4>⚡ Lightning Talks</h4>
                                                 <div
                                                     onclick="window['talk-lightning-1-dialog'].hasAttribute('open') ? window['talk-lightning-1-dialog'].close() : window['talk-lightning-1-dialog'].showModal()">
@@ -629,73 +696,6 @@
                                                     </dialog>
                                                 </div>
                                             </td>
-                                            <td
-                                                onclick="window['talk-2-3-1-dialog'].hasAttribute('open') ? window['talk-2-3-1-dialog'].close() : window['talk-2-3-1-dialog'].showModal()">
-                                                <img class="language-flag" src="assets/img/es_circle.svg"
-                                                    alt="Spanish" />
-                                                Escalando con cabeza: 7 años de arquitectura para un ecommerce de
-                                                100M€<br>
-                                                <span class="author"><img
-                                                        src="assets/img/speakers/asier_alba_osambela.jpeg"
-                                                        alt="Asier Alba Osambela" />Asier Alba Osambela</span>
-                                                <dialog id="talk-2-3-1-dialog">
-                                                    <div class="post-excerpt">
-                                                        <h2 class="post-title">Escalando con cabeza: 7 años de
-                                                            arquitectura para un ecommerce de 100M€</h2>
-                                                        <p>En esta charla compartiré nuestra experiencia escalando la
-                                                            arquitectura de un ecommerce real, un proyecto de gran
-                                                            envergadura con una inversión significativa y más de 100
-                                                            millones de euros anuales en ventas a través del portal.</p>
-                                                        <p>Empezamos hace 7 años con un monolito sin apenas estructura.
-                                                            Pronto sentimos la necesidad de introducir una arquitectura
-                                                            hexagonal para separar responsabilidades y dar algo de
-                                                            orden. Pero eso solo fue el primer paso.</p>
-                                                        <p>Conforme el producto, el equipo y el negocio fueron
-                                                            creciendo, fuimos evolucionando hacia Bounded Contexts para
-                                                            reflejar mejor los límites naturales del dominio. Y más
-                                                            adelante, dimos el salto a CQRS, aún dentro del monolito,
-                                                            como estrategia para desacoplar necesidades muy distintas de
-                                                            lectura y escritura.</p>
-                                                        <p>Ahora estamos dando un nuevo paso hacia una arquitectura
-                                                            orientada a eventos, acompañando también un cambio
-                                                            organizacional que nos permita seguir escalando.</p>
-                                                        <p>Todo esto lo hemos vivido desde una empresa de servicios que
-                                                            trabaja codo con codo con el cliente, equilibrando siempre
-                                                            diseño, entrega y sostenibilidad.</p>
-                                                        <p>En la charla también compartiré aprendizajes clave sobre cómo
-                                                            trabajar con lenguaje ubicuo, cómo adaptar la arquitectura
-                                                            al ritmo del negocio y cómo construir software que sigue
-                                                            siendo relevante y mantenible incluso en productos de largo
-                                                            recorrido y gran impacto.</p>
-                                                    </div>
-                                                    <form method="dialog">
-                                                        <button class="dialog-feedback"
-                                                            onclick="window.open('', '_blank')">Feedback</button>
-                                                        <button class="dialog-close">Close</button>
-                                                    </form>
-                                                </dialog>
-                                            </td>
-                                            <td
-                                                onclick="window['talk-2-4-1-dialog'].hasAttribute('open') ? window['talk-2-4-1-dialog'].close() : window['talk-2-4-1-dialog'].showModal()">
-                                                <img class="language-flag" src="assets/img/es_circle.svg"
-                                                    alt="Spanish" />
-                                                Product Engineer: ¡El unicornio que sí existe! 🦄💥<br>
-                                                <span class="author"><img
-                                                        src="assets/img/speakers/leo_manfred.jpeg"
-                                                        alt="leo@getmanfred.com" />Leonardo Poza</span>
-                                                <dialog id="talk-2-4-1-dialog">
-                                                    <div class="post-excerpt">
-                                                        <h2 class="post-title">Product Engineer: ¡El unicornio que sí existe! 🦄💥</h2>
-                                                        <p>Dicen que no existen, pero todas las empresas los quieren. Te suena, ¿verdad? En esta charla desenmascaramos al Product Engineer: qué demonios es, por qué mola tanto estar en ese rol, qué buscan las empresas cuando lo piden y cómo detectamos talento real cuando lo entrevistamos.</p>
-                                                        <p>Tres prismas: dev, empresa y recruiting. Sin bullshit, sin postureo. Solo criterio y un poco de rock and roll.</p>
-                                                    </div>
-                                                    <form method="dialog">
-                                                        <button class="dialog-feedback"
-                                                            onclick="window.open('', '_blank')">Feedback</button>
-                                                        <button class="dialog-close">Close</button>
-                                                    </form>
-                                                </dialog>
-                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="time-block">12:30 - 13:25</td>
@@ -735,6 +735,80 @@
                                                         <p>This session is great for those starting out or wanting to
                                                             improve collaboration across roles. Bring your questions and
                                                             curiosity!</p>
+                                                    </div>
+                                                    <form method="dialog">
+                                                        <button class="dialog-feedback"
+                                                            onclick="window.open('', '_blank')">Feedback</button>
+                                                        <button class="dialog-close">Close</button>
+                                                    </form>
+                                                </dialog>
+                                            </td>
+                                            <td
+                                                onclick="window['talk-2-2-2-dialog'].hasAttribute('open') ? window['talk-2-2-2-dialog'].close() : window['talk-2-2-2-dialog'].showModal()">
+                                                <img class="language-flag" src="assets/img/es_circle.svg"
+                                                    alt="Spanish" />
+                                                Documentando APIs<br>
+                                                <span class="author"><img src="assets/img/speakers/javier_rubio.jpg"
+                                                        alt="Javier Rubio" />Javier Rubio</span>
+                                                <dialog id="talk-2-2-2-dialog">
+                                                    <div class="post-excerpt">
+                                                        <h2 class="post-title">Documentando APIs</h2>
+                                                        <p>Con una API no hay <em>marketing claims</em> que valgan: su
+                                                            calidad se mide por la calidad de su documentación.</p>
+                                                        <p>En esta charla exploraremos qué hace que la documentación de
+                                                            una API sea realmente útil, empezando por lo esencial:</p>
+                                                        <p>- Principales <strong>estándares técnicos</strong> y por qué
+                                                            importan: OpenAPI, sus extensiones, la nueva especificación
+                                                            Arazzo o el Model Context Protocol (MCP) en el contexto de
+                                                            la IA.<br>
+                                                            - Explicar con claridad las <strong>convenciones
+                                                                clave</strong>: autenticación, errores, paginación, rate
+                                                            limiting o versionado.<br>
+                                                            - <strong>Redactar guías y tutoriales</strong> según los
+                                                            distintos perfiles de usuario: desde quien solo necesita un
+                                                            ejemplo funcional hasta quien quiere entender el diseño
+                                                            completo.<br>
+                                                            - <strong>Herramientas</strong> actuales para documentar tu
+                                                            API y montar tu portal de desarrolladores, así como otras
+                                                            herramientas del ecosistema de las APIs como son linters,
+                                                            generación de specs desde tests, Postman, etc.</p>
+                                                        <p>También abordaremos <strong>temas transversales</strong>:
+                                                            tratar la documentación como un producto vivo, fomentar el
+                                                            ownership compartido, y entender cómo encajan roles como
+                                                            Tech Writer, DevRel o Technical Product Manager.</p>
+                                                        <p>Una charla útil tanto para quienes empiezan a documentar APIs
+                                                            como para quienes quieren profesionalizar una práctica que
+                                                            suele quedar a medias.</p>
+                                                    </div>
+                                                    <form method="dialog">
+                                                        <button class="dialog-feedback"
+                                                            onclick="window.open('', '_blank')">Feedback</button>
+                                                        <button class="dialog-close">Close</button>
+                                                    </form>
+                                                </dialog>
+                                            </td>
+                                            <td
+                                                onclick="window['talk-2-3-2-dialog'].hasAttribute('open') ? window['talk-2-3-2-dialog'].close() : window['talk-2-3-2-dialog'].showModal()">
+                                                <img class="language-flag" src="assets/img/cat_circle.svg"
+                                                    alt="Catalan" />
+                                                Si Lean i XP van tan bé, per què no ho fan tots els equips?<br>
+                                                <span class="author"><img
+                                                        src="assets/img/speakers/vicenc_garcia_altes.jpg"
+                                                        alt="Vicenç García Altés" />Vicenç García Altés</span>
+                                                <dialog id="talk-2-3-2-dialog">
+                                                    <div class="post-excerpt">
+                                                        <h2 class="post-title">Si Lean i XP van tan bé, per què no ho
+                                                            fan tots els equips?</h2>
+                                                        <p>Després de diversos anys parlant i practicant "agilitat",
+                                                            segons la meva experiència la combinació de Lean Software
+                                                            Development i eXtreme Programming és el cavall guanyador per
+                                                            a la gran majoria de projectes. Però la realitat és que molt
+                                                            pocs equips i empreses ho posen en pràctica. Sembla curiós
+                                                            que una cosa que he vist que dona tants fruits no s'estigui
+                                                            utilitzant de manera massiva.</p>
+                                                        <p>En aquesta xerrada veurem algunes de les raons per les quals
+                                                            això passa i donarem algunes recomanacions sobre com
+                                                            començar aquest viatge.</p>
                                                     </div>
                                                     <form method="dialog">
                                                         <button class="dialog-feedback"
@@ -844,80 +918,6 @@
                                                     </dialog>
                                                 </div>
                                             </td>
-                                            <td
-                                                onclick="window['talk-2-3-2-dialog'].hasAttribute('open') ? window['talk-2-3-2-dialog'].close() : window['talk-2-3-2-dialog'].showModal()">
-                                                <img class="language-flag" src="assets/img/es_circle.svg"
-                                                    alt="Spanish" />
-                                                Documentando APIs<br>
-                                                <span class="author"><img src="assets/img/speakers/javier_rubio.jpg"
-                                                        alt="Javier Rubio" />Javier Rubio</span>
-                                                <dialog id="talk-2-3-2-dialog">
-                                                    <div class="post-excerpt">
-                                                        <h2 class="post-title">Documentando APIs</h2>
-                                                        <p>Con una API no hay <em>marketing claims</em> que valgan: su
-                                                            calidad se mide por la calidad de su documentación.</p>
-                                                        <p>En esta charla exploraremos qué hace que la documentación de
-                                                            una API sea realmente útil, empezando por lo esencial:</p>
-                                                        <p>- Principales <strong>estándares técnicos</strong> y por qué
-                                                            importan: OpenAPI, sus extensiones, la nueva especificación
-                                                            Arazzo o el Model Context Protocol (MCP) en el contexto de
-                                                            la IA.<br>
-                                                            - Explicar con claridad las <strong>convenciones
-                                                                clave</strong>: autenticación, errores, paginación, rate
-                                                            limiting o versionado.<br>
-                                                            - <strong>Redactar guías y tutoriales</strong> según los
-                                                            distintos perfiles de usuario: desde quien solo necesita un
-                                                            ejemplo funcional hasta quien quiere entender el diseño
-                                                            completo.<br>
-                                                            - <strong>Herramientas</strong> actuales para documentar tu
-                                                            API y montar tu portal de desarrolladores, así como otras
-                                                            herramientas del ecosistema de las APIs como son linters,
-                                                            generación de specs desde tests, Postman, etc.</p>
-                                                        <p>También abordaremos <strong>temas transversales</strong>:
-                                                            tratar la documentación como un producto vivo, fomentar el
-                                                            ownership compartido, y entender cómo encajan roles como
-                                                            Tech Writer, DevRel o Technical Product Manager.</p>
-                                                        <p>Una charla útil tanto para quienes empiezan a documentar APIs
-                                                            como para quienes quieren profesionalizar una práctica que
-                                                            suele quedar a medias.</p>
-                                                    </div>
-                                                    <form method="dialog">
-                                                        <button class="dialog-feedback"
-                                                            onclick="window.open('', '_blank')">Feedback</button>
-                                                        <button class="dialog-close">Close</button>
-                                                    </form>
-                                                </dialog>
-                                            </td>
-                                            <td
-                                                onclick="window['talk-2-4-2-dialog'].hasAttribute('open') ? window['talk-2-4-2-dialog'].close() : window['talk-2-4-2-dialog'].showModal()">
-                                                <img class="language-flag" src="assets/img/cat_circle.svg"
-                                                    alt="Catalan" />
-                                                Si Lean i XP van tan bé, per què no ho fan tots els equips?<br>
-                                                <span class="author"><img
-                                                        src="assets/img/speakers/vicenc_garcia_altes.jpg"
-                                                        alt="Vicenç García Altés" />Vicenç García Altés</span>
-                                                <dialog id="talk-2-4-2-dialog">
-                                                    <div class="post-excerpt">
-                                                        <h2 class="post-title">Si Lean i XP van tan bé, per què no ho
-                                                            fan tots els equips?</h2>
-                                                        <p>Després de diversos anys parlant i practicant "agilitat",
-                                                            segons la meva experiència la combinació de Lean Software
-                                                            Development i eXtreme Programming és el cavall guanyador per
-                                                            a la gran majoria de projectes. Però la realitat és que molt
-                                                            pocs equips i empreses ho posen en pràctica. Sembla curiós
-                                                            que una cosa que he vist que dona tants fruits no s'estigui
-                                                            utilitzant de manera massiva.</p>
-                                                        <p>En aquesta xerrada veurem algunes de les raons per les quals
-                                                            això passa i donarem algunes recomanacions sobre com
-                                                            començar aquest viatge.</p>
-                                                    </div>
-                                                    <form method="dialog">
-                                                        <button class="dialog-feedback"
-                                                            onclick="window.open('', '_blank')">Feedback</button>
-                                                        <button class="dialog-close">Close</button>
-                                                    </form>
-                                                </dialog>
-                                            </td>
 
                                         </tr>
                                         <tr>
@@ -953,18 +953,33 @@
                                                 </dialog>
                                             </td>
                                             <td
-                                                onclick="window['talk-2-2-2-dialog'].hasAttribute('open') ? window['talk-2-2-2-dialog'].close() : window['talk-2-2-2-dialog'].showModal()">
-                                                <img class="language-flag" src="assets/img/es_circle.svg"
-                                                    alt="Spanish" />
-                                                Automatización moderna de procesos de negocio con Kogito en un mundo cloud-native<br>
-                                                <span class="author"><img
-                                                        src="assets/img/speakers/javier_ramos_panduro.jpg"
-                                                        alt="Javier Ramos Panduro" />Javier Ramos Panduro</span>
-                                                <dialog id="talk-2-2-2-dialog">
+                                                onclick="window['talk-2-2-3-dialog'].hasAttribute('open') ? window['talk-2-2-3-dialog'].close() : window['talk-2-2-3-dialog'].showModal()">
+                                                <img class="language-flag" src="assets/img/gb_circle.svg"
+                                                    alt="English" />
+                                                Rethinking Discovery: A Sprint-by-Sprint Approach to Building the
+                                                Right<br>
+                                                <span class="author"><img src="assets/img/speakers/nastassia_shahun.jpg"
+                                                        alt="Nastassia Shahun" />Nastassia Shahun</span>
+                                                <dialog id="talk-2-2-3-dialog">
                                                     <div class="post-excerpt">
-                                                        <h2 class="post-title">Automatización moderna de procesos de negocio con Kogito en un mundo cloud-native</h2>
-                                                        <p>En esta charla exploraremos cómo diseñar e implementar una arquitectura moderna de automatización de procesos de negocio utilizando Kogito en un entorno de Containers-as-a-Service (CaaS).</p>
-                                                        <p>Veremos cómo Quarkus permite desarrollar microservicios de alto rendimiento, cómo Keycloak aporta una gestión segura de identidades, y cómo Kafka posibilita la integración orientada a eventos. Descubriremos cómo estas tecnologías se combinan para habilitar una automatización de procesos escalable, cloud-native e inteligente.</p>
+                                                        <h2 class="post-title">Rethinking Discovery: A Sprint-by-Sprint
+                                                            Approach to Building the Right</h2>
+                                                        <p>Discovery is too often treated as a project phase - something
+                                                            we "finish" before coding starts. But in modern product
+                                                            teams, discovery must become a habit.</p>
+                                                        <p>In this talk, I'll share how to embed discovery into every
+                                                            sprint without slowing the team down. You'll learn simple,
+                                                            lightweight techniques - like assumption mapping, user
+                                                            feedback loops, hypothesis framing, and quick discovery
+                                                            spikes - that BAs, developers, and designers can use to make
+                                                            better decisions every week.</p>
+                                                        <p>I'll share real-world examples of how discovery habits helped
+                                                            teams avoid rework, align faster with stakeholders, and
+                                                            shift focus from outputs to outcomes.</p>
+                                                        <p>Whether you're a developer tired of unclear requirements, or
+                                                            a BA looking to stay user-focused throughout delivery, this
+                                                            talk will give you practical tools to bring discovery into
+                                                            your sprint rhythm.</p>
                                                     </div>
                                                     <form method="dialog">
                                                         <button class="dialog-feedback"
@@ -1007,34 +1022,20 @@
                                                     </form>
                                                 </dialog>
                                             </td>
+
                                             <td
                                                 onclick="window['talk-2-4-3-dialog'].hasAttribute('open') ? window['talk-2-4-3-dialog'].close() : window['talk-2-4-3-dialog'].showModal()">
-                                                <img class="language-flag" src="assets/img/gb_circle.svg"
-                                                    alt="English" />
-                                                Rethinking Discovery: A Sprint-by-Sprint Approach to Building the
-                                                Right<br>
-                                                <span class="author"><img src="assets/img/speakers/nastassia_shahun.jpg"
-                                                        alt="Nastassia Shahun" />Nastassia Shahun</span>
+                                                <img class="language-flag" src="assets/img/es_circle.svg"
+                                                    alt="Spanish" />
+                                                Automatización moderna de procesos de negocio con Kogito en un mundo cloud-native<br>
+                                                <span class="author"><img
+                                                        src="assets/img/speakers/javier_ramos_panduro.jpg"
+                                                        alt="Javier Ramos Panduro" />Javier Ramos Panduro</span>
                                                 <dialog id="talk-2-4-3-dialog">
                                                     <div class="post-excerpt">
-                                                        <h2 class="post-title">Rethinking Discovery: A Sprint-by-Sprint
-                                                            Approach to Building the Right</h2>
-                                                        <p>Discovery is too often treated as a project phase - something
-                                                            we "finish" before coding starts. But in modern product
-                                                            teams, discovery must become a habit.</p>
-                                                        <p>In this talk, I'll share how to embed discovery into every
-                                                            sprint without slowing the team down. You'll learn simple,
-                                                            lightweight techniques - like assumption mapping, user
-                                                            feedback loops, hypothesis framing, and quick discovery
-                                                            spikes - that BAs, developers, and designers can use to make
-                                                            better decisions every week.</p>
-                                                        <p>I'll share real-world examples of how discovery habits helped
-                                                            teams avoid rework, align faster with stakeholders, and
-                                                            shift focus from outputs to outcomes.</p>
-                                                        <p>Whether you're a developer tired of unclear requirements, or
-                                                            a BA looking to stay user-focused throughout delivery, this
-                                                            talk will give you practical tools to bring discovery into
-                                                            your sprint rhythm.</p>
+                                                        <h2 class="post-title">Automatización moderna de procesos de negocio con Kogito en un mundo cloud-native</h2>
+                                                        <p>En esta charla exploraremos cómo diseñar e implementar una arquitectura moderna de automatización de procesos de negocio utilizando Kogito en un entorno de Containers-as-a-Service (CaaS).</p>
+                                                        <p>Veremos cómo Quarkus permite desarrollar microservicios de alto rendimiento, cómo Keycloak aporta una gestión segura de identidades, y cómo Kafka posibilita la integración orientada a eventos. Descubriremos cómo estas tecnologías se combinan para habilitar una automatización de procesos escalable, cloud-native e inteligente.</p>
                                                     </div>
                                                     <form method="dialog">
                                                         <button class="dialog-feedback"
@@ -1043,7 +1044,6 @@
                                                     </form>
                                                 </dialog>
                                             </td>
-
                                         </tr>
                                         <tr>
                                             <td class="time-block">16:00 - 16:55</td>
@@ -1094,61 +1094,12 @@
                                             </td>
                                             <td
                                                 onclick="window['talk-2-2-4-dialog'].hasAttribute('open') ? window['talk-2-2-4-dialog'].close() : window['talk-2-2-4-dialog'].showModal()">
-                                                <img class="language-flag" src="assets/img/es_circle.svg"
-                                                    alt="Spanish" />
-                                                Soft skills: Cómo jugar a rol me hizo mejor programadora<br>
-                                                <span class="author"><img src="assets/img/speakers/mia_salazar.jpg"
-                                                        alt="Mia Salazar" />Mia Salazar</span>
-                                                <dialog id="talk-2-2-4-dialog">
-                                                    <div class="post-excerpt">
-                                                        <h2 class="post-title">Soft skills: Cómo jugar a rol me hizo
-                                                            mejor programadora</h2>
-                                                        <p>Os doy la bienvenida a Dragonia, tierra de dragones, magia y
-                                                            secretos. En esta campaña de rol emprenderemos juntos un
-                                                            viaje, para salvar este lugar de las malvadas garras del Rey
-                                                            Oscuro. En esta travesía, jugarán un papel esencial las
-                                                            personas que te acompañen, la gestión de los recursos, la
-                                                            confianza, la fortaleza del equipo y las buenas tiradas de
-                                                            dados. Una mirada a través del rol de la importancia de las
-                                                            soft skills en los equipos de desarrollo</p>
-                                                    </div>
-                                                    <form method="dialog">
-                                                        <button class="dialog-feedback"
-                                                            onclick="window.open('', '_blank')">Feedback</button>
-                                                        <button class="dialog-close">Close</button>
-                                                    </form>
-                                                </dialog>
-                                            </td>
-                                            <td
-                                                onclick="window['talk-2-3-4-dialog'].hasAttribute('open') ? window['talk-2-3-4-dialog'].close() : window['talk-2-3-4-dialog'].showModal()">
-                                                <img class="language-flag" src="assets/img/es_circle.svg"
-                                                    alt="Spanish" />
-                                                Maquinistas de un tren en marcha: nuestra primera vez construyendo y lanzando un producto nuevo<br>
-                                                <span class="author"><img src="assets/img/speakers/pablo_rodriguez.jpeg"
-                                                        alt="Pablo Rodríguez Guillén" />Pablo Rodríguez Guillén</span>
-                                                <dialog id="talk-2-3-4-dialog">
-                                                    <div class="post-excerpt">
-                                                        <h2 class="post-title">Maquinistas de un tren en marcha: nuestra primera vez construyendo y lanzando un producto nuevo</h2>
-                                                        <p>En Audiense, donde trabajamos con datos de redes sociales para analizar audiencias, surgió la oportunidad de añadir datos de una nueva red social a través de su API. El equipo que empezó a explorarlo no tenía capacidad para continuar y se decidió dividir el foco de uno de los equipos existentes para dedicar una parte a construir una nueva aplicación.</p>
-                                                        <p>En esta charla contaré el camino que hemos recorrido durante el último año: un equipo de cuatro personas, con perfiles de desarrollo, producto y diseño y con mentalidad de product engineering, creando un nuevo producto desde cero.</p>
-                                                        <p>Veníamos de trabajar en una aplicación estable y con una base de usuarios consolidada, y pasamos a un escenario muy distinto, con incertidumbre, decisiones complicadas y aprendizaje continuo.</p>
-                                                        <p>Compartiré cómo lo afrontamos, qué hicimos y qué aprendimos por el camino.</p>
-                                                    </div>
-                                                    <form method="dialog">
-                                                        <button class="dialog-feedback"
-                                                            onclick="window.open('', '_blank')">Feedback</button>
-                                                        <button class="dialog-close">Close</button>
-                                                    </form>
-                                                </dialog>
-                                            </td>
-                                            <td
-                                                onclick="window['talk-2-4-4-dialog'].hasAttribute('open') ? window['talk-2-4-4-dialog'].close() : window['talk-2-4-4-dialog'].showModal()">
                                                 <img class="language-flag" src="assets/img/gb_circle.svg"
                                                     alt="English" />
                                                 Attacking tech Debt: A Marathon, Not a Sprint<br>
                                                 <span class="author"><img src="assets/img/speakers/rafa_gomez.jpeg"
                                                         alt="Rafa Gomez" />Rafa Gomez</span>
-                                                <dialog id="talk-2-4-4-dialog">
+                                                <dialog id="talk-2-2-4-dialog">
                                                     <div class="post-excerpt">
                                                         <h2 class="post-title">Attacking tech Debt: A Marathon, Not a
                                                             Sprint</h2>
@@ -1181,7 +1132,55 @@
                                                     </form>
                                                 </dialog>
                                             </td>
-
+                                            <td
+                                                onclick="window['talk-2-3-4-dialog'].hasAttribute('open') ? window['talk-2-3-4-dialog'].close() : window['talk-2-3-4-dialog'].showModal()">
+                                                <img class="language-flag" src="assets/img/es_circle.svg"
+                                                    alt="Spanish" />
+                                                Maquinistas de un tren en marcha: nuestra primera vez construyendo y lanzando un producto nuevo<br>
+                                                <span class="author"><img src="assets/img/speakers/pablo_rodriguez.jpeg"
+                                                        alt="Pablo Rodríguez Guillén" />Pablo Rodríguez Guillén</span>
+                                                <dialog id="talk-2-3-4-dialog">
+                                                    <div class="post-excerpt">
+                                                        <h2 class="post-title">Maquinistas de un tren en marcha: nuestra primera vez construyendo y lanzando un producto nuevo</h2>
+                                                        <p>En Audiense, donde trabajamos con datos de redes sociales para analizar audiencias, surgió la oportunidad de añadir datos de una nueva red social a través de su API. El equipo que empezó a explorarlo no tenía capacidad para continuar y se decidió dividir el foco de uno de los equipos existentes para dedicar una parte a construir una nueva aplicación.</p>
+                                                        <p>En esta charla contaré el camino que hemos recorrido durante el último año: un equipo de cuatro personas, con perfiles de desarrollo, producto y diseño y con mentalidad de product engineering, creando un nuevo producto desde cero.</p>
+                                                        <p>Veníamos de trabajar en una aplicación estable y con una base de usuarios consolidada, y pasamos a un escenario muy distinto, con incertidumbre, decisiones complicadas y aprendizaje continuo.</p>
+                                                        <p>Compartiré cómo lo afrontamos, qué hicimos y qué aprendimos por el camino.</p>
+                                                    </div>
+                                                    <form method="dialog">
+                                                        <button class="dialog-feedback"
+                                                            onclick="window.open('', '_blank')">Feedback</button>
+                                                        <button class="dialog-close">Close</button>
+                                                    </form>
+                                                </dialog>
+                                            </td>
+                                            <td
+                                                onclick="window['talk-2-4-4-dialog'].hasAttribute('open') ? window['talk-2-4-4-dialog'].close() : window['talk-2-4-4-dialog'].showModal()">
+                                                <img class="language-flag" src="assets/img/es_circle.svg"
+                                                    alt="Spanish" />
+                                                Soft skills: Cómo jugar a rol me hizo mejor programadora<br>
+                                                <span class="author"><img src="assets/img/speakers/mia_salazar.jpg"
+                                                        alt="Mia Salazar" />Mia Salazar</span>
+                                                <dialog id="talk-2-4-4-dialog">
+                                                    <div class="post-excerpt">
+                                                        <h2 class="post-title">Soft skills: Cómo jugar a rol me hizo
+                                                            mejor programadora</h2>
+                                                        <p>Os doy la bienvenida a Dragonia, tierra de dragones, magia y
+                                                            secretos. En esta campaña de rol emprenderemos juntos un
+                                                            viaje, para salvar este lugar de las malvadas garras del Rey
+                                                            Oscuro. En esta travesía, jugarán un papel esencial las
+                                                            personas que te acompañen, la gestión de los recursos, la
+                                                            confianza, la fortaleza del equipo y las buenas tiradas de
+                                                            dados. Una mirada a través del rol de la importancia de las
+                                                            soft skills en los equipos de desarrollo</p>
+                                                    </div>
+                                                    <form method="dialog">
+                                                        <button class="dialog-feedback"
+                                                            onclick="window.open('', '_blank')">Feedback</button>
+                                                        <button class="dialog-close">Close</button>
+                                                    </form>
+                                                </dialog>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="time-block">17:00 - 17:25</td>
@@ -1215,32 +1214,22 @@
                                                 onclick="window['talk-2-2-5-dialog'].hasAttribute('open') ? window['talk-2-2-5-dialog'].close() : window['talk-2-2-5-dialog'].showModal()">
                                                 <img class="language-flag" src="assets/img/es_circle.svg"
                                                     alt="Spanish" />
-                                                Arquitectura de Software con "Residuality"<br>
-                                                <span class="author"><img
-                                                        src="assets/img/speakers/alejandro_scandroli.jpg"
-                                                        alt="Alejandro Scandroli" />Alejandro Scandroli</span>
+                                                Por qué empezar a contribuir en proyectos open source<br>
+                                                <span class="author"><img src="assets/img/speakers/david_remon.jpg"
+                                                        alt="David Remon" />David Remon</span>
                                                 <dialog id="talk-2-2-5-dialog">
                                                     <div class="post-excerpt">
-                                                        <h2 class="post-title">Arquitectura de Software con
-                                                            "Residuality"</h2>
-                                                        <p><em>Residuality</em> es una teoría de arquitectura y diseño
-                                                            de software que busca facilitar el diseño de sistemas para
-                                                            entornos de negocio complejos. Propuesta por Barry O'Reilly,
-                                                            ofrece una forma alternativa de trabajar la arquitectura más
-                                                            allá del modelado tradicional de componentes y procesos,
-                                                            incorporando principios de ciencias de la complejidad y
-                                                            filosofía para gestionar la incertidumbre de manera
-                                                            estratégica.</p>
-                                                        <p>En esta charla exploraremos cómo aplicar <em>Residuality</em>
-                                                            y conectar la arquitectura con su contexto de negocio,
-                                                            económico, cultural y organizacional. Abordaremos conceptos
-                                                            como análisis de estresores, patrones emergentes, el papel
-                                                            de los atractores en la evolución del software, y la
-                                                            formalización matemática que da soporte a esta teoría.</p>
-                                                        <p><em>Residuality</em> propone una nueva forma de pensar la
-                                                            arquitectura como un sistema vivo, donde la clave no es
-                                                            eliminar la incertidumbre, sino diseñar para convivir con
-                                                            ella.</p>
+                                                        <h2 class="post-title">Por qué empezar a contribuir en proyectos
+                                                            open source</h2>
+                                                        <p>¿Tienes curiosidad por el impacto del código open source en
+                                                            la industria y la investigación? Esta charla analiza en
+                                                            profundidad cómo el software open source ha revolucionado la
+                                                            innovación y destaca casos de éxito emblemáticos. Cubriremos
+                                                            los aspectos fundamentales de la gobernanza del código open
+                                                            source: best practices, las licencias y el papel fundamental
+                                                            de las fundaciones.</p>
+
+
                                                     </div>
                                                     <form method="dialog">
                                                         <button class="dialog-feedback"
@@ -1284,22 +1273,32 @@
                                                 onclick="window['talk-2-4-5-dialog'].hasAttribute('open') ? window['talk-2-4-5-dialog'].close() : window['talk-2-4-5-dialog'].showModal()">
                                                 <img class="language-flag" src="assets/img/es_circle.svg"
                                                     alt="Spanish" />
-                                                Por qué empezar a contribuir en proyectos open source<br>
-                                                <span class="author"><img src="assets/img/speakers/david_remon.jpg"
-                                                        alt="David Remon" />David Remon</span>
+                                                Arquitectura de Software con "Residuality"<br>
+                                                <span class="author"><img
+                                                        src="assets/img/speakers/alejandro_scandroli.jpg"
+                                                        alt="Alejandro Scandroli" />Alejandro Scandroli</span>
                                                 <dialog id="talk-2-4-5-dialog">
                                                     <div class="post-excerpt">
-                                                        <h2 class="post-title">Por qué empezar a contribuir en proyectos
-                                                            open source</h2>
-                                                        <p>¿Tienes curiosidad por el impacto del código open source en
-                                                            la industria y la investigación? Esta charla analiza en
-                                                            profundidad cómo el software open source ha revolucionado la
-                                                            innovación y destaca casos de éxito emblemáticos. Cubriremos
-                                                            los aspectos fundamentales de la gobernanza del código open
-                                                            source: best practices, las licencias y el papel fundamental
-                                                            de las fundaciones.</p>
-
-
+                                                        <h2 class="post-title">Arquitectura de Software con
+                                                            "Residuality"</h2>
+                                                        <p><em>Residuality</em> es una teoría de arquitectura y diseño
+                                                            de software que busca facilitar el diseño de sistemas para
+                                                            entornos de negocio complejos. Propuesta por Barry O'Reilly,
+                                                            ofrece una forma alternativa de trabajar la arquitectura más
+                                                            allá del modelado tradicional de componentes y procesos,
+                                                            incorporando principios de ciencias de la complejidad y
+                                                            filosofía para gestionar la incertidumbre de manera
+                                                            estratégica.</p>
+                                                        <p>En esta charla exploraremos cómo aplicar <em>Residuality</em>
+                                                            y conectar la arquitectura con su contexto de negocio,
+                                                            económico, cultural y organizacional. Abordaremos conceptos
+                                                            como análisis de estresores, patrones emergentes, el papel
+                                                            de los atractores en la evolución del software, y la
+                                                            formalización matemática que da soporte a esta teoría.</p>
+                                                        <p><em>Residuality</em> propone una nueva forma de pensar la
+                                                            arquitectura como un sistema vivo, donde la clave no es
+                                                            eliminar la incertidumbre, sino diseñar para convivir con
+                                                            ella.</p>
                                                     </div>
                                                     <form method="dialog">
                                                         <button class="dialog-feedback"
@@ -1308,7 +1307,6 @@
                                                     </form>
                                                 </dialog>
                                             </td>
-
                                         </tr>
                                         <tr>
                                             <td class="time-block">18:30 - 18:40</td>
