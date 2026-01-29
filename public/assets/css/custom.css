@@ -369,3 +369,39 @@ table a {
   box-sizing: border-box;
   margin: 0;
 }
+
+#main .container .scbcn-description {
+    font-family: 'Poppins', 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (min-width: 600px) {
+    #main .container .scbcn-description {
+        text-align: left;
+        margin-top: 0;
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 600px) {
+    #main .page-section.background-img-slider .container {
+        justify-content: space-between !important;
+        max-width: 1600px;
+    }
+}
+
+@media (max-width: 600px) {
+    #main .container {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    #main .container .place {
+        justify-content: center;
+        text-align: center;
+    }
+}
