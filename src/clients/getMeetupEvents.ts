@@ -6,6 +6,7 @@ export interface MeetupEvent {
   duration: number;
   eventUrl: string;
   rsvpState: string;
+  isPast?: boolean;
 }
 
 export async function getMeetupEvents(groupId: number): Promise<MeetupEvent[]> {
@@ -19,18 +20,31 @@ export async function getMeetupEvents(groupId: number): Promise<MeetupEvent[]> {
         query: `
           query {
             group(id: ${groupId}) {
-                events {
-                edges {
-                    node {
-                        id,
-                        title,
-                        description,
-                        dateTime,
-                        duration,
-                        eventUrl,
-                        rsvpState
-                        }
-                    }
+                upcoming: events(status: ACTIVE) {
+                  edges {
+                      node {
+                          id,
+                          title,
+                          description,
+                          dateTime,
+                          duration,
+                          eventUrl,
+                          rsvpState
+                      }
+                  }
+                }
+                past: events(status: PAST, sort: DESC, first: 30) {
+                  edges {
+                      node {
+                          id,
+                          title,
+                          description,
+                          dateTime,
+                          duration,
+                          eventUrl,
+                          rsvpState
+                      }
+                  }
                 }
             }
         }
@@ -49,7 +63,36 @@ export async function getMeetupEvents(groupId: number): Promise<MeetupEvent[]> {
       return [];
     }
 
-    return events?.data?.group?.events?.edges?.map((edge: any) => edge.node) ?? [];
+    const now = new Date();
+    const currentYear = now.getFullYear();
+
+    const upcomingNodes = events?.data?.group?.upcoming?.edges?.map((edge: any) => ({
+      ...edge.node,
+      isPast: false,
+    })) ?? [];
+
+    const pastNodes = events?.data?.group?.past?.edges?.map((edge: any) => ({
+      ...edge.node,
+      isPast: true,
+    })) ?? [];
+
+    // Filter past events to only keep those from the current year
+    const pastThisYear = pastNodes.filter((event: any) => {
+      const eventYear = new Date(event.dateTime).getFullYear();
+      return eventYear === currentYear;
+    });
+
+    // Upcoming events sorted ascending by date (soonest first)
+    const sortedUpcoming = upcomingNodes.sort(
+      (a: any, b: any) => new Date(a.dateTime).getTime() - new Date(b.dateTime).getTime()
+    );
+
+    // Past events sorted descending by date (most recent first)
+    const sortedPast = pastThisYear.sort(
+      (a: any, b: any) => new Date(b.dateTime).getTime() - new Date(a.dateTime).getTime()
+    );
+
+    return [...sortedUpcoming, ...sortedPast];
   } catch (e) {
     console.error("Error fetching Meetup events:", e);
     return [];
