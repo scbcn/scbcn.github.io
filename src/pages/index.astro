@@ -124,7 +124,7 @@ const pastEventsByMonth = pastEvents.reduce((acc, event) => {
               <details class="past-events-details" style="margin-top: 35px; border-top: 1px solid #eee; padding-top: 25px;">
                 <summary style="font-weight: bold; cursor: pointer; color: #428bca; margin-bottom: 25px; user-select: none; display: flex; align-items: center; gap: 8px;">
                   <i class="fa fa-chevron-down" style="transition: transform 0.2s ease;"></i>
-                  <span>Show Past Events from This Year ({pastEvents.length})</span>
+                  <span>Curious about our past meetups? ({pastEvents.length})</span>
                 </summary>
                 <div style="margin-top: 15px; padding-left: 15px; border-left: 3px solid #eee;">
                   {pastEventsByMonth.map(({ month, events }) => (
