@@ -1,6 +1,7 @@
 ---
 import Layout from "../components/layout.astro";
 import { getMeetupEvents } from "../clients/getMeetupEvents";
+import agendaData from "../../agenda.json";
 
 const groupEvents = await getMeetupEvents(11478542);
 const upcomingEvents = groupEvents?.filter((event) => !event.isPast) ?? [];
@@ -18,6 +19,86 @@ const pastEventsByMonth = pastEvents.reduce((acc, event) => {
   group.events.push(event);
   return acc;
 }, [] as { month: string; events: typeof pastEvents }[]);
+
+// Extract talks for Day 2 (Saturday, 2026-10-17)
+const day2 = agendaData.schedule.conference.days.find((d) => d.index === 2);
+const roomsData = day2 ? day2.rooms : {};
+
+// Defined rooms matching the columns in schedule-instructions
+const rooms = ["Track 1", "Track 2", "Track 3", "Track 4"];
+
+// Group standard talks and assign dialog IDs
+let talkCounter: Record<string, number> = { "Track 1": 0, "Track 2": 0, "Track 3": 0, "Track 4": 0 };
+let lightningCounter = 0;
+
+const processedRoomsData: Record<string, any[]> = {};
+
+rooms.forEach((roomName) => {
+  const rawTalks = roomsData[roomName] || [];
+  processedRoomsData[roomName] = rawTalks.map((talk: any) => {
+    const isLightning = talk.type === "Lighning talk" || talk.duration === "00:07";
+    let dialogId = "";
+    if (roomName === "Track 1" && talk.start === "10:00") {
+      dialogId = "keynote";
+    } else if (isLightning) {
+      lightningCounter++;
+      dialogId = `talk-lightning-${lightningCounter}-dialog`;
+    } else {
+      const trackNum = rooms.indexOf(roomName) + 1;
+      talkCounter[roomName]++;
+      dialogId = `talk-2-${trackNum}-${talkCounter[roomName]}-dialog`;
+    }
+    
+    // Extract language from question 36
+    const langAnswer = talk.answers?.find((a: any) => a.question === 36);
+    const lang = langAnswer ? langAnswer.answer : "English";
+    let langFlag = "/assets/img/gb_circle.svg";
+    if (lang === "Spanish") langFlag = "/assets/img/es_circle.svg";
+    else if (lang === "Catalan") langFlag = "/assets/img/cat_circle.svg";
+
+    return {
+      ...talk,
+      isLightning,
+      dialogId,
+      lang,
+      langFlag,
+    };
+  });
+});
+
+// Saturday slots configuration with custom rows representation
+interface ScheduleRow {
+  timeLabel: string;
+  isSpecialSection: boolean;
+  specialTitle?: string;
+  isKeynote?: boolean;
+  slotStart?: string;
+  slotEnd?: string;
+}
+
+const SaturdayRows: ScheduleRow[] = [
+  { timeLabel: "09:00 - 09:25", isSpecialSection: true, specialTitle: "Registration" },
+  { timeLabel: "09:30 - 09:55", isSpecialSection: true, specialTitle: "Opening" },
+  { timeLabel: "10:00 - 10:55", isSpecialSection: false, isKeynote: true, slotStart: "10:00", slotEnd: "10:55" },
+  { timeLabel: "11:00 - 11:25", isSpecialSection: true, specialTitle: "Break" },
+  { timeLabel: "11:30 - 12:25", isSpecialSection: false, slotStart: "11:30", slotEnd: "12:25" },
+  { timeLabel: "12:30 - 13:25", isSpecialSection: false, slotStart: "12:30", slotEnd: "13:25" },
+  { timeLabel: "13:30 - 14:55", isSpecialSection: true, specialTitle: "Lunch" },
+  { timeLabel: "15:00 - 15:55", isSpecialSection: false, slotStart: "15:00", slotEnd: "15:55" },
+  { timeLabel: "16:00 - 16:55", isSpecialSection: false, slotStart: "16:00", slotEnd: "16:55" },
+  { timeLabel: "17:00 - 17:25", isSpecialSection: true, specialTitle: "Break" },
+  { timeLabel: "17:30 - 18:25", isSpecialSection: false, slotStart: "17:30", slotEnd: "18:25" },
+  { timeLabel: "18:30 - 19:00", isSpecialSection: true, specialTitle: "Closing" },
+];
+
+const getTalkEndTime = (start: string, duration: string) => {
+  const [startH, startM] = start.split(":").map(Number);
+  const [durH, durM] = duration.split(":").map(Number);
+  let endM = startM + durM;
+  let endH = startH + durH + Math.floor(endM / 60);
+  endM = endM % 60;
+  return `${String(endH).padStart(2, "0")}:${String(endM).padStart(2, "0")}`;
+};
 ---
 
 <Layout>
@@ -328,6 +409,302 @@ const pastEventsByMonth = pastEvents.reduce((acc, event) => {
         </div>
       </div>
       <!-- /PAGE ABOUT -->
+
+      <!-- PAGE SCHEDULE -->
+      <section class="page-section" id="schedule">
+        <div class="container">
+          <h1 class="section-title">
+            <span
+              data-animation="flipInY"
+              data-animation-delay="300"
+              class="icon-inner"
+              ><span class="fa-stack"
+                ><i class="fa rhex fa-stack-2x"></i><i
+                  class="fa fa-calendar fa-stack-1x"></i></span
+              ></span
+            >
+            <span
+              data-animation="fadeInRight"
+              data-animation-delay="500"
+              class="title-inner"
+              >Schedule <small>/ 16 & 17 October</small></span
+            >
+          </h1>
+
+          <div class="schedule-wrapper clear" data-animation="fadeIn" data-animation-delay="200">
+            <div class="schedule-tabs lv1">
+              <ul id="tabs-lv1" class="nav nav-justified">
+                <li class="active">
+                  <a href="#tab-first" data-toggle="tab">
+                    <strong>Friday</strong><br />16.10.2026
+                  </a>
+                </li>
+                <li>
+                  <a href="#tab-second" data-toggle="tab">
+                    <strong>Saturday</strong><br />17.10.2026
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content lv1">
+              <!-- DAY 1: Friday Open Space -->
+              <div id="tab-first" class="tab-pane fade in active">
+                <div class="schedule-tabs lv2">
+                  <ul id="tabs-lv21" class="nav nav-justified">
+                    <li class="active">
+                      <a href="#tab-lv21-first" data-toggle="tab">
+                        Open Space<br />
+                        <img src="/assets/img/sponsors/540-flat.png" height="50" alt="540" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-content lv2">
+                  <div id="tab-lv21-first" class="tab-pane fade in active">
+                    <div class="timeline">
+                      <!-- Registration -->
+                      <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="200">
+                        <div class="media">
+                          <div class="schedule-width">
+                            <div class="post-header">
+                              <div class="post-meta">
+                                <span class="post-date"><i class="fa fa-clock-o"></i> 17:00 - 17:25</span>
+                              </div>
+                              <h2 class="post-title">Registration</h2>
+                            </div>
+                            <div class="post-body">
+                              <div class="post-excerpt">
+                                <br />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+
+                      <!-- Opening -->
+                      <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
+                        <div class="media">
+                          <div class="schedule-width">
+                            <div class="post-header">
+                              <div class="post-meta">
+                                <span class="post-date"><i class="fa fa-clock-o"></i> 17:30 - 17:40</span>
+                              </div>
+                              <h2 class="post-title">Opening</h2>
+                            </div>
+                            <div class="post-body">
+                              <div class="post-excerpt">
+                                <br />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+
+                      <!-- Open Space -->
+                      <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
+                        <div class="media">
+                          <div class="schedule-width">
+                            <div class="post-header">
+                              <div class="post-meta">
+                                <span class="post-date"><i class="fa fa-clock-o"></i> 17:45 - 20:00</span>
+                              </div>
+                              <h2 class="post-title">Open Space</h2>
+                            </div>
+                            <div class="post-body">
+                              <div class="post-excerpt">
+                                <p>
+                                  An Open Space is a self-organized event where, unlike a traditional conference, everyone participates interactively in defining sessions and their development. Despite being self-organized, there are simple dynamics to carry it out:
+                                </p>
+                                <p>
+                                  - Those who attend propose specific topics. They do not necessarily have to lead these topics, it can be a question that among the attendees you also have it and you want to talk more about the topic. You don’t need expert people in the session, just people who want to talk about the topic.
+                                </p>
+                                <p>
+                                  - These topics are voted on by all attendees and the discussion topics are organized into “tracks”.
+                                </p>
+                                <p>
+                                  - If you feel that you are not contributing or are not interested in the topic, you are free to enter and exit the session.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="sc-avatar-wrapper">
+                              <img src="/assets/img/preview/logo.png" alt="Software Crafters Barcelona" />
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+
+                      <!-- Closing -->
+                      <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
+                        <div class="media">
+                          <div class="schedule-width">
+                            <div class="post-header">
+                              <div class="post-meta">
+                                <span class="post-date"><i class="fa fa-clock-o"></i> 20:00 - 21:00</span>
+                              </div>
+                              <h2 class="post-title">Cocktail / Networking</h2>
+                            </div>
+                            <div class="post-body">
+                              <div class="post-excerpt">
+                                <br />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DAY 2: Saturday Conference -->
+              <div id="tab-second" class="tab-pane fade table-responsive">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Track 1</th>
+                      <th>Track 2</th>
+                      <th>Track 3</th>
+                      <th>
+                        <img src="/assets/img/sponsors/540-flat.png" alt="540" height="50" />
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {SaturdayRows.map((row) => (
+                      <tr>
+                        <td class="time-block">{row.timeLabel}</td>
+                        {row.isSpecialSection ? (
+                          <td colspan="4" class="special-section">{row.specialTitle}</td>
+                        ) : row.isKeynote ? (
+                          (() => {
+                            const keynoteTalk = processedRoomsData["Track 1"].find((t) => t.start === row.slotStart);
+                            return keynoteTalk ? (
+                              <td colspan="4" onclick={`window['${keynoteTalk.dialogId}'].showModal()`}>
+                                <img class="language-flag" src={keynoteTalk.langFlag} alt={keynoteTalk.lang} />
+                                <span class="title">{keynoteTalk.title}</span><br />
+                                <span class="author">
+                                  {keynoteTalk.persons.map((p) => (
+                                    <img src={p.avatar || "/assets/img/preview/logo.png"} alt={p.public_name} />
+                                  ))}
+                                  {keynoteTalk.persons.map((p) => p.public_name).join(" & ")}
+                                </span>
+                                <dialog id={keynoteTalk.dialogId} onclick="event.stopPropagation()">
+                                  <div class="post-excerpt">
+                                    <h2 class="post-title">{keynoteTalk.title}</h2>
+                                    <p class="track-tag"><strong>Track:</strong> {keynoteTalk.track}</p>
+                                    <p>{keynoteTalk.abstract}</p>
+                                    {keynoteTalk.persons.map((p) => (
+                                      <div class="speaker-bio-container" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px; display: flex; gap: 15px; align-items: start;">
+                                        <img src={p.avatar || "/assets/img/preview/logo.png"} alt={p.public_name} style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;" />
+                                        <div>
+                                          <h4 style="margin: 0; font-weight: bold;">{p.public_name}</h4>
+                                          <p style="font-size: 0.9em; color: #666; margin: 5px 0 0 0;">{p.biography || "No biography available."}</p>
+                                        </div>
+                                      </div>
+                                    ))}
+                                  </div>
+                                  <form method="dialog">
+                                    <button class="dialog-close">Close</button>
+                                  </form>
+                                </dialog>
+                              </td>
+                            ) : (
+                              <td colspan="4" class="special-section">-</td>
+                            );
+                          })()
+                        ) : (
+                          rooms.map((roomName) => {
+                            const talksInSlot = processedRoomsData[roomName].filter((t) => t.start >= row.slotStart! && t.start < row.slotEnd!);
+                            if (talksInSlot.length === 0) {
+                              return <td>-</td>;
+                            }
+                            const isLightningCell = talksInSlot.some((t) => t.isLightning);
+                            if (isLightningCell) {
+                              return (
+                                <td class="lightning-talks">
+                                  <h4>⚡ Lightning Talks</h4>
+                                  {talksInSlot.map((talk) => (
+                                    <div onclick={`window['${talk.dialogId}'].showModal()`}>
+                                      <img class="language-flag" src={talk.langFlag} alt={talk.lang} />
+                                      {talk.start} - {getTalkEndTime(talk.start, talk.duration)} | {talk.title}<br />
+                                      <span class="author">
+                                        {talk.persons.map((p) => (
+                                          <img src={p.avatar || "/assets/img/preview/logo.png"} alt={p.public_name} />
+                                        ))}
+                                        {talk.persons.map((p) => p.public_name).join(" & ")}
+                                      </span>
+                                      <dialog id={talk.dialogId} onclick="event.stopPropagation()">
+                                        <div class="post-excerpt">
+                                          <h2 class="post-title">{talk.title}</h2>
+                                          <p class="track-tag"><strong>Track:</strong> {talk.track}</p>
+                                          <p>{talk.abstract}</p>
+                                          {talk.persons.map((p) => (
+                                            <div class="speaker-bio-container" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px; display: flex; gap: 15px; align-items: start;">
+                                              <img src={p.avatar || "/assets/img/preview/logo.png"} alt={p.public_name} style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;" />
+                                              <div>
+                                                <h4 style="margin: 0; font-weight: bold;">{p.public_name}</h4>
+                                                <p style="font-size: 0.9em; color: #666; margin: 5px 0 0 0;">{p.biography || "No biography available."}</p>
+                                              </div>
+                                            </div>
+                                          ))}
+                                        </div>
+                                        <form method="dialog">
+                                          <button class="dialog-close">Close</button>
+                                        </form>
+                                      </dialog>
+                                    </div>
+                                  ))}
+                                </td>
+                              );
+                            } else {
+                              const talk = talksInSlot[0];
+                              return (
+                                <td onclick={`window['${talk.dialogId}'].showModal()`}>
+                                  <img class="language-flag" src={talk.langFlag} alt={talk.lang} />
+                                  {talk.title}<br />
+                                  <span class="author">
+                                    {talk.persons.map((p) => (
+                                      <img src={p.avatar || "/assets/img/preview/logo.png"} alt={p.public_name} />
+                                    ))}
+                                    {talk.persons.map((p) => p.public_name).join(" & ")}
+                                  </span>
+                                  <dialog id={talk.dialogId} onclick="event.stopPropagation()">
+                                    <div class="post-excerpt">
+                                      <h2 class="post-title">{talk.title}</h2>
+                                      <p class="track-tag"><strong>Track:</strong> {talk.track}</p>
+                                      <p>{talk.abstract}</p>
+                                      {talk.persons.map((p) => (
+                                        <div class="speaker-bio-container" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px; display: flex; gap: 15px; align-items: start;">
+                                          <img src={p.avatar || "/assets/img/preview/logo.png"} alt={p.public_name} style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;" />
+                                          <div>
+                                            <h4 style="margin: 0; font-weight: bold;">{p.public_name}</h4>
+                                            <p style="font-size: 0.9em; color: #666; margin: 5px 0 0 0;">{p.biography || "No biography available."}</p>
+                                          </div>
+                                        </div>
+                                      ))}
+                                    </div>
+                                    <form method="dialog">
+                                      <button class="dialog-close">Close</button>
+                                    </form>
+                                  </dialog>
+                                </td>
+                              );
+                            }
+                          })
+                        )}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /PAGE SCHEDULE -->
+
       <!-- PAGE DIVERSITY -->
       <section class="page-section" id="diversity">
         <div class="container">
