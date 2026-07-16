@@ -1,0 +1,460 @@
+{
+  "schedule": {
+    "conference": {
+      "days": [
+        {
+          "index": 1,
+          "rooms": {}
+        },
+        {
+          "index": 2,
+          "rooms": {
+            "Track 1": [
+              {
+                "start": "10:00",
+                "duration": "00:55",
+                "title": "Next.js: The Final Boss of Web Performance",
+                "type": "Talk",
+                "track": "Development principles and methodologies",
+                "abstract": "Your local Lighthouse test shows a perfect 100, but when your app hits the real-world production stage, it’s instant Game Over. Welcome to the Next.js Hard Mode!\r\n\r\nIn this data-driven session, we will bypass marketing hype and put Next.js's real-world performance to the test. Armed with massive global datasets from the HTTP Archive and the Chrome User Experience Report (CrUX), we’ll review the built-in optimization power-ups Next.js provides, contrast them with the messy reality of large-scale projects, and hand you a practical cheat code survival kit to rescue your Core Web Vitals before you run out of lives.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Estela Franco",
+                    "avatar": "/assets/img/speakers/LGFDEY_YdcSM52.png",
+                    "biography": "Estela is a Senior Technical Architect in Web Performance at Shopify, where she helps merchants build faster and more performant experiences for their customers. Deeply involved in the global tech community, Estela is an international speaker, the co-founder of #MujeresEnSEO, and a co-organizer of PerformanceObserver.dev. She is dedicated to sharing technical knowledge and advocating for more diversity in the industry."
+                  }
+                ]
+              },
+              {
+                "start": "11:30",
+                "duration": "00:55",
+                "title": "The craft is still yours: rethinking junior growth with AI",
+                "type": "Talk",
+                "track": "AI and Automation",
+                "abstract": "The narrative is spreading fast: AI is coming for the junior role. Why invest in growing someone when a model can generate a pull request in seconds?\r\nThis way of thinking is dangerous, and it’s costing us the next generation of great engineers. The real question was never “can AI do what a junior does?” but rather “how do juniors grow into seniors?” which is a question our industry has answered for decades with methods like pair programming.\r\nWith the right structure, AI becomes a natural evolution of that practice: a 24/7 companion that knows the project, answers without judgment, and meets the junior where they are. Spec-first and intentional, it keeps them in the driver’s seat while accelerating growth across multiple dimensions, from reasoning about requirements to product thinking to implementation and beyond.\r\nJuniors aren’t just using AI; they’re managing it. They interrogate its output, catch its blind spots, and decide when to trust it or push back. That judgment is the craft, and it’s theirs to build.\r\nThis talk brings together two perspectives: leadership and lived experience. A junior AI engineer shares what it feels like, including what unlocked, what was hard, and what she wishes she’d known earlier. An industry leader adds perspective on designing the environment that makes this growth possible, and what breaks when structure is missing.\r\nThe craft is still yours, and AI is just another tool to grow it.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "English"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Diana Gamez",
+                    "avatar": "/assets/img/speakers/ZUP7UR_fXlBgW8.jpeg",
+                    "biography": "Diana is a tech leader with a background in AI, backend engineering, and team leadership. She started nearly a decade ago drawn by robotics, and has since led data and AI projects across diverse teams. With a people-first approach, she focuses on building practical, responsible AI. Diana shares her story to inspire others and believes AI should reflect the world it serves: diverse, thoughtful, and built with purpose."
+                  },
+                  {
+                    "public_name": "Lauren Tucker",
+                    "avatar": null,
+                    "biography": null
+                  }
+                ]
+              },
+              {
+                "start": "12:30",
+                "duration": "00:55",
+                "title": "De 300 ms a 3 segundos: Cómo navegar la tormenta de un incidente real  en producción y salir airoso",
+                "type": "Talk",
+                "track": "Monitoring and observability",
+                "abstract": "Parecía un día normal: las alertas habituales, el ruido esperable en un sistema distribuido como Grafana Tempo, nuestra base de datos de trazas. Hasta que llegó una de las gordas, y yo estaba de guardia.\r\n\r\nEl p99 de la latencia de escritura en uno de nuestros clústeres más grandes pasó de cientos de milisegundos a más de 3 segundos. En un clúster que ingiere 64 TB al día, esto no es anecdótico. Los timeouts empezaron a multiplicarse y, con ellos, la incertidumbre sobre millones de spans potencialmente perdidos. Declaré el incidente.\r\n\r\nEsta charla trata de lo que pasa cuando todo se rompe en producción y tú estás al mando. A partir de este incidente real, veremos cómo convertir una crisis en una oportunidad de crecimiento técnico y profesional.\r\n\r\n¿Qué vas a aprender?\r\n* Triaje sin pánico: Cómo responder durante los primeros minutos críticos, definir roles (Comandante e Investigador) y comunicar con claridad y transparencia cuando la causa no está clara.\r\n* Diagnóstico pragmático: Técnicas para evitar el sesgo de confirmación y la visión de túnel cuando las alertas no dejan de sonar.\r\n* Post-mortems que importan: Cómo escribir análisis blameless (sin culpas) que generen cambios sistémicos, no documentos olvidados.\r\n* Crecimiento profesional: Por qué los incidentes son uno de los aceleradores más poderosos en la carrera de un ingeniero.\r\n\r\nCerraremos con ejercicio simulado, poniendo en práctica las las herramientas de triaje y comunicación aprendidas.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Javi",
+                    "avatar": "/assets/img/speakers/GCZBRD_CSJtolY.png",
+                    "biography": "Granadino, trabajo desarrollando Grafana Tempo, una base de datos de trazas distribuida. Trotamundos digital."
+                  }
+                ]
+              },
+              {
+                "start": "15:00",
+                "duration": "00:55",
+                "title": "¿Es rentable (y posible) la IA 100% local en desarrollo?",
+                "type": "Talk",
+                "track": "AI and Automation",
+                "abstract": "Tal y como está el patio de las suscripciones de Claude, Antigravity, Codex.... ¿Es factible hoy en día desarrollar software profesional prescindiendo de los modelos privativos y sus sistemas de pago por uso?\r\n\r\nMovido por la búsqueda de autonomía técnica y privacidad, decidí realizar una inversión \"posiblemente descabellada\" en hardware de última generación (NVIDIA Blackwell) para ejecutar modelos de pesos abiertos y ponerlo a prueba.\r\n\r\nEsta es la crónica de un descubrimiento: un viaje de aprendizaje incremental donde se analiza, desde una visión crítica y honesta, si la IA local ha madurado lo suficiente para el día a día de un desarrollador. \r\n\r\nExploraremos cómo configurar un nodo de cómputo, el dilema de las cuantizaciones, qué modelos elegir para cada fase del ciclo de vida (planificar, programar, refactorizar) y cómo se comportan estas herramientas ante retos reales como el Domain-Driven Design (DDD) sobre un producto complejo.\r\n\r\nUna sesión para quienes se preguntan si es el momento de reclamar su soberanía tecnológica o si todavía estamos atados a la nube.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Fernando Aparicio",
+                    "avatar": "/assets/img/speakers/FTWUEL_JJ7mnjd.jpeg",
+                    "biography": null
+                  }
+                ]
+              },
+              {
+                "start": "16:00",
+                "duration": "00:55",
+                "title": "Exactly-Once Semantics: Sagas Done Right When Money Is on the Line",
+                "type": "Talk",
+                "track": "Software Design and Architecture",
+                "abstract": "Exactly-once semantics is a cornerstone - and often unspoken - rule of many business requirements: we must not charge a user twice for the same product, deliver the same service twice, or lose a payment halfway through.\r\n\r\nBut the distributed systems we build on rarely provide exactly-once behavior end to end. As business rules grow more complex and architectures span services, queues, databases, and third-party APIs, getting this right becomes a really hard engineering problem.\r\n\r\nIn this talk, we'll walk through a specific fintech business case end to end: design the state machine, choose the right tools, and build an event-driven saga that survives crashes, network partitions, and unreliable third parties. We’ll cover the important failure modes and end up with an architecture that delivers effectively exactly-once semantics in practice.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "English"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Sergei Aleksandrov",
+                    "avatar": "/assets/img/speakers/JT77DP_Et7Rnll.png",
+                    "biography": "Senior Backend Engineer based in Barcelona, working in fintech. I build distributed systems for high-load, mission-critical products, recently focused on real-time ML-driven fraud detection. I work mainly with Kotlin/Java, event-driven architectures, and consistency patterns that keep complex business workflows correct under failure."
+                  }
+                ]
+              },
+              {
+                "start": "17:30",
+                "duration": "00:55",
+                "title": "Secure by Design, Secure by Principles",
+                "type": "Talk",
+                "track": "AI and Automation",
+                "abstract": "La inteligencia artificial no es solo una herramienta: es una infraestructura de poder. En esta charla exploramos cómo diseñar sistemas de IA que sean seguros desde su concepción, no como parche posterior. Hablaremos de secure-by-design aplicado a IA, modelos robustos y predecibles, mitigación de riesgos (prompt injection, data poisoning, fugas de información), gobernanza, soberanía tecnológica y ética aplicada al diseño arquitectónico.\r\n\r\nMás allá de la ciberseguridad clásica, abordaremos cómo integrar principios de ingeniería responsable, trazabilidad, explicabilidad y control humano significativo. El objetivo: construir sistemas confiables, auditables y alineados con valores humanos y sociales. Porque la seguridad no es una feature, es un principio de diseño, y de ética.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Javier Ramos Panduro",
+                    "avatar": "/assets/img/speakers/LRQFK7_TJGxs4E.jpg",
+                    "biography": "I'm a Solutions Architect with almost 20 years of experience designing and building robust and scalable applications. Passionate about technology with positive social impact, combining deep technical expertise with leadership to create solutions that drive progress and inclusivity."
+                  }
+                ]
+              }
+            ],
+            "Track 2": [
+              {
+                "start": "11:30",
+                "duration": "00:55",
+                "title": "Construint un framework de testing distribuït amb Argo Workflows i Open Test Reporting",
+                "type": "Talk",
+                "track": "Testing and Quality",
+                "abstract": "La nostra plataforma basada en Kafka gestiona milions de connexions, amb el suport de desenes de components en Kubernetes. La validació automàtica i el testing funcional són essencials per al nostre procés de release. El framework de testing que vam construir originalment ens va permetre executar tests end-to-end durant anys, però, a mesura que la plataforma es va anar ampliant, van anar sorgint diversos problemes: temps d’execució llargs, integració limitada amb Kubernetes, tooling fragmentat i una fricció creixent tant per als developers com per a QA.\r\n\r\nDurant l’últim any, hem estat modernitzant aquest legacy framework mentre continuàvem amb les releases de la plataforma sota terminis ajustats. En aquesta xerrada compartirem com vam abordar aquest procés: identificant els principals pain points, definint els building blocks d’una nova solució i introduint de manera incremental tecnologies com Argo Workflows, deployments amb Helm i Flux, un nou ecosistema de components I reporting estandarditzat.\r\n\r\nJuntament amb el recorregut tècnic, també parlarem de les consideracions pràctiques que han marcat el projecte — equilibrar la migració amb el desenvolupament continu, coordinar els esforços i introduir millores sense poder “aturar-ho tot”. Els assistents s’enduran estratègies per fer evolucionar un sistema de testing complex en Kubernetes, així com aprenentatges tant des del vessant tècnic com des de l’organitzatiu a l’hora de modernitzar una peça crítica d'infraestuctura.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Catalan"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Javier Rois",
+                    "avatar": "/assets/img/speakers/79CNA3_eJpDZZs.jpg",
+                    "biography": "Javier Rois is a software engineer with experience across backend systems, data platforms, and teaching. He currently works as a Data Engineer at Klarrio, where he focuses on building and maintaining data platforms. Before that, he spent over a decade in roles ranging from backend engineering to consulting and technical training, working for ThoughtWorks, Wallapop, FactoriaF5, and Gradiant."
+                  }
+                ]
+              },
+              {
+                "start": "12:30",
+                "duration": "00:55",
+                "title": "Building an Application Security function",
+                "type": "Talk",
+                "track": "Testing and Quality",
+                "abstract": "In a technology organisation of over 2,500 engineers across 200+ teams, building cloud-native, mobile, and embedded systems under external scrutiny (SOC 2, NIS2), we set out to create an Application Security function (sometimes named Product Security) that could scale without becoming a bottleneck, alongside an existing InfoSec capability.\r\n\r\nThis talk shares how we designed AppSec so that teams own the security of their applications, while a central team provides guidance, tooling, and enablement. It covers hiring for both technical skills and empathy, navigating funding challenges, and embedding security into delivery without slowing it down.\r\n\r\nWe will explore practical elements such as integrating dependency scanning into developer workflows; introducing threat modelling into standard development practices; and managing incidents, penetration testing, and bug bounty programmes. We also built a Security Champions community through training and hands-on initiatives.\r\n\r\nFinally, we'll discuss the implications of the introduction of generative AI to the SDLC activities.\r\n\r\nA central theme is culture: building trust with engineers and leadership, working collaboratively, and avoiding isolation. This experience offers insights for organisations looking to evolve Application Security as a shared, scalable responsibility in modern software development.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "English"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Toni Tassani",
+                    "avatar": "/assets/img/speakers/A9PXHK_UDLJOQc.jpeg",
+                    "biography": "Toni Tassani is a Barcelona-based software engineering leader with 20+ years of experience. As VP of Engineering, he leads initiatives in engineering practices and application security. A university lecturer and international conference speaker, he is passionate about the human aspects of software development, organisational culture, and communication. Outside work, he enjoys reading and engaging in philosophical discussions."
+                  }
+                ]
+              },
+              {
+                "start": "15:00",
+                "duration": "00:55",
+                "title": "Stop Designing Screens. Start Designing Decisions",
+                "type": "Talk",
+                "track": "Monitoring and observability",
+                "abstract": "Modern software is no longer purely reactive.\r\n\r\nFrom AI copilots to automated workflows, systems increasingly act on behalf of users—making suggestions, triggering actions, and sometimes making decisions without explicit input.\r\n\r\nBut most of our engineering practices still assume a simple model: request → response\r\n\r\nSo what happens when there is no clear request?\r\n\r\nWhen the system decides to act, new challenges emerge:\r\n-How do we model and implement decision-making in our systems?\r\n-How do we observe and explain why something happened?\r\n-How do we debug behavior that wasn’t directly triggered by a user?\r\n-How do we define requirements for actions that may or may not happen?\r\n\r\nIn this talk, we’ll explore how agentic behavior changes the way we design, build, and operate software.\r\n\r\nWe’ll look at:\r\n-how to move from endpoint-driven thinking to decision-driven architecture\r\n-what “observability” means when systems make choices—not just process inputs\r\n-practical ways to keep autonomous behavior traceable, testable, and safe\r\n\r\nThis is not a UX talk. It’s a shift in how we think about systems. Because if your software can decide to act—and you didn’t design how—you’ll still get decisions. Just ones you can’t see, explain, or control.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "English"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Nastassia Shahun",
+                    "avatar": "/assets/img/speakers/WGUWCF_wpDSkAK.png",
+                    "biography": "Nastassia Shahun is a Senior IT Business Analyst and Product Owner specializing in complex, intelligent products across FinTech and eCommerce. Her work focuses on decision-making, product discovery, and aligning business and user intent in systems that increasingly act on behalf of users. She is an international conference speaker, writer, and mentor at global hackathons. As Editorial Lead at the IIBA Poland Chapter, she shapes content strategy and supports the development of the BA community."
+                  }
+                ]
+              },
+              {
+                "start": "16:00",
+                "duration": "00:55",
+                "title": "Testing the Limits: Can PMs and Designers Build Products in the Real World?",
+                "type": "Talk",
+                "track": "AI and Automation",
+                "abstract": "With all the recent advancements in AI, we found ourselves, almost inevitably, uncovering better ways of developing software by doing it and helping others do it. This led us to a fundamental question: Can a pair of Product Managers and Designers build something real, reliable, and production-ready with minimal developer supervision? We wanted to move past the marketing hype and find out if non-engineers could actually navigate the complexities of a live codebase without a developer holding their hand at every step.\r\n\r\nTo find the answer, we ran a dual-track experiment following two PM/PD pairs on very different journeys: one starting a project from scratch and another attempting to build and ship products within a massive, pre-existing production environment filled with established patterns and strict architectural rules.\r\n\r\nIn this talk, we will pull back the curtain on the entire process. We will explain how we configured the initial setup to enable autonomy, the specific technical hurdles and logic-based problems we encountered when the AI hit its limits, and the crucial moments where the experiment failed and developers had to intervene to save the day. Finally, we will share how we assessed our confidence in the outcome—whether we truly reached a level of trust where the final code could be deployed—providing an honest look at whether the \"Product Engineer\" is a sustainable reality or a dangerous myth.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "David Valero",
+                    "avatar": "/assets/img/speakers/FKKC9G_DqpY6ME.jpeg",
+                    "biography": "Product Software Engineer with experience delivering impactful, user-centered solutions in dynamic, fast-paced environments. Thriving in remote settings, skilled in building scalable backend systems and translating business needs into solid technical solutions. Deeply committed to XP and Lean principles, relying on TDD and CI/CD to ensure continuous improvement and clean code. Always eager to learn and grow with new technologies."
+                  },
+                  {
+                    "public_name": "Rosana Reischak",
+                    "avatar": "/assets/img/speakers/PZHBQ3_uPus8hv.png",
+                    "biography": "TODO"
+                  }
+                ]
+              },
+              {
+                "start": "17:30",
+                "duration": "00:55",
+                "title": "My journey as a developreneur: accessible games and apps that work for everyone",
+                "type": "Talk",
+                "track": "Diversity in IT",
+                "abstract": "Hello.\r\nI started as a developer in 2020 after many years of wanting to make mobile games and apps for everyone (I'm a solo totally blind developer).\r\n\r\nThis talk is not about becoming or a developer or about developing as a blind person. Rather, it is a talk to share my experience, give advice to new devs, and showcase what I've tried to do over the years. Failures, successes, future projects, and how AI is changing our lives as developers and, yes, how AI is helping blind developers make better UIs.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "English"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Oriol Gómez Sentís",
+                    "avatar": "/assets/img/speakers/YCVSJR_j0vsBZJ.jpeg",
+                    "biography": "I am a web and mobile developer as well as accessibility consultant. I've been in the field for 6 years.\r\n\r\nhttps://www.oriolgomez.com"
+                  }
+                ]
+              }
+            ],
+            "Track 3": [
+              {
+                "start": "11:30",
+                "duration": "00:55",
+                "title": "Tu próximo pair puede no saber programar",
+                "type": "Talk",
+                "track": "Innovation and Trends",
+                "abstract": "Durante décadas, la frontera entre \"quienes construyen\" y \"quienes deciden qué construir\" estaba clara. Un PM escribía un PID, ingeniería estimaba, y meses después salía algo a producción. La IA ha dinamitado esa frontera.\r\nEn Cabify lo estamos viviendo en primera persona. Product Managers que prototipan soluciones funcionales en horas. Designers que validan ideas con datos sintéticos antes de que ingeniería escriba una línea de código. Sesiones de pair programming donde un IC y un perfil de producto trabajan juntos en Cursor, combinando visión de negocio con criterio técnico.\r\nPero este escenario no es gratis. Sin guardrails claros, el resultado es caos disfrazado de velocidad. El rol de ingeniería no desaparece: muta. Pasamos de escribir todo el código a diseñar las reglas del juego: coberturas de test, estándares de calidad, pipelines de validación y límites claros sobre qué llega a producción y qué no.\r\nCompartiré historias reales de cómo estamos redefiniendo nuestro flujo: qué ha funcionado, qué ha explotado, qué guardrails hemos construido tras problemas que no anticipamos, y cómo institucionalizamos una forma de trabajar donde prototipar es casi gratis pero la calidad no se negocia. No es una charla sobre herramientas. Es sobre qué pasa cuando toda la organización puede construir producto, y qué debe hacer ingeniería para que esa velocidad no se convierta en caos.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Diego Albert",
+                    "avatar": "/assets/img/speakers/PUU3Z3_klcfhoF.jpeg",
+                    "biography": "Engineering Manager with over 6 years of experience leading multidisciplinary teams to deliver high-quality, scalable solutions that drive measurable business impact. I am passionate about empowering individuals to reach their full potential, creating inclusive and supportive environments, and fostering collaboration across teams."
+                  }
+                ]
+              },
+              {
+                "start": "12:30",
+                "duration": "00:55",
+                "title": "Cuando España se apagó: arquitectura para sobrevivir cuando falla hasta la luz",
+                "type": "Talk",
+                "track": "Software Design and Architecture",
+                "abstract": "Diseñamos sistemas asumiendo que la conectividad es un hecho. El año pasado, durante el apagón nacional, esa suposición se rompió. Algunas partes de nuestros sistemas aguantaron. Otras no. Y la diferencia entre unas y otras no fue suerte: fueron decisiones de arquitectura tomadas años antes, en frío, cuando nadie quería justificar el coste y no había forma de probar que valían la pena.\r\n\r\nEn esta charla cuento esas decisiones, con los trade-offs de negocio detrás de ellas, que permitieron que nuestros almacenes siguieran operando sin conexión a sistemas centrales durante horas. Con 1.700 tiendas, producto perecedero y logística que cuesta miles por minuto de parada.\r\n\r\nTres problemas concretos: el modo bunker (cómo un nodo opera solo), el split-brain (qué pasa cuando la realidad física y la base de datos central divergen durante horas, y quién gana) y la reconciliación (cómo resincronizar millones de transacciones oscuras sin pérdida de datos cuando el sistema vuelve a la vida, y los race conditions que tienes que haber diseñado antes de que ocurran).\r\n\r\nCada abstracción técnica de esta historia tiene una restricción de negocio detrás. La charla no separa las dos cosas.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Emilio Carrión",
+                    "avatar": "/assets/img/speakers/XKKUEM_br2WeLd.png",
+                    "biography": "Staff Engineer en Mercadona Tech, donde trabaja con sistemas distribuidos para la logística de 1.700 tiendas. Da charlas desde hace varios años sobre lo que eso enseña y sobre cómo cambia el oficio de programar. \r\n\r\nEscribe en emiliocarrion.com y en YouTube (@emcarrio)."
+                  }
+                ]
+              },
+              {
+                "start": "15:00",
+                "duration": "00:55",
+                "title": "Kit de supervivencia para fechas límite: Optimizando las rutas de 22.000 pedidos bajo presión",
+                "type": "Talk",
+                "track": "Development principles and methodologies",
+                "abstract": "A todos nos ha pasado eso de llegar un día a la oficina, y antes siquiera de poder tomarte un café alguien te avisa de que hay una reunión urgente. Te acercas temoroso, pues sabes que se avecinan curvas. \r\n\r\nEn nuestro caso el negocio ha crecido, el motor de rutas que fue construido al inicio del proyecto ya no soporta los 22.000 pedidos que debe entregar a diario. Crea rutas ineficientes que requieren de manualidades provocando retrasos en las entregas, clientes descontentos y un equipo exhausto haciendo horas extra. \r\n\r\nSe trata de una situación peliaguda, y los stakeholders lo necesitan \"para ayer\". ¿Qué haces ante esta situación?\r\n\r\nEn esta charla abriremos las tripas de un caso real donde la **mentalidad Lean** y las prácticas de **Extreme Programming (XP)** fueron nuestro salvavidas. Veremos código, métricas y gráficas para detallar todo el camino que seguimos.\r\n\r\n¿Qué veremos en la sesión?\r\n\r\n- Analizaremos las opciones que teníamos y por qué elegimos nuestra solución actual, siempre abogando por una solución pragmática con sus tradeoffs.\r\n- Cómo gestionamos las expectativas de los stakeholders.\r\n- Cómo las dinámicas de equipo (feedback constante, simplicidad y coraje) nos permitieron atacar el problema sin quemarnos.\r\n- Cómo utilizar la “deuda técnica” como herramienta de entrega eficiente sin que fuera un obstáculo.\r\n- Qué pasó en la primera puesta en producción y cómo nuestras decisiones iniciales afectaron al sistema meses después.\r\n- Un repaso por lo que salió bien y, sobre todo",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Alejandro",
+                    "avatar": "/assets/img/speakers/BFJKNL_oLYxrH7.jpeg",
+                    "biography": "Soy staff engineer en Mercadona Tech. En mi día a día me dedico a construir software que evolucione con el negocio sin perder la calidad por el camino, apoyándome siempre en las prácticas XP. Creo firmemente en el pragmatismo responsable y en el aprendizaje continuo. Fuera de las pantallas, devoro libros y busco mi próximo reto en cualquier Escape Room que se me ponga por delante."
+                  },
+                  {
+                    "public_name": "Victor Nassif",
+                    "avatar": "/assets/img/speakers/C3D8ZW_bi72aq3.jpeg",
+                    "biography": "Backend Engineer en Mercadona Tech. Creyente de XP y TDD. Brasileño en tierras españolas. Entre fogones y pedales en mis ratos libres"
+                  }
+                ]
+              },
+              {
+                "start": "16:00",
+                "duration": "00:55",
+                "title": "De vibe coding a harness engineering: modernizando un entorno regulado con la IA",
+                "type": "Talk",
+                "track": "AI and Automation",
+                "abstract": "Migrar un mainframe bancario a la nube bajo normativas de seguridad fluctuantes en tres meses parecía una misión imposible. La IA (agentes, herramientas MCP) fue el multiplicador de fuerza para lograrlo, pero exigió un cambio de paradigma. Esta sesión disecciona la evolución desde la ilusión del vibe coding —generar código mediante conversaciones fluidas— hacia una estricta disciplina de harness engineering (ingeniería de arneses).\r\n\r\nCuando la IA escribe el código, la artesanía del software (Software Craftsmanship) evoluciona. El foco ya no es la sintaxis, sino la construcción de las redes de seguridad. Exploraremos cómo domar la generación automática en entornos hostiles y altamente regulados construyendo arneses implacables: Spec-Driven Development, pipelines evolutivos y validación continua.\r\n\r\nPuntos Clave\r\nEvolución del Craftsmanship: El paso de teclear código a orquestar, limitar y auditar sistemas generados por múltiples subagentes.\r\n\r\nConstrucción de Arneses: Uso de testing extremo (integración, testcontainers, simulación de entornos) para contener y certificar el comportamiento del código generado.\r\n\r\nSpec-Driven Development: La especificación como contrato único e inquebrantable entre negocio, seguridad y los agentes de IA.\r\n\r\nPragmatismo radical: Cómo mantener la agilidad y los principios de diseño cuando las reglas del entorno regulado cambian a diario.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Anyul Rivas",
+                    "avatar": "/assets/img/speakers/FWRDEA_H4tteKJ.jpeg",
+                    "biography": "Artesano del software con 20 años de experiencia profesional."
+                  }
+                ]
+              }
+            ],
+            "Track 4": [
+              {
+                "start": "11:30",
+                "duration": "00:07",
+                "title": "Documentando APIs para IAs",
+                "type": "Lighning talk",
+                "track": "AI and Automation",
+                "abstract": "El año pasado en la SCBCN25 hablé de cómo Documentar APIs. Dejé fuera una parte que estaba incipiente y ha explotado en doce meses: ahora quien integra tu API muchas veces no es una persona, es una IA.\r\n\r\nEn esta lightning quiero hacer un repaso rápido del panorama actual:\r\n➟ Herramientas y estándares que amplían el ecosistema: MCPs y generación de tool definitions, llms.txt, OpenAPI para agentes\r\n➟ Casos de uso: chatbots con RAG sobre la documentación, agentes de soporte… \r\n➟ Qué cambia en cómo documentamos\r\n\r\nY por supuesto, cualquier novedad reseñable, que las habrá desde la presentación de este C4P hasta el día del evento 😉",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Javi Rubio",
+                    "avatar": "/assets/img/speakers/AAJLMJ_U6VO2wh.jpg",
+                    "biography": "Ingeniero de software con inquietudes tecnoactivistas. Más de 20 años trabajando en la intersección entre producto, ingeniería y gestión del conocimiento.\r\n\r\nDisfruto dando charlas y colaborando en comunidades, defiendo el trabajo remoto sano, y el uso de la IA con cabeza. Promotor de #NoMeetings."
+                  }
+                ]
+              },
+              {
+                "start": "11:44",
+                "duration": "00:07",
+                "title": "Rescuing the System Everyone Gave Up On",
+                "type": "Lighning talk",
+                "track": "Tech culture and soft skills",
+                "abstract": "What happens when only 3 out of 100 engineers can touch a critical system and nobody else wants to? This talk dives into a real story of a failing legacy codebase: programming language barrier, poor testing, outdated dependencies, constant outages and a team stuck in frustration with no investment in sight.\r\nInstead of another failed “big rewrite” proposal, I approached the problem differently, using product thinking. By breaking the system into smaller, prioritized problems, aligning stakeholders and introducing measurable outcomes, we turned paralysis into progress.\r\nIn this lightning talk, I’ll walk through the exact steps I used to reframe the problem, gain buy-in and start delivering impact without having to think about rewriting everything. If you’ve ever faced a legacy system everyone avoids but depends on, this talk will give you a practical way forward.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "English"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Andrei Danilov",
+                    "avatar": "/assets/img/speakers/TQP9SN_Y4cvvew.jpg",
+                    "biography": "https://www.linkedin.com/in/andreidanilov/"
+                  }
+                ]
+              },
+              {
+                "start": "12:30",
+                "duration": "00:07",
+                "title": "What PLG Actually Means for an Engineering Team",
+                "type": "Lighning talk",
+                "track": "Tech culture and soft skills",
+                "abstract": "You won't have a thorough PRD and months to implement a feature. You have a hypothesis to validate, a quick solution to ship, and a few days later you're measuring its impact. This talk covers what PLG engineering actually looks like in practice: from running quick experiments and negotiating scope, to measuring what matters and avoiding the dead code traps of A/B testing.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "English"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Marta Vasconcelos",
+                    "avatar": "/assets/img/speakers/GNKBGF_TK8AWhi.jpeg",
+                    "biography": "Currently an Engineering Manager at SingleStore, Marta leads a team of engineers focused on PLG and User Experience. Leveraging her design background and software engineering experience, her journey through software development led to a deep appreciation for user experience, frontend development, PLG, and developer tools, driven by her dedication to building top-notch products and the teams that ship them."
+                  }
+                ]
+              },
+              {
+                "start": "16:00",
+                "duration": "00:55",
+                "title": "La feature perpètua: Com integrar accessibilitat i complir l'EAA amb l'ajuda de la IA",
+                "type": "Talk",
+                "track": "Accesibility and sustainability",
+                "abstract": "L’accessibilitat és la \"feature perpètua\": aquell tiquet que viu eternament al backlog, s’hereda de sprint en sprint i mai no es tanca perquè \"no hi ha temps\". Però el 2026, amb l’EAA (European Accessibility Act) en ple vigor, ajornar-la ja no és una opció tècnica, és un risc legal imminent. La realitat és que la majoria dels equips no estan preparats i confien en automatitzacions bàsiques que només generen una perillosa il·lusió de qualitat.\r\n​En aquesta sessió, trencarem el cicle de postergació. Analitzarem per què els validadors tradicionals fallen en detectar barreres reals i com l’Enginyeria d’Agents revoluciona el compliment de la normativa. Explorarem com l’orquestració d’agents capaços de raonar sobre la semàntica i la interacció humana —utilitzant el Model Context Protocol (MCP) i les Chrome DevTools— permet auditar amb precisió allò que els tests automàtics ignoren.\r\n​Descobrirem una estratègia per integrar auditors intel·ligents que eleven la capacitat dels equips, transformant l’accessibilitat d’una càrrega inabastable en un procés tècnic escalable, auditable i real. És hora de deixar de moure el tiquet de sprint i començar a garantir una web que no exclogui ningú.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Catalan"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Rocío Cejudo Soronellas",
+                    "avatar": "/assets/img/speakers/RDUGML_nrklhWe.jpg",
+                    "biography": "Rocío es desarrolladora web con experiencia en frontend y fullstack. Actualmente trabaja como desarrolladora y formadora en programación, acompañando a personas en entornos inclusivos y proyectos de impacto social, conectando la tecnología con contextos reales."
+                  }
+                ]
+              },
+              {
+                "start": "17:30",
+                "duration": "00:55",
+                "title": "Asteroide A11y-B-612",
+                "type": "Talk",
+                "track": "Accesibility and sustainability",
+                "abstract": "Cada any, WebAIM estudia l’estat global de l’accessibilitat analitzant un milió de pàgines web. En l’anàlisi de l’últim any (publicada al febrer), es van detectar prop de 56 milions d’errors diferents. El més curiós és que el 96 % d’aquests errors es poden agrupar en sis categories, que han estat les mateixes durant els darrers set anys pero l'últim any han empitjorat. Vols saber què ha passat i quines són?\r\n\r\nAquesta xerrada et servirà per entendre com afecta l’accessibilitat als teus projectes digitals i com evitar els errors més habituals. Al llarg del viatge, visitarem diversos planetes d’El Petit Príncep, on els seus personatges ens ajudaran a descobrir conceptes clau d’accessibilitat, bones pràctiques i algunes lliçons imprescindibles per construir experiències digitals més inclusives.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Catalan"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Jordi Turull",
+                    "avatar": "/assets/img/speakers/BQRYCZ_IkDrdGu.jpg",
+                    "biography": "Jordi es ingeniero informático y técnico en realización de audiovisuales. Cuenta con 15 años de experiencia en el sector tecnológico, especializado en frontend, y actualmente desempeña el rol de Tech Lead y Design System Engineer.\r\n\r\nLe apasionan el diseño, la fotografía y el deporte. Desde hace 5 años, además, ha incorporado la accesibilidad web a sus intereses y dedica parte de su tiempo a difundir y sensibilizar sobre este tema tan relevante, tanto dentro como fuera de la empresa."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
