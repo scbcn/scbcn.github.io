@@ -34,26 +34,21 @@
               {
                 "start": "11:30",
                 "duration": "00:55",
-                "title": "The craft is still yours: rethinking junior growth with AI",
+                "title": "Construint un framework de testing distribuït amb Argo Workflows i Open Test Reporting",
                 "type": "Talk",
-                "track": "AI and Automation",
-                "abstract": "The narrative is spreading fast: AI is coming for the junior role. Why invest in growing someone when a model can generate a pull request in seconds?\r\nThis way of thinking is dangerous, and it’s costing us the next generation of great engineers. The real question was never “can AI do what a junior does?” but rather “how do juniors grow into seniors?” which is a question our industry has answered for decades with methods like pair programming.\r\nWith the right structure, AI becomes a natural evolution of that practice: a 24/7 companion that knows the project, answers without judgment, and meets the junior where they are. Spec-first and intentional, it keeps them in the driver’s seat while accelerating growth across multiple dimensions, from reasoning about requirements to product thinking to implementation and beyond.\r\nJuniors aren’t just using AI; they’re managing it. They interrogate its output, catch its blind spots, and decide when to trust it or push back. That judgment is the craft, and it’s theirs to build.\r\nThis talk brings together two perspectives: leadership and lived experience. A junior AI engineer shares what it feels like, including what unlocked, what was hard, and what she wishes she’d known earlier. An industry leader adds perspective on designing the environment that makes this growth possible, and what breaks when structure is missing.\r\nThe craft is still yours, and AI is just another tool to grow it.",
+                "track": "Testing and Quality",
+                "abstract": "La nostra plataforma basada en Kafka gestiona milions de connexions, amb el suport de desenes de components en Kubernetes. La validació automàtica i el testing funcional són essencials per al nostre procés de release. El framework de testing que vam construir originalment ens va permetre executar tests end-to-end durant anys, però, a mesura que la plataforma es va anar ampliant, van anar sorgint diversos problemes: temps d’execució llargs, integració limitada amb Kubernetes, tooling fragmentat i una fricció creixent tant per als developers com per a QA.\r\n\r\nDurant l’últim any, hem estat modernitzant aquest legacy framework mentre continuàvem amb les releases de la plataforma sota terminis ajustats. En aquesta xerrada compartirem com vam abordar aquest procés: identificant els principals pain points, definint els building blocks d’una nova solució i introduint de manera incremental tecnologies com Argo Workflows, deployments amb Helm i Flux, un nou ecosistema de components I reporting estandarditzat.\r\n\r\nJuntament amb el recorregut tècnic, també parlarem de les consideracions pràctiques que han marcat el projecte — equilibrar la migració amb el desenvolupament continu, coordinar els esforços i introduir millores sense poder “aturar-ho tot”. Els assistents s’enduran estratègies per fer evolucionar un sistema de testing complex en Kubernetes, així com aprenentatges tant des del vessant tècnic com des de l’organitzatiu a l’hora de modernitzar una peça crítica d'infraestuctura.",
                 "answers": [
                   {
                     "question": 36,
-                    "answer": "English"
+                    "answer": "Catalan"
                   }
                 ],
                 "persons": [
                   {
-                    "public_name": "Diana Gamez",
-                    "avatar": "/assets/img/speakers/ZUP7UR_fXlBgW8.jpeg",
-                    "biography": "Diana is a tech leader with a background in AI, backend engineering, and team leadership. She started nearly a decade ago drawn by robotics, and has since led data and AI projects across diverse teams. With a people-first approach, she focuses on building practical, responsible AI. Diana shares her story to inspire others and believes AI should reflect the world it serves: diverse, thoughtful, and built with purpose."
-                  },
-                  {
-                    "public_name": "Lauren Tucker",
-                    "avatar": null,
-                    "biography": null
+                    "public_name": "Javier Rois",
+                    "avatar": "/assets/img/speakers/79CNA3_eJpDZZs.jpg",
+                    "biography": "Javier Rois is a software engineer with experience across backend systems, data platforms, and teaching. He currently works as a Data Engineer at Klarrio, where he focuses on building and maintaining data platforms. Before that, he spent over a decade in roles ranging from backend engineering to consulting and technical training, working for ThoughtWorks, Wallapop, FactoriaF5, and Gradiant."
                   }
                 ]
               },
@@ -93,7 +88,7 @@
                 ],
                 "persons": [
                   {
-                    "public_name": "Fernando Aparicio",
+                    "public_name": "Fernando Aparicio Reviriego",
                     "avatar": "/assets/img/speakers/FTWUEL_JJ7mnjd.jpeg",
                     "biography": null
                   }
@@ -102,21 +97,26 @@
               {
                 "start": "16:00",
                 "duration": "00:55",
-                "title": "Exactly-Once Semantics: Sagas Done Right When Money Is on the Line",
+                "title": "Testing the Limits: Can PMs and Designers Build Products in the Real World?",
                 "type": "Talk",
-                "track": "Software Design and Architecture",
-                "abstract": "Exactly-once semantics is a cornerstone - and often unspoken - rule of many business requirements: we must not charge a user twice for the same product, deliver the same service twice, or lose a payment halfway through.\r\n\r\nBut the distributed systems we build on rarely provide exactly-once behavior end to end. As business rules grow more complex and architectures span services, queues, databases, and third-party APIs, getting this right becomes a really hard engineering problem.\r\n\r\nIn this talk, we'll walk through a specific fintech business case end to end: design the state machine, choose the right tools, and build an event-driven saga that survives crashes, network partitions, and unreliable third parties. We’ll cover the important failure modes and end up with an architecture that delivers effectively exactly-once semantics in practice.",
+                "track": "AI and Automation",
+                "abstract": "With all the recent advancements in AI, we found ourselves, almost inevitably, uncovering better ways of developing software by doing it and helping others do it. This led us to a fundamental question: Can a pair of Product Managers and Designers build something real, reliable, and production-ready with minimal developer supervision? We wanted to move past the marketing hype and find out if non-engineers could actually navigate the complexities of a live codebase without a developer holding their hand at every step.\r\n\r\nTo find the answer, we ran a dual-track experiment following two PM/PD pairs on very different journeys: one starting a project from scratch and another attempting to build and ship products within a massive, pre-existing production environment filled with established patterns and strict architectural rules.\r\n\r\nIn this talk, we will pull back the curtain on the entire process. We will explain how we configured the initial setup to enable autonomy, the specific technical hurdles and logic-based problems we encountered when the AI hit its limits, and the crucial moments where the experiment failed and developers had to intervene to save the day. Finally, we will share how we assessed our confidence in the outcome—whether we truly reached a level of trust where the final code could be deployed—providing an honest look at whether the \"Product Engineer\" is a sustainable reality or a dangerous myth.",
                 "answers": [
                   {
                     "question": 36,
-                    "answer": "English"
+                    "answer": "Spanish"
                   }
                 ],
                 "persons": [
                   {
-                    "public_name": "Sergei Aleksandrov",
-                    "avatar": "/assets/img/speakers/JT77DP_Et7Rnll.png",
-                    "biography": "Senior Backend Engineer based in Barcelona, working in fintech. I build distributed systems for high-load, mission-critical products, recently focused on real-time ML-driven fraud detection. I work mainly with Kotlin/Java, event-driven architectures, and consistency patterns that keep complex business workflows correct under failure."
+                    "public_name": "David Valero",
+                    "avatar": "/assets/img/speakers/FKKC9G_DqpY6ME.jpeg",
+                    "biography": "Product Software Engineer with experience delivering impactful, user-centered solutions in dynamic, fast-paced environments. Thriving in remote settings, skilled in building scalable backend systems and translating business needs into solid technical solutions. Deeply committed to XP and Lean principles, relying on TDD and CI/CD to ensure continuous improvement and clean code. Always eager to learn and grow with new technologies."
+                  },
+                  {
+                    "public_name": "Rosana Reischak",
+                    "avatar": "/assets/img/speakers/PZHBQ3_uPus8hv.png",
+                    "biography": "TODO"
                   }
                 ]
               },
@@ -146,21 +146,26 @@
               {
                 "start": "11:30",
                 "duration": "00:55",
-                "title": "Construint un framework de testing distribuït amb Argo Workflows i Open Test Reporting",
+                "title": "The craft is still yours: rethinking junior growth with AI",
                 "type": "Talk",
-                "track": "Testing and Quality",
-                "abstract": "La nostra plataforma basada en Kafka gestiona milions de connexions, amb el suport de desenes de components en Kubernetes. La validació automàtica i el testing funcional són essencials per al nostre procés de release. El framework de testing que vam construir originalment ens va permetre executar tests end-to-end durant anys, però, a mesura que la plataforma es va anar ampliant, van anar sorgint diversos problemes: temps d’execució llargs, integració limitada amb Kubernetes, tooling fragmentat i una fricció creixent tant per als developers com per a QA.\r\n\r\nDurant l’últim any, hem estat modernitzant aquest legacy framework mentre continuàvem amb les releases de la plataforma sota terminis ajustats. En aquesta xerrada compartirem com vam abordar aquest procés: identificant els principals pain points, definint els building blocks d’una nova solució i introduint de manera incremental tecnologies com Argo Workflows, deployments amb Helm i Flux, un nou ecosistema de components I reporting estandarditzat.\r\n\r\nJuntament amb el recorregut tècnic, també parlarem de les consideracions pràctiques que han marcat el projecte — equilibrar la migració amb el desenvolupament continu, coordinar els esforços i introduir millores sense poder “aturar-ho tot”. Els assistents s’enduran estratègies per fer evolucionar un sistema de testing complex en Kubernetes, així com aprenentatges tant des del vessant tècnic com des de l’organitzatiu a l’hora de modernitzar una peça crítica d'infraestuctura.",
+                "track": "AI and Automation",
+                "abstract": "The narrative is spreading fast: AI is coming for the junior role. Why invest in growing someone when a model can generate a pull request in seconds?\r\nThis way of thinking is dangerous, and it’s costing us the next generation of great engineers. The real question was never “can AI do what a junior does?” but rather “how do juniors grow into seniors?” which is a question our industry has answered for decades with methods like pair programming.\r\nWith the right structure, AI becomes a natural evolution of that practice: a 24/7 companion that knows the project, answers without judgment, and meets the junior where they are. Spec-first and intentional, it keeps them in the driver’s seat while accelerating growth across multiple dimensions, from reasoning about requirements to product thinking to implementation and beyond.\r\nJuniors aren’t just using AI; they’re managing it. They interrogate its output, catch its blind spots, and decide when to trust it or push back. That judgment is the craft, and it’s theirs to build.\r\nThis talk brings together two perspectives: leadership and lived experience. A junior AI engineer shares what it feels like, including what unlocked, what was hard, and what she wishes she’d known earlier. An industry leader adds perspective on designing the environment that makes this growth possible, and what breaks when structure is missing.\r\nThe craft is still yours, and AI is just another tool to grow it.",
                 "answers": [
                   {
                     "question": 36,
-                    "answer": "Catalan"
+                    "answer": "English"
                   }
                 ],
                 "persons": [
                   {
-                    "public_name": "Javier Rois",
-                    "avatar": "/assets/img/speakers/79CNA3_eJpDZZs.jpg",
-                    "biography": "Javier Rois is a software engineer with experience across backend systems, data platforms, and teaching. He currently works as a Data Engineer at Klarrio, where he focuses on building and maintaining data platforms. Before that, he spent over a decade in roles ranging from backend engineering to consulting and technical training, working for ThoughtWorks, Wallapop, FactoriaF5, and Gradiant."
+                    "public_name": "Diana Gamez",
+                    "avatar": "/assets/img/speakers/ZUP7UR_fXlBgW8.jpeg",
+                    "biography": "Diana is a tech leader with a background in AI, backend engineering, and team leadership. She started nearly a decade ago drawn by robotics, and has since led data and AI projects across diverse teams. With a people-first approach, she focuses on building practical, responsible AI. Diana shares her story to inspire others and believes AI should reflect the world it serves: diverse, thoughtful, and built with purpose."
+                  },
+                  {
+                    "public_name": "Lauren Tucker",
+                    "avatar": null,
+                    "biography": null
                   }
                 ]
               },
@@ -209,26 +214,21 @@
               {
                 "start": "16:00",
                 "duration": "00:55",
-                "title": "Testing the Limits: Can PMs and Designers Build Products in the Real World?",
+                "title": "Exactly-Once Semantics: Sagas Done Right When Money Is on the Line",
                 "type": "Talk",
-                "track": "AI and Automation",
-                "abstract": "With all the recent advancements in AI, we found ourselves, almost inevitably, uncovering better ways of developing software by doing it and helping others do it. This led us to a fundamental question: Can a pair of Product Managers and Designers build something real, reliable, and production-ready with minimal developer supervision? We wanted to move past the marketing hype and find out if non-engineers could actually navigate the complexities of a live codebase without a developer holding their hand at every step.\r\n\r\nTo find the answer, we ran a dual-track experiment following two PM/PD pairs on very different journeys: one starting a project from scratch and another attempting to build and ship products within a massive, pre-existing production environment filled with established patterns and strict architectural rules.\r\n\r\nIn this talk, we will pull back the curtain on the entire process. We will explain how we configured the initial setup to enable autonomy, the specific technical hurdles and logic-based problems we encountered when the AI hit its limits, and the crucial moments where the experiment failed and developers had to intervene to save the day. Finally, we will share how we assessed our confidence in the outcome—whether we truly reached a level of trust where the final code could be deployed—providing an honest look at whether the \"Product Engineer\" is a sustainable reality or a dangerous myth.",
+                "track": "Software Design and Architecture",
+                "abstract": "Exactly-once semantics is a cornerstone - and often unspoken - rule of many business requirements: we must not charge a user twice for the same product, deliver the same service twice, or lose a payment halfway through.\r\n\r\nBut the distributed systems we build on rarely provide exactly-once behavior end to end. As business rules grow more complex and architectures span services, queues, databases, and third-party APIs, getting this right becomes a really hard engineering problem.\r\n\r\nIn this talk, we'll walk through a specific fintech business case end to end: design the state machine, choose the right tools, and build an event-driven saga that survives crashes, network partitions, and unreliable third parties. We’ll cover the important failure modes and end up with an architecture that delivers effectively exactly-once semantics in practice.",
                 "answers": [
                   {
                     "question": 36,
-                    "answer": "Spanish"
+                    "answer": "English"
                   }
                 ],
                 "persons": [
                   {
-                    "public_name": "David Valero",
-                    "avatar": "/assets/img/speakers/FKKC9G_DqpY6ME.jpeg",
-                    "biography": "Product Software Engineer with experience delivering impactful, user-centered solutions in dynamic, fast-paced environments. Thriving in remote settings, skilled in building scalable backend systems and translating business needs into solid technical solutions. Deeply committed to XP and Lean principles, relying on TDD and CI/CD to ensure continuous improvement and clean code. Always eager to learn and grow with new technologies."
-                  },
-                  {
-                    "public_name": "Rosana Reischak",
-                    "avatar": "/assets/img/speakers/PZHBQ3_uPus8hv.png",
-                    "biography": "TODO"
+                    "public_name": "Sergei Aleksandrov",
+                    "avatar": "/assets/img/speakers/JT77DP_Et7Rnll.png",
+                    "biography": "Senior Backend Engineer based in Barcelona, working in fintech. I build distributed systems for high-load, mission-critical products, recently focused on real-time ML-driven fraud detection. I work mainly with Kotlin/Java, event-driven architectures, and consistency patterns that keep complex business workflows correct under failure."
                   }
                 ]
               },
