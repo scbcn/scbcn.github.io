@@ -115,8 +115,8 @@
                   },
                   {
                     "public_name": "Rosana Reischak",
-                    "avatar": "/assets/img/speakers/PZHBQ3_uPus8hv.png",
-                    "biography": "TODO"
+                    "avatar": "/assets/img/speakers/PZHBQ3_kZwOTib.jpeg",
+                    "biography": "Rosana Reischak is a Senior Product Manager based in Barcelona, currently working at Top Doctors. Previously, she spent several years at Cooltra and co-founded two startups, combining experience in scaling established products with building new ones from scratch. She is particularly interested in how AI is reshaping product development and strengthening collaboration between Product, Design, and Engineering."
                   }
                 ]
               },
@@ -164,8 +164,8 @@
                   },
                   {
                     "public_name": "Lauren Tucker",
-                    "avatar": null,
-                    "biography": null
+                    "avatar": "/assets/img/speakers/V7DGRC_LAdaEM0.jpg",
+                    "biography": "Lauren is a junior AI engineer who came to the field from mainframe engineering with a curiosity to see where the industry was heading. With a CS degree and a master's in AI behind her, she's spent her early career learning what that theory actually looks like in practice. Her main area of interest is using AI to accelerate skills growth as an engineer while building the judgment to know when to push back on it."
                   }
                 ]
               },
@@ -214,10 +214,10 @@
               {
                 "start": "16:00",
                 "duration": "00:55",
-                "title": "Exactly-Once Semantics: Sagas Done Right When Money Is on the Line",
+                "title": "Exactly-Once Semantics: Getting It Right When Money Is on the Line",
                 "type": "Talk",
                 "track": "Software Design and Architecture",
-                "abstract": "Exactly-once semantics is a cornerstone - and often unspoken - rule of many business requirements: we must not charge a user twice for the same product, deliver the same service twice, or lose a payment halfway through.\r\n\r\nBut the distributed systems we build on rarely provide exactly-once behavior end to end. As business rules grow more complex and architectures span services, queues, databases, and third-party APIs, getting this right becomes a really hard engineering problem.\r\n\r\nIn this talk, we'll walk through a specific fintech business case end to end: design the state machine, choose the right tools, and build an event-driven saga that survives crashes, network partitions, and unreliable third parties. We’ll cover the important failure modes and end up with an architecture that delivers effectively exactly-once semantics in practice.",
+                "abstract": "Exactly-once semantics is a cornerstone - and often unspoken - rule of many business requirements: we must not charge a user twice for the same product, deliver the same service twice, or lose a payment halfway through.\r\n\r\nBut the distributed systems we build on rarely provide exactly-once behavior end to end. As business rules grow more complex and architectures span services, queues, databases, and third-party APIs, getting this right becomes a really hard engineering problem.\r\n\r\nIn this talk, we’ll walk through a real fintech case from the initial product promise to the technical architecture behind it. We’ll bridge the gap between business expectations and the guarantees engineers must build, examine the most important failure modes, and arrive at a solution that delivers effectively-once behavior in practice.",
                 "answers": [
                   {
                     "question": 36,
@@ -227,8 +227,8 @@
                 "persons": [
                   {
                     "public_name": "Sergei Aleksandrov",
-                    "avatar": "/assets/img/speakers/JT77DP_Et7Rnll.png",
-                    "biography": "Senior Backend Engineer based in Barcelona, working in fintech. I build distributed systems for high-load, mission-critical products, recently focused on real-time ML-driven fraud detection. I work mainly with Kotlin/Java, event-driven architectures, and consistency patterns that keep complex business workflows correct under failure."
+                    "avatar": "/assets/img/speakers/JT77DP_38gVXlw.jpg",
+                    "biography": "I’m a Senior Backend Engineer based in Barcelona, specializing in distributed systems where failure is expected but incorrect outcomes are not. In fintech, I build high-load, mission-critical products and have recently focused on real-time fraud detection and payments processing. I work primarily with Kotlin and Java, and I enjoy exploring what event-driven architecture, consistency challenges, and production failures can teach us about building more reliable systems."
                   }
                 ]
               },
@@ -248,7 +248,7 @@
                 "persons": [
                   {
                     "public_name": "Oriol Gómez Sentís",
-                    "avatar": "/assets/img/speakers/YCVSJR_j0vsBZJ.jpeg",
+                    "avatar": "/assets/img/speakers/YCVSJR_t26Hw75.jpeg",
                     "biography": "I am a web and mobile developer as well as accessibility consultant. I've been in the field for 6 years.\r\n\r\nhttps://www.oriolgomez.com"
                   }
                 ]
@@ -368,6 +368,27 @@
                 ]
               },
               {
+                "start": "11:37",
+                "duration": "00:07",
+                "title": "Ya no me pagan por programar 😢 (y menos mal)",
+                "type": "Lighning talk",
+                "track": "Development principles and methodologies",
+                "abstract": "Spoiler: la IA ya programa. Así que, ¿por qué seguimos cobrando? Porque nuestro trabajo nunca fue el código, sino el problema. Un recorrido honesto por cómo mi equipo giró hacia el product mindset —research, impacto, slicing— con la IA como compañera de viaje, no como amenaza.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Dani Patiño",
+                    "avatar": "/assets/img/speakers/ZUNQX3_uREuL8C.jpg",
+                    "biography": "Passionate software developer with 8+ years of experience, I thrive on challenges and never give up. I am dedicated to supporting and empowering my colleagues, always giving my best and continuously learning from each experience. I love sharing knowledge, and I embrace opportunities to learn something new every day."
+                  }
+                ]
+              },
+              {
                 "start": "11:44",
                 "duration": "00:07",
                 "title": "Rescuing the System Everyone Gave Up On",
@@ -410,28 +431,7 @@
                 ]
               },
               {
-                "start": "16:00",
-                "duration": "00:55",
-                "title": "La feature perpètua: Com integrar accessibilitat i complir l'EAA amb l'ajuda de la IA",
-                "type": "Talk",
-                "track": "Accesibility and sustainability",
-                "abstract": "L’accessibilitat és la \"feature perpètua\": aquell tiquet que viu eternament al backlog, s’hereda de sprint en sprint i mai no es tanca perquè \"no hi ha temps\". Però el 2026, amb l’EAA (European Accessibility Act) en ple vigor, ajornar-la ja no és una opció tècnica, és un risc legal imminent. La realitat és que la majoria dels equips no estan preparats i confien en automatitzacions bàsiques que només generen una perillosa il·lusió de qualitat.\r\n​En aquesta sessió, trencarem el cicle de postergació. Analitzarem per què els validadors tradicionals fallen en detectar barreres reals i com l’Enginyeria d’Agents revoluciona el compliment de la normativa. Explorarem com l’orquestració d’agents capaços de raonar sobre la semàntica i la interacció humana —utilitzant el Model Context Protocol (MCP) i les Chrome DevTools— permet auditar amb precisió allò que els tests automàtics ignoren.\r\n​Descobrirem una estratègia per integrar auditors intel·ligents que eleven la capacitat dels equips, transformant l’accessibilitat d’una càrrega inabastable en un procés tècnic escalable, auditable i real. És hora de deixar de moure el tiquet de sprint i començar a garantir una web que no exclogui ningú.",
-                "answers": [
-                  {
-                    "question": 36,
-                    "answer": "Catalan"
-                  }
-                ],
-                "persons": [
-                  {
-                    "public_name": "Rocío Cejudo Soronellas",
-                    "avatar": "/assets/img/speakers/RDUGML_nrklhWe.jpg",
-                    "biography": "Rocío es desarrolladora web con experiencia en frontend y fullstack. Actualmente trabaja como desarrolladora y formadora en programación, acompañando a personas en entornos inclusivos y proyectos de impacto social, conectando la tecnología con contextos reales."
-                  }
-                ]
-              },
-              {
-                "start": "17:30",
+                "start": "15:00",
                 "duration": "00:55",
                 "title": "Asteroide A11y-B-612",
                 "type": "Talk",
@@ -448,6 +448,27 @@
                     "public_name": "Jordi Turull",
                     "avatar": "/assets/img/speakers/BQRYCZ_IkDrdGu.jpg",
                     "biography": "Jordi es ingeniero informático y técnico en realización de audiovisuales. Cuenta con 15 años de experiencia en el sector tecnológico, especializado en frontend, y actualmente desempeña el rol de Tech Lead y Design System Engineer.\r\n\r\nLe apasionan el diseño, la fotografía y el deporte. Desde hace 5 años, además, ha incorporado la accesibilidad web a sus intereses y dedica parte de su tiempo a difundir y sensibilizar sobre este tema tan relevante, tanto dentro como fuera de la empresa."
+                  }
+                ]
+              },
+              {
+                "start": "16:00",
+                "duration": "00:55",
+                "title": "La feature perpètua: Com integrar accessibilitat i complir l'EAA amb l'ajuda de la IA",
+                "type": "Talk",
+                "track": "Accesibility and sustainability",
+                "abstract": "L’accessibilitat és la \"feature perpètua\": aquell tiquet que viu eternament al backlog, s’hereda de sprint en sprint i mai no es tanca perquè \"no hi ha temps\". Però el 2026, amb l’EAA (European Accessibility Act) en ple vigor, ajornar-la ja no és una opció tècnica, és un risc legal imminent. La realitat és que la majoria dels equips no estan preparats i confien en automatitzacions bàsiques que només generen una perillosa il·lusió de qualitat.\r\n​En aquesta sessió, trencarem el cicle de postergació. Analitzarem per què els validadors tradicionals fallen en detectar barreres reals i com l’Enginyeria d’Agents revoluciona el compliment de la normativa. Explorarem com l’orquestració d’agents d'IA personalitzats, creats específicament per a auditar l'accessibilitat, permet raonar sobre la semàntica i la interacció humana. Mitjançant el Model Context Protocol (MCP) i les Chrome DevTools, veurem com aquests agents auditen amb precisió allò que els tests automàtics ignoren.\r\n​Descobrirem una estratègia per integrar auditors intel·ligents que eleven la capacitat dels equips, transformant l’accessibilitat d’una càrrega inabastable en un procés tècnic escalable, auditable i real. És hora de deixar de moure el tiquet de sprint i començar a garantir una web que no exclogui ningú.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Catalan"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Rocío Cejudo Soronellas",
+                    "avatar": "/assets/img/speakers/RDUGML_nrklhWe.jpg",
+                    "biography": "Rocío es Desarrolladora Senior Fullstack y formadora técnica en Factoría F5. Pasa sus días compaginando el aula, donde mentoriza a talento diverso hacia el sector TIC, con el coliderazgo técnico de plataformas web de alto impacto social. Especializada en accesibilidad (A11y) e IA, le apasiona explorar cómo la automatización potencia a los equipos sin perder el foco humano, transformando el código en una herramienta real de inclusión y empoderamiento."
                   }
                 ]
               }
