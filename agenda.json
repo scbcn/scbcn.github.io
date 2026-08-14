@@ -97,6 +97,27 @@
               {
                 "start": "16:00",
                 "duration": "00:55",
+                "title": "Secure by Design, Secure by Principles",
+                "type": "Talk",
+                "track": "AI and Automation",
+                "abstract": "La inteligencia artificial no es solo una herramienta: es una infraestructura de poder. En esta charla exploramos cómo diseñar sistemas de IA que sean seguros desde su concepción, no como parche posterior. Hablaremos de secure-by-design aplicado a IA, modelos robustos y predecibles, mitigación de riesgos (prompt injection, data poisoning, fugas de información), gobernanza, soberanía tecnológica y ética aplicada al diseño arquitectónico.\r\n\r\nMás allá de la ciberseguridad clásica, abordaremos cómo integrar principios de ingeniería responsable, trazabilidad, explicabilidad y control humano significativo. El objetivo: construir sistemas confiables, auditables y alineados con valores humanos y sociales. Porque la seguridad no es una feature, es un principio de diseño, y de ética.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Javier Ramos Panduro",
+                    "avatar": "/assets/img/speakers/LRQFK7_TJGxs4E.jpg",
+                    "biography": "I'm a Solutions Architect with almost 20 years of experience designing and building robust and scalable applications. Passionate about technology with positive social impact, combining deep technical expertise with leadership to create solutions that drive progress and inclusivity."
+                  }
+                ]
+              },
+              {
+                "start": "17:30",
+                "duration": "00:55",
                 "title": "Testing the Limits: Can PMs and Designers Build Products in the Real World?",
                 "type": "Talk",
                 "track": "AI and Automation",
@@ -117,27 +138,6 @@
                     "public_name": "Rosana Reischak",
                     "avatar": "/assets/img/speakers/PZHBQ3_kZwOTib.jpeg",
                     "biography": "Rosana Reischak is a Senior Product Manager based in Barcelona, currently working at Top Doctors. Previously, she spent several years at Cooltra and co-founded two startups, combining experience in scaling established products with building new ones from scratch. She is particularly interested in how AI is reshaping product development and strengthening collaboration between Product, Design, and Engineering."
-                  }
-                ]
-              },
-              {
-                "start": "17:30",
-                "duration": "00:55",
-                "title": "Secure by Design, Secure by Principles",
-                "type": "Talk",
-                "track": "AI and Automation",
-                "abstract": "La inteligencia artificial no es solo una herramienta: es una infraestructura de poder. En esta charla exploramos cómo diseñar sistemas de IA que sean seguros desde su concepción, no como parche posterior. Hablaremos de secure-by-design aplicado a IA, modelos robustos y predecibles, mitigación de riesgos (prompt injection, data poisoning, fugas de información), gobernanza, soberanía tecnológica y ética aplicada al diseño arquitectónico.\r\n\r\nMás allá de la ciberseguridad clásica, abordaremos cómo integrar principios de ingeniería responsable, trazabilidad, explicabilidad y control humano significativo. El objetivo: construir sistemas confiables, auditables y alineados con valores humanos y sociales. Porque la seguridad no es una feature, es un principio de diseño, y de ética.",
-                "answers": [
-                  {
-                    "question": 36,
-                    "answer": "Spanish"
-                  }
-                ],
-                "persons": [
-                  {
-                    "public_name": "Javier Ramos Panduro",
-                    "avatar": "/assets/img/speakers/LRQFK7_TJGxs4E.jpg",
-                    "biography": "I'm a Solutions Architect with almost 20 years of experience designing and building robust and scalable applications. Passionate about technology with positive social impact, combining deep technical expertise with leadership to create solutions that drive progress and inclusivity."
                   }
                 ]
               }
