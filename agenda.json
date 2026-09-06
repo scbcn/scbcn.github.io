@@ -132,7 +132,7 @@
                   {
                     "public_name": "David Valero",
                     "avatar": "/assets/img/speakers/FKKC9G_DqpY6ME.jpeg",
-                    "biography": "Product Software Engineer with experience delivering impactful, user-centered solutions in dynamic, fast-paced environments. Thriving in remote settings, skilled in building scalable backend systems and translating business needs into solid technical solutions. Deeply committed to XP and Lean principles, relying on TDD and CI/CD to ensure continuous improvement and clean code. Always eager to learn and grow with new technologies."
+                    "biography": "Product Software Engineer who loves building scalable backend systems and turning real business problems into solid technical solutions. I work remote, I'm big on XP and Lean principles — TDD and CI/CD are just how I like to build, clean and iterative. Lately I've been diving into AI-powered tools and LLMs to speed up how I build and ship, and honestly just to build smarter stuff. Always chasing the next thing to learn"
                   },
                   {
                     "public_name": "Rosana Reischak",
@@ -343,6 +343,27 @@
                     "biography": "Artesano del software con 20 años de experiencia profesional."
                   }
                 ]
+              },
+              {
+                "start": "17:30",
+                "duration": "00:55",
+                "title": "\"Todo el mundo es un cutre\"",
+                "type": "Talk",
+                "track": "Tech culture and soft skills",
+                "abstract": "¿Todo el mundo es un cutre? ¿Qué es realmente la cutrez? ¿Soy YO un cutre? Desde la PR que es cuestionable hasta la documentación que da pena verla, todo el mundo ha tenido la sensación de que algo es cutre y que no puede ser así. Pero... ¿acaso nosotros no somos unos cutres para el resto? ¿Cómo identificamos cuando estamos haciendo algo mal? ¿Qué pistas podemos encontrar que nos indican que algo no funciona? En esta charla hablaremos de esto, de las expectativas, de cómo juzgamos nuestro trabajo y el del resto y de cómo poder asegurarnos de que estamos entregando un trabajo del cual nos sentiremos orgullosos dentro de unos años.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Ana María García Sánchez",
+                    "avatar": "/assets/img/speakers/RDUDEV_KNsKr6m.jpg",
+                    "biography": "Ingeniera con amplia experiencia dando charlas técnicas, también a nivel internacional. Combina experiencia en backend con privacidad (CIPT) y visión de marketing para conectar técnica y negocio."
+                  }
+                ]
               }
             ],
             "Track 4": [
@@ -352,7 +373,7 @@
                 "title": "Documentando APIs para IAs",
                 "type": "Lighning talk",
                 "track": "AI and Automation",
-                "abstract": "El año pasado en la SCBCN25 hablé de cómo Documentar APIs. Dejé fuera una parte que estaba incipiente y ha explotado en doce meses: ahora quien integra tu API muchas veces no es una persona, es una IA.\r\n\r\nEn esta lightning quiero hacer un repaso rápido del panorama actual:\r\n➟ Herramientas y estándares que amplían el ecosistema: MCPs y generación de tool definitions, llms.txt, OpenAPI para agentes\r\n➟ Casos de uso: chatbots con RAG sobre la documentación, agentes de soporte… \r\n➟ Qué cambia en cómo documentamos\r\n\r\nY por supuesto, cualquier novedad reseñable, que las habrá desde la presentación de este C4P hasta el día del evento 😉",
+                "abstract": "El año pasado en la SCBCN25 hablé sobre documentar APIs. Dejé fuera una parte que estaba incipiente y ha explotado en doce meses: ahora quien lee tu documentación para usar tu API muchas veces no es una persona, es una IA.\r\n\r\nEn esta lightning haremos un repaso rápido del panorama actual:\r\n➟ Cómo se ha adaptado el ecosistema de herramientas y estándares de documentación.\r\n➟ Nuevos casos de uso: chatbots con RAG sobre la documentación, agentes de soporte…\r\n➟ Qué cambia en cómo documentamos.\r\n\r\nApta tanto para personas que conocen el tema, como para quien quiera introducirse en el mundillo.",
                 "answers": [
                   {
                     "question": 36,
@@ -370,7 +391,7 @@
               {
                 "start": "11:37",
                 "duration": "00:07",
-                "title": "Ya no me pagan por programar 😢 (y menos mal)",
+                "title": "Ya no me pagan por programar 😢",
                 "type": "Lighning talk",
                 "track": "Development principles and methodologies",
                 "abstract": "Spoiler: la IA ya programa. Así que, ¿por qué seguimos cobrando? Porque nuestro trabajo nunca fue el código, sino el problema. Un recorrido honesto por cómo mi equipo giró hacia el product mindset —research, impacto, slicing— con la IA como compañera de viaje, no como amenaza.",
@@ -405,7 +426,7 @@
                   {
                     "public_name": "Andrei Danilov",
                     "avatar": "/assets/img/speakers/TQP9SN_Y4cvvew.jpg",
-                    "biography": "https://www.linkedin.com/in/andreidanilov/"
+                    "biography": "Engineering leader. Building product minded teams and AI-native ways of working. \r\nhttps://www.linkedin.com/in/andreidanilov/"
                   }
                 ]
               },
