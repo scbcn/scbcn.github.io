@@ -52,8 +52,9 @@
 }
 
 .sponsor {
-  line-height: 150px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   background-color: #ffffff;
   border-radius: 10px;
@@ -63,15 +64,19 @@
 }
 
 .sponsor img {
-  width: 150px;
+  max-width: 150px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .unixcorn img {
-  width: 200px;
+  max-width: 200px;
 }
 
 .friends-for-life img {
-  width: 270px;
+  max-width: 270px;
 }
 
 .sponsor-list {
