@@ -431,12 +431,33 @@
                 ]
               },
               {
+                "start": "11:51",
+                "duration": "00:07",
+                "title": "La IA contra la IA: Crónica de un reclutamiento absurdo",
+                "type": "Lighning talk",
+                "track": "Tech culture and soft skills",
+                "abstract": "Empresas que criban CVs con IA. Candidatos que preparan CVs con IA para burlarlas. Una charla sobre cómo el reclutamiento se ha convertido en una guerra absurda, donde el factor humano se diluye.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Leonardo Poza",
+                    "avatar": "/assets/img/speakers/3QRNQJ_AYv2Fcb.jpeg",
+                    "biography": "Burgalés. Feliz al cuadrado. Padre por duplicado. He pasado más de 15 años desarrollando software y liderando equipos técnicos. Luego llegó Manfred, y con ello la oportunidad de cambiar la forma en que se contrata talento tecnológico en España. Todo lo que viví como ingeniero me sirve para hacer mejor recruiting."
+                  }
+                ]
+              },
+              {
                 "start": "12:30",
                 "duration": "00:07",
                 "title": "What PLG Actually Means for an Engineering Team",
                 "type": "Lighning talk",
                 "track": "Tech culture and soft skills",
-                "abstract": "You won't have a thorough PRD and months to implement a feature. You have a hypothesis to validate, a quick solution to ship, and a few days later you're measuring its impact. This talk covers what PLG engineering actually looks like in practice: from running quick experiments and negotiating scope, to measuring what matters and avoiding the dead code traps of A/B testing.",
+                "abstract": "You won't have a thorough PRD and months to implement a feature. You have a hypothesis to validate, a quick solution to ship, and a few days later you're measuring its impact. This talk covers what PLG and growth engineering actually look like in practice: from running quick experiments and negotiating scope, to measuring what matters and avoiding the dead code traps of A/B testing.",
                 "answers": [
                   {
                     "question": 36,
@@ -448,6 +469,27 @@
                     "public_name": "Marta Vasconcelos",
                     "avatar": "/assets/img/speakers/GNKBGF_TK8AWhi.jpeg",
                     "biography": "Currently an Engineering Manager at SingleStore, Marta leads a team of engineers focused on PLG and User Experience. Leveraging her design background and software engineering experience, her journey through software development led to a deep appreciation for user experience, frontend development, PLG, and developer tools, driven by her dedication to building top-notch products and the teams that ship them."
+                  }
+                ]
+              },
+              {
+                "start": "12:44",
+                "duration": "00:07",
+                "title": "Un perfil tècnic en una empresa \"teal\"",
+                "type": "Lighning talk",
+                "track": "Tech culture and soft skills",
+                "abstract": "En un entorn en el que s'espera que tothom prengui decisions es donen dinàmiques una mica diferents. \r\nAixò porta a una manera de treballar que és interessant, tot i que no per a tothom, que comporta certes dificultats, i requereix d'unes altres habilitats. \r\nVeurem un esbós d'aquestes diferències, i qui sap, potser us voleu emportar alguna d'aquestes idees als vostres equips.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Catalan"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Jordi Saumell",
+                    "avatar": "/assets/img/speakers/jordi_saumell.jpg",
+                    "biography": "I'm an Android developer and Kotlin enthusiast who is passionate about craftsmanship.\r\nMy main motivation drivers are improving user experience and developer experience.\r\nI also love a good debate about anything I can learn from. How to improve the UI, how to make code more readable, architecture, agile..."
                   }
                 ]
               },
