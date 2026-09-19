@@ -16,7 +16,7 @@
                 "title": "Next.js: The Final Boss of Web Performance",
                 "type": "Talk",
                 "track": "Development principles and methodologies",
-                "abstract": "Your local Lighthouse test shows a perfect 100, but when your app hits the real-world production stage, it’s instant Game Over. Welcome to the Next.js Hard Mode!\r\n\r\nIn this data-driven session, we will bypass marketing hype and put Next.js's real-world performance to the test. Armed with massive global datasets from the HTTP Archive and the Chrome User Experience Report (CrUX), we’ll review the built-in optimization power-ups Next.js provides, contrast them with the messy reality of large-scale projects, and hand you a practical cheat code survival kit to rescue your Core Web Vitals before you run out of lives.",
+                "abstract": "Tu test de Lighthouse en local da un 100 perfecto, pero cuando tu aplicación llega a producción, en el mundo real, es un Game Over instantáneo. ¿Por qué Next.js parece tan rápido en desarrollo y resulta no serlo para los usuarios reales? \r\n\r\nEn esta charla desmitificaremos qué ocurre realmente entre el servidor y el usuario, desde el SSR y el streaming hasta la hidratación y las Core Web Vitals. Saldrás de la charla con soluciones a los errores más habituales y las estrategias reales necesarias para conquistar la performance de Next.js a escala.",
                 "answers": [
                   {
                     "question": 36,
@@ -468,7 +468,7 @@
                   {
                     "public_name": "Marta Vasconcelos",
                     "avatar": "/assets/img/speakers/GNKBGF_TK8AWhi.jpeg",
-                    "biography": "Currently an Engineering Manager at SingleStore, Marta leads a team of engineers focused on PLG and User Experience. Leveraging her design background and software engineering experience, her journey through software development led to a deep appreciation for user experience, frontend development, PLG, and developer tools, driven by her dedication to building top-notch products and the teams that ship them."
+                    "biography": "Currently a Director of Engineering at SingleStore, Marta leads teams of engineers focused on building a product. Her journey through software development has led Marta to a deep appreciation for product thinking, frontend, user experience, and developer tools, driven by her dedication to building top-notch products and the teams that ship them."
                   }
                 ]
               },
