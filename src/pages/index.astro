@@ -36,7 +36,7 @@ const processedRoomsData: Record<string, any[]> = {};
 rooms.forEach((roomName) => {
   const rawTalks = roomsData[roomName] || [];
   processedRoomsData[roomName] = rawTalks.map((talk: any) => {
-    const isLightning = talk.type === "Lighning talk" || talk.duration === "00:07";
+    const isLightning = talk.type === "Lighning talk" || talk.type === "Lightning talk" || talk.duration === "00:07";
     let dialogId = "";
     if (roomName === "Track 1" && talk.start === "10:00") {
       dialogId = "keynote";

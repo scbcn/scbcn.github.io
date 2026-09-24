@@ -118,10 +118,10 @@
               {
                 "start": "17:30",
                 "duration": "00:55",
-                "title": "Testing the Limits: Can PMs and Designers Build Products in the Real World?",
+                "title": "Poniendo a prueba los límites: ¿pueden PMs y Diseñadores construir productos reales?",
                 "type": "Talk",
                 "track": "AI and Automation",
-                "abstract": "With all the recent advancements in AI, we found ourselves, almost inevitably, uncovering better ways of developing software by doing it and helping others do it. This led us to a fundamental question: Can a pair of Product Managers and Designers build something real, reliable, and production-ready with minimal developer supervision? We wanted to move past the marketing hype and find out if non-engineers could actually navigate the complexities of a live codebase without a developer holding their hand at every step.\r\n\r\nTo find the answer, we ran a dual-track experiment following two PM/PD pairs on very different journeys: one starting a project from scratch and another attempting to build and ship products within a massive, pre-existing production environment filled with established patterns and strict architectural rules.\r\n\r\nIn this talk, we will pull back the curtain on the entire process. We will explain how we configured the initial setup to enable autonomy, the specific technical hurdles and logic-based problems we encountered when the AI hit its limits, and the crucial moments where the experiment failed and developers had to intervene to save the day. Finally, we will share how we assessed our confidence in the outcome—whether we truly reached a level of trust where the final code could be deployed—providing an honest look at whether the \"Product Engineer\" is a sustainable reality or a dangerous myth.",
+                "abstract": "Con todos los avances recientes en IA, hemos ido descubriendo, casi de forma inevitable, mejores formas de desarrollar software a medida que lo hacíamos nosotros mismos y ayudábamos a otros a hacerlo. Esto nos llevó a una pregunta: ¿pueden un par de Product Managers y Diseñadores crear algo real, fiable y listo para producción con una supervisión mínima de desarrolladores?\r\n\r\nQueríamos ir más allá del hype y comprobar si personas que no son ingenieros podían desenvolverse en las complejidades del código en producción sin necesitar un desarrollador a su lado en cada paso.\r\n\r\nPara responder, llevamos a cabo un doble experimento con dos parejas de PM/PD en situaciones muy diferentes: una comenzó un proyecto desde cero y la otra intentó construir y lanzar productos dentro de un enorme entorno de producción ya existente, con patrones establecidos y estrictas reglas arquitectónicas.\r\n\r\nEn esta charla mostraremos todo el proceso: cómo configuramos el entorno, los avances y cambios que fuimos haciendo, los obstáculos que encontramos cuando la IA llegó a sus límites y los momentos en los que los desarrolladores tuvieron que intervenir. También veremos cómo fuimos aprendiendo de esos momentos para reducir progresivamente la necesidad de intervención.\r\n\r\nPor último, compartiremos si hemos alcanzado la confianza suficiente para desplegar el código en producción y, a partir de ahí, hasta qué punto el concepto de «Product Engineer» puede convertirse en una realidad.",
                 "answers": [
                   {
                     "question": 36,
@@ -488,7 +488,7 @@
                 "persons": [
                   {
                     "public_name": "Jordi Saumell",
-                    "avatar": "/assets/img/speakers/jordi_saumell.jpg",
+                    "avatar": "/assets/img/speakers/NFNFE8_6SyF2ZB.jpg",
                     "biography": "I'm an Android developer and Kotlin enthusiast who is passionate about craftsmanship.\r\nMy main motivation drivers are improving user experience and developer experience.\r\nI also love a good debate about anything I can learn from. How to improve the UI, how to make code more readable, architecture, agile..."
                   }
                 ]
@@ -532,6 +532,27 @@
                     "public_name": "Rocío Cejudo Soronellas",
                     "avatar": "/assets/img/speakers/RDUGML_nrklhWe.jpg",
                     "biography": "Rocío es Desarrolladora Senior Fullstack y formadora técnica en Factoría F5. Pasa sus días compaginando el aula, donde mentoriza a talento diverso hacia el sector TIC, con el coliderazgo técnico de plataformas web de alto impacto social. Especializada en accesibilidad (A11y) e IA, le apasiona explorar cómo la automatización potencia a los equipos sin perder el foco humano, transformando el código en una herramienta real de inclusión y empoderamiento."
+                  }
+                ]
+              },
+              {
+                "start": "17:30",
+                "duration": "00:55",
+                "title": "Construyendo el sistema que construye el sistema",
+                "type": "Talk",
+                "track": "AI and Automation",
+                "abstract": "¿Se puede automatizar por completo el desarrollo de software? Llevo meses intentando responder esta pregunta para un equipo de ingeniería de ~100 personas. Lo hacemos como se hace cualquier cambio grande: probando con un grupo pequeño, aprendiendo y ampliando. En uno de los repos de ese grupo pasamos de 87 PRs mergeadas en agosto de 2025 a 502 en 2026. El cuello de botella ya no es escribir código, es diseñarlo y revisarlo. Comparto el camino, los errores y los aprendizajes que tenemos hasta la fecha.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Mikel Ros",
+                    "avatar": "/assets/img/speakers/GLPSW8_QKptnNM.png",
+                    "biography": "Me llamo Mikel y trabajo de Tech Lead en 540. Empecé a desarrollar software hace casi 10 años y últimamente la pregunta que estoy intentando responder es cómo adaptar nuestra forma de trabajar y nuestras prácticas al entorno con agentes."
                   }
                 ]
               }
