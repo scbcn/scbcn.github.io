@@ -434,14 +434,18 @@ const getTalkEndTime = (start: string, duration: string) => {
           <div class="schedule-wrapper clear" data-animation="fadeIn" data-animation-delay="200">
             <div class="schedule-tabs lv1">
               <ul id="tabs-lv1" class="nav nav-justified">
-                <li class="active">
-                  <a href="#tab-first" data-toggle="tab">
-                    <strong>Friday</strong><br />16.10.2026
+                <li class="tab-day tab-day-friday active">
+                  <a href="#tab-first" data-toggle="tab" id="tab-link-friday">
+                    <span class="tab-day-name">Friday</span>
+                    <span class="tab-day-date">16.10.2026</span>
+                    <span class="tab-day-badge">Open Space</span>
                   </a>
                 </li>
-                <li>
-                  <a href="#tab-second" data-toggle="tab">
-                    <strong>Saturday</strong><br />17.10.2026
+                <li class="tab-day tab-day-saturday">
+                  <a href="#tab-second" data-toggle="tab" id="tab-link-saturday">
+                    <span class="tab-day-name">Saturday</span>
+                    <span class="tab-day-date">17.10.2026</span>
+                    <span class="tab-day-badge">Conference</span>
                   </a>
                 </li>
               </ul>
@@ -702,6 +706,197 @@ const getTalkEndTime = (start: string, duration: string) => {
             </div>
           </div>
         </div>
+
+        <script is:inline>
+          (function () {
+            try {
+              var hash = window.location.hash;
+              var params = new URLSearchParams(window.location.search);
+              var dayParam = (params.get('day') || '').toLowerCase();
+              var dateOverride = params.get('date');
+              var now = dateOverride ? new Date(dateOverride) : new Date();
+              var isSaturday =
+                hash === '#tab-second' ||
+                dayParam === 'saturday' ||
+                dayParam === 'sat' ||
+                dayParam === '2' ||
+                (hash !== '#tab-first' && dayParam !== 'friday' && dayParam !== 'fri' && dayParam !== '1' && now.getDay() === 6);
+
+              if (isSaturday) {
+                var friTab = document.querySelector('.tab-day-friday');
+                var satTab = document.querySelector('.tab-day-saturday');
+                if (friTab && satTab) {
+                  friTab.classList.remove('active');
+                  satTab.classList.add('active');
+                }
+                var friPane = document.getElementById('tab-first');
+                var satPane = document.getElementById('tab-second');
+                if (friPane && satPane) {
+                  friPane.classList.remove('active', 'in');
+                  satPane.classList.add('active', 'in');
+                }
+              }
+            } catch (e) {}
+          })();
+        </script>
+
+        <style is:global>
+          /* Schedule Day Tabs - Elegant Blues & Slate Theme */
+          .schedule-wrapper .schedule-tabs.lv1 {
+            background-color: transparent !important;
+            border-radius: 28px 28px 0 0;
+            overflow: visible;
+            position: relative;
+            z-index: 10;
+            padding: 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+          }
+
+          .schedule-wrapper .schedule-tabs.lv1 .nav {
+            display: flex !important;
+            flex-direction: row;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            overflow: visible;
+          }
+
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li {
+            flex: 1 1 50%;
+            display: block;
+            float: none;
+            width: 50%;
+            position: relative;
+            transition: all 0.25s ease-in-out;
+            cursor: pointer;
+          }
+
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li.tab-day-friday {
+            border-top-left-radius: 28px;
+            background-color: #2e4057; /* Classic theme slate-navy */
+            border-right: 1px solid rgba(255, 255, 255, 0.12);
+          }
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li.tab-day-friday > a {
+            border-top-left-radius: 28px;
+          }
+
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li.tab-day-saturday {
+            border-top-right-radius: 28px;
+            background-color: #243548; /* Harmonious deep slate-navy */
+          }
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li.tab-day-saturday > a {
+            border-top-right-radius: 28px;
+          }
+
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li > a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 82px;
+            padding: 16px 15px;
+            text-align: center;
+            text-decoration: none !important;
+            cursor: pointer !important;
+            transition: all 0.25s ease-in-out;
+            border: none;
+            background: transparent !important;
+            color: rgba(255, 255, 255, 0.7);
+          }
+
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li .tab-day-name {
+            font-family: 'Poppins', 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            line-height: 1.2;
+          }
+
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li .tab-day-date {
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 3px;
+            opacity: 0.85;
+            letter-spacing: 0.5px;
+          }
+
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li .tab-day-badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            padding: 3px 10px;
+            border-radius: 12px;
+            margin-top: 6px;
+            background-color: rgba(255, 255, 255, 0.12);
+            color: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.25s ease;
+          }
+
+          /* Hover state for inactive tabs */
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li:not(.active):hover {
+            background-color: #1a4f66;
+          }
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li:not(.active):hover > a {
+            color: #ffffff;
+          }
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li:not(.active):hover .tab-day-badge {
+            background-color: rgba(255, 255, 255, 0.22);
+            color: #ffffff;
+          }
+
+          /* Active tab (Signature schedule blue #07819c from timetable left blocks) */
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li.active {
+            background-color: #07819c !important;
+          }
+
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li.active > a {
+            color: #ffffff !important;
+          }
+
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li.active .tab-day-badge {
+            background-color: rgba(255, 255, 255, 0.25);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+          }
+
+          .schedule-wrapper .schedule-tabs.lv1 .nav > li.active:before {
+            content: '';
+            position: absolute;
+            z-index: 25;
+            top: 100%;
+            left: 50%;
+            margin-left: -10px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #07819c !important;
+            right: auto;
+          }
+
+          /* Mobile adjustments */
+          @media (max-width: 767px) {
+            .schedule-wrapper .schedule-tabs.lv1 .nav > li > a {
+              min-height: 72px;
+              padding: 12px 8px;
+            }
+            .schedule-wrapper .schedule-tabs.lv1 .nav > li .tab-day-name {
+              font-size: 16px;
+            }
+            .schedule-wrapper .schedule-tabs.lv1 .nav > li .tab-day-date {
+              font-size: 12px;
+            }
+            .schedule-wrapper .schedule-tabs.lv1 .nav > li .tab-day-badge {
+              font-size: 9px;
+              padding: 2px 6px;
+            }
+          }
+        </style>
       </section>
       <!-- /PAGE SCHEDULE -->
 
