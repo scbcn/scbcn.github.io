@@ -715,12 +715,16 @@ const getTalkEndTime = (start: string, duration: string) => {
               var dayParam = (params.get('day') || '').toLowerCase();
               var dateOverride = params.get('date');
               var now = dateOverride ? new Date(dateOverride) : new Date();
+              var isEventSaturday =
+                now.getFullYear() === 2026 &&
+                now.getMonth() === 9 &&
+                now.getDate() === 17;
               var isSaturday =
                 hash === '#tab-second' ||
                 dayParam === 'saturday' ||
                 dayParam === 'sat' ||
                 dayParam === '2' ||
-                (hash !== '#tab-first' && dayParam !== 'friday' && dayParam !== 'fri' && dayParam !== '1' && now.getDay() === 6);
+                (hash !== '#tab-first' && dayParam !== 'friday' && dayParam !== 'fri' && dayParam !== '1' && isEventSaturday);
 
               if (isSaturday) {
                 var friTab = document.querySelector('.tab-day-friday');
@@ -1343,16 +1347,6 @@ const getTalkEndTime = (start: string, duration: string) => {
                   </a>
                 </div>
                 <div class="sc-organiser-avatar">
-                  <a href="//x.com/AlvarPR" target="_blank">
-                    <img
-                      class="img-hex img-responsive sc-organiser-avatar-image"
-                      src="/assets/img/organisers/alvar.jpeg"
-                      alt="Àlvar"
-                    />
-                    <p class="img-responsive sc-organiser-avatar-name">Àlvar</p>
-                  </a>
-                </div>
-                <div class="sc-organiser-avatar">
                   <a
                     href="//www.linkedin.com/in/sandra-d-367b1785/"
                     target="_blank"
@@ -1406,21 +1400,6 @@ const getTalkEndTime = (start: string, duration: string) => {
                 </div>
                 <div class="sc-organiser-avatar">
                   <a
-                    href="//www.linkedin.com/in/ivan-prats-martinho/"
-                    target="_blank"
-                  >
-                    <img
-                      class="img-hex img-responsive sc-organiser-avatar-image"
-                      src="/assets/img/organisers/iprats.jpg"
-                      alt="Iván Prats"
-                    />
-                    <p class="img-responsive sc-organiser-avatar-name">
-                      Iván Prats
-                    </p>
-                  </a>
-                </div>
-                <div class="sc-organiser-avatar">
-                  <a
                     href="https://www.linkedin.com/in/borroni/"
                     target="_blank"
                   >
@@ -1431,6 +1410,30 @@ const getTalkEndTime = (start: string, duration: string) => {
                     />
                     <p class="img-responsive sc-organiser-avatar-name">
                       Mila Borroni
+                    </p>
+                  </a>
+                </div>
+                <div class="sc-organiser-avatar">
+                  <a href="#">
+                    <img
+                      class="img-hex img-responsive sc-organiser-avatar-image"
+                      src="/assets/img/organisers/michelle.png"
+                      alt="Michelle Cabrera"
+                    />
+                    <p class="img-responsive sc-organiser-avatar-name">
+                      Michelle Cabrera
+                    </p>
+                  </a>
+                </div>
+                <div class="sc-organiser-avatar">
+                  <a href="#">
+                    <img
+                      class="img-hex img-responsive sc-organiser-avatar-image"
+                      src="/assets/img/organisers/andre.png"
+                      alt="André Menks"
+                    />
+                    <p class="img-responsive sc-organiser-avatar-name">
+                      André Menks
                     </p>
                   </a>
                 </div>

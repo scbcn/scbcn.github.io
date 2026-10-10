@@ -21,17 +21,24 @@
       return 'friday';
     }
 
-    // 3. Current day of the week:
-    // If today is Friday (5) -> Friday
-    // If today is Saturday (6) -> Saturday
-    // Otherwise -> null (do nothing, keep default)
+    // 3. Conference event date detection:
+    // Friday: 16 October 2026
+    // Saturday: 17 October 2026
+    // Any other date (e.g. before/after): do nothing, keep Friday default
     var dateOverride = params.get('date');
     var now = dateOverride ? new Date(dateOverride) : new Date();
-    var currentDay = now.getDay();
+    var isEventSaturday =
+      now.getFullYear() === 2026 &&
+      now.getMonth() === 9 &&
+      now.getDate() === 17;
+    var isEventFriday =
+      now.getFullYear() === 2026 &&
+      now.getMonth() === 9 &&
+      now.getDate() === 16;
 
-    if (currentDay === 6) {
+    if (isEventSaturday) {
       return 'saturday';
-    } else if (currentDay === 5) {
+    } else if (isEventFriday) {
       return 'friday';
     }
 
