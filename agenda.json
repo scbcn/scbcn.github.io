@@ -79,7 +79,7 @@
                 "title": "¿Es rentable (y posible) la IA 100% local en desarrollo?",
                 "type": "Talk",
                 "track": "AI and Automation",
-                "abstract": "Tal y como está el patio de las suscripciones de Claude, Antigravity, Codex.... ¿Es factible hoy en día desarrollar software profesional prescindiendo de los modelos privativos y sus sistemas de pago por uso?\r\n\r\nMovido por la búsqueda de autonomía técnica y privacidad, decidí realizar una inversión \"posiblemente descabellada\" en hardware de última generación (NVIDIA Blackwell) para ejecutar modelos de pesos abiertos y ponerlo a prueba.\r\n\r\nEsta es la crónica de un descubrimiento: un viaje de aprendizaje incremental donde se analiza, desde una visión crítica y honesta, si la IA local ha madurado lo suficiente para el día a día de un desarrollador. \r\n\r\nExploraremos cómo configurar un nodo de cómputo, el dilema de las cuantizaciones, qué modelos elegir para cada fase del ciclo de vida (planificar, programar, refactorizar) y cómo se comportan estas herramientas ante retos reales como el Domain-Driven Design (DDD) sobre un producto complejo.\r\n\r\nUna sesión para quienes se preguntan si es el momento de reclamar su soberanía tecnológica o si todavía estamos atados a la nube.",
+                "abstract": "Tal y como está el patio de las suscripciones de Claude, Antigravity, Codex.... ¿Es factible hoy en día desarrollar software profesional prescindiendo de los modelos privativos y sus sistemas de pago por uso?\r\n\r\nMovido por la búsqueda de autonomía técnica y privacidad, decidí realizar una inversión \"posiblemente descabellada\" en hardware de última generación (NVIDIA Blackwell) para ejecutar modelos de pesos abiertos y ponerlo a prueba.\r\n\r\nEsta es la crónica de un descubrimiento: un viaje de aprendizaje incremental donde se analiza, desde una visión crítica y honesta, si la IA local ha madurado lo suficiente para el día a día de un desarrollador. \r\n\r\nExploraremos cómo configurar un nodo de cómputo, el dilema de las cuantizaciones, qué modelos elegir para cada fase del ciclo de vida (planificar, programar, refactorizar) y cómo se comportan estas herramientas ante retos reales como el Domain-Driven Design (DDD) sobre un producto complejo.\r\n\r\nUna sesión para quienes se preguntan si con los precios actuales del mercado es el momento de comprar hierro propio, si la salida pasa por el alquiler bajo demanda, o si todavía estamos atados al bufé de la nube.",
                 "answers": [
                   {
                     "question": 36,
@@ -369,9 +369,9 @@
             "Track 4": [
               {
                 "start": "11:30",
-                "duration": "00:07",
+                "duration": "00:10",
                 "title": "Documentando APIs para IAs",
-                "type": "Lighning talk",
+                "type": "Lightning talk",
                 "track": "AI and Automation",
                 "abstract": "El año pasado en la SCBCN25 hablé sobre documentar APIs. Dejé fuera una parte que estaba incipiente y ha explotado en doce meses: ahora quien lee tu documentación para usar tu API muchas veces no es una persona, es una IA.\r\n\r\nEn esta lightning haremos un repaso rápido del panorama actual:\r\n➟ Cómo se ha adaptado el ecosistema de herramientas y estándares de documentación.\r\n➟ Nuevos casos de uso: chatbots con RAG sobre la documentación, agentes de soporte…\r\n➟ Qué cambia en cómo documentamos.\r\n\r\nApta tanto para personas que conocen el tema, como para quien quiera introducirse en el mundillo.",
                 "answers": [
@@ -389,10 +389,10 @@
                 ]
               },
               {
-                "start": "11:37",
-                "duration": "00:07",
+                "start": "11:45",
+                "duration": "00:10",
                 "title": "Ya no me pagan por programar 😢",
-                "type": "Lighning talk",
+                "type": "Lightning talk",
                 "track": "Development principles and methodologies",
                 "abstract": "Spoiler: la IA ya programa. Así que, ¿por qué seguimos cobrando? Porque nuestro trabajo nunca fue el código, sino el problema. Un recorrido honesto por cómo mi equipo giró hacia el product mindset —research, impacto, slicing— con la IA como compañera de viaje, no como amenaza.",
                 "answers": [
@@ -410,10 +410,10 @@
                 ]
               },
               {
-                "start": "11:44",
-                "duration": "00:07",
+                "start": "12:00",
+                "duration": "00:10",
                 "title": "Rescuing the System Everyone Gave Up On",
-                "type": "Lighning talk",
+                "type": "Lightning talk",
                 "track": "Tech culture and soft skills",
                 "abstract": "What happens when only 3 out of 100 engineers can touch a critical system and nobody else wants to? This talk dives into a real story of a failing legacy codebase: programming language barrier, poor testing, outdated dependencies, constant outages and a team stuck in frustration with no investment in sight.\r\nInstead of another failed “big rewrite” proposal, I approached the problem differently, using product thinking. By breaking the system into smaller, prioritized problems, aligning stakeholders and introducing measurable outcomes, we turned paralysis into progress.\r\nIn this lightning talk, I’ll walk through the exact steps I used to reframe the problem, gain buy-in and start delivering impact without having to think about rewriting everything. If you’ve ever faced a legacy system everyone avoids but depends on, this talk will give you a practical way forward.",
                 "answers": [
@@ -431,10 +431,10 @@
                 ]
               },
               {
-                "start": "11:51",
-                "duration": "00:07",
+                "start": "12:15",
+                "duration": "00:10",
                 "title": "La IA contra la IA: Crónica de un reclutamiento absurdo",
-                "type": "Lighning talk",
+                "type": "Lightning talk",
                 "track": "Tech culture and soft skills",
                 "abstract": "Empresas que criban CVs con IA. Candidatos que preparan CVs con IA para burlarlas. Una charla sobre cómo el reclutamiento se ha convertido en una guerra absurda, donde el factor humano se diluye.",
                 "answers": [
@@ -453,9 +453,9 @@
               },
               {
                 "start": "12:30",
-                "duration": "00:07",
+                "duration": "00:10",
                 "title": "What PLG Actually Means for an Engineering Team",
-                "type": "Lighning talk",
+                "type": "Lightning talk",
                 "track": "Tech culture and soft skills",
                 "abstract": "You won't have a thorough PRD and months to implement a feature. You have a hypothesis to validate, a quick solution to ship, and a few days later you're measuring its impact. This talk covers what PLG and growth engineering actually look like in practice: from running quick experiments and negotiating scope, to measuring what matters and avoiding the dead code traps of A/B testing.",
                 "answers": [
@@ -473,12 +473,33 @@
                 ]
               },
               {
-                "start": "12:44",
-                "duration": "00:07",
-                "title": "Un perfil tècnic en una empresa \"teal\"",
-                "type": "Lighning talk",
+                "start": "12:45",
+                "duration": "00:10",
+                "title": "Desarrollo con IA vs vieja usanza. \"Esto antes molaba\".",
+                "type": "Lightning talk",
+                "track": "AI and Automation",
+                "abstract": "7 minutos para ver cómo ha cambiado el desarrollo en cuestión de 2 años.\r\n\r\nMientras 1 persona soluciona un problema con IA, en paralelo, otra lo soluciona a la vieja usanza. ¡Fight!\r\n\r\nLightning interesante para:\r\n\r\n- Rememorar rápidamente (o descubrir) lo que era depurar usando breakpoints.\r\n- Evidenciar cómo se ha reducido el valor de focalizarnos en el inner loop.\r\n- Reflexionar acerca de cómo cubrir las necesidades básicas que han quedado descubiertas con el cambio de paradigma. Aprendizaje, descubrimiento, reto, etc.\r\n\r\n¡Nos vemos!",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Javier Ferrer González",
+                    "avatar": "/assets/img/speakers/PCJSWY_Jlwd9xc.jpg",
+                    "biography": "Redescubriendo el desarrollo de producto y compartiendo los aprendizajes en Codely 😊🤟."
+                  }
+                ]
+              },
+              {
+                "start": "13:00",
+                "duration": "00:10",
+                "title": "Un perfil tècnic a una empresa \"teal\"",
+                "type": "Lightning talk",
                 "track": "Tech culture and soft skills",
-                "abstract": "En un entorn en el que s'espera que tothom prengui decisions es donen dinàmiques una mica diferents. \r\nAixò porta a una manera de treballar que és interessant, tot i que no per a tothom, que comporta certes dificultats, i requereix d'unes altres habilitats. \r\nVeurem un esbós d'aquestes diferències, i qui sap, potser us voleu emportar alguna d'aquestes idees als vostres equips.",
+                "abstract": "En un entorn en què s'espera que tothom prengui decisions es donen dinàmiques una mica diferents. \r\nAixò porta a una manera de treballar interessant, tot i que no apta per a tothom; comporta certes dificultats; i requereix noves habilitats. \r\nVeurem un esbós d'aquestes diferències i, qui sap, potser us voleu emportar alguna d'aquestes idees als vostres equips.",
                 "answers": [
                   {
                     "question": 36,
@@ -489,7 +510,28 @@
                   {
                     "public_name": "Jordi Saumell",
                     "avatar": "/assets/img/speakers/NFNFE8_6SyF2ZB.jpg",
-                    "biography": "I'm an Android developer and Kotlin enthusiast who is passionate about craftsmanship.\r\nMy main motivation drivers are improving user experience and developer experience.\r\nI also love a good debate about anything I can learn from. How to improve the UI, how to make code more readable, architecture, agile..."
+                    "biography": "Jordi is the Mobile Chapter Lead at Basetis, specializing in Android and KMP. \r\nHe is passionate about craftsmanship in both product and code, with a focus on improving user experience and developer experience.\r\nHe loves a good debate about anything he can learn from, including how to improve the UI, how to make code more readable, architecture, or agile."
+                  }
+                ]
+              },
+              {
+                "start": "13:15",
+                "duration": "00:10",
+                "title": "Fem comunitat: hay una comunidad para eso",
+                "type": "Lightning talk",
+                "track": "Diversity in IT",
+                "abstract": "Hace diez años, en Barcelona había unos pocos meetups tech. Si querías conocer a otros developers, no tenías muchas opciones y casi siempre te encontrabas con las mismas caras. Hoy es todo lo contrario. Hay un meetup, un evento o una comunidad para prácticamente cualquier tecnología, framework o herramienta de IA. Pero con tantas opciones, ¿es más fácil encontrar tu sitio o estamos todos un poco más perdidos?\r\n\r\nLlevo más de diez años participando y organizando comunidades tech, y he visto cómo ha cambiado el panorama en Barcelona. En estos 7 minutos quiero compartir algunas reflexiones sobre lo que hemos ganado (y perdido) por el camino, cómo la IA está cambiando las formas de aprender y conectar, y por qué, al final, lo más importante de una comunidad sigue siendo lo mismo: las personas que conoces, lo que compartes y las ganas de ayudarse unos a otros.",
+                "answers": [
+                  {
+                    "question": 36,
+                    "answer": "Spanish"
+                  }
+                ],
+                "persons": [
+                  {
+                    "public_name": "Nicolas Grenié",
+                    "avatar": "/assets/img/speakers/GNVZF7_t4WBQ7D.jpg",
+                    "biography": "Nicolas lleva más de diez años trabajando en Developer Relations, creando contenido técnico y conectando a developers con las tecnologías. Después de pasar por empresas como Red Hat, Typeform y SLNG, sigue convencido de que las mejores cosas se construyen en comunidad.\r\n\r\nEs fundador de HackBarna, una comunidad de developers y builders que se encuentran por hackathons para aprender, experimentar y compartir ideas."
                   }
                 ]
               },
